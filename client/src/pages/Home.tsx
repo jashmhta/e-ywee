@@ -269,7 +269,7 @@ function VideoSection({ src, poster, title, subtitle, cta, ctaHref, side = "left
 }) {
   const ref = useReveal();
   return (
-    <section className="video-feature-section" style={{ display: "grid" }}>
+    <section className="video-feature-section">
       <div className="video-section" style={{ order: side === "left" ? 0 : 1 }}>
         {src ? (
           <video autoPlay muted loop playsInline poster={poster}
@@ -614,7 +614,7 @@ export default function Home() {
       <main style={{ background: "var(--paper)" }}>
 
         {/* ── Hero ──────────────────────────────────────────────── */}
-        <section style={{ position: "relative", height: "100dvh", minHeight: "600px", overflow: "hidden", display: "flex", alignItems: "flex-end" }}>
+        <section className="hero-section" style={{ position: "relative", height: "100dvh", minHeight: "600px", overflow: "hidden", display: "flex", alignItems: "flex-end" }}>
           <div ref={heroRef} style={{ position: "absolute", inset: 0, zIndex: 0 }}>
             {HERO_VIDEO ? (
               <video
@@ -629,10 +629,10 @@ export default function Home() {
               <img
                 src={HERO_POSTER}
                 alt="YWEE — She Owns Every Day"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 40%", display: "block" }}
               />
             )}
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(26,25,22,0.55) 0%, rgba(26,25,22,0.1) 50%, transparent 100%)" }} />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.25) 40%, rgba(26,25,22,0.05) 70%, transparent 100%)" }} />
           </div>
 
           {/* Hero content */}
@@ -640,7 +640,7 @@ export default function Home() {
             <p style={{ fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(244,239,230,0.65)", marginBottom: "16px", fontFamily: "var(--sans)" }}>
               Girls' Stretch Denim · Ages 1–14 · Made in India
             </p>
-            <h1 style={{ fontFamily: "var(--serif)", fontSize: "clamp(52px, 10vw, 128px)", fontWeight: 300, fontStyle: "italic", letterSpacing: "-0.04em", color: "var(--paper)", lineHeight: 0.92, marginBottom: "32px" }}>
+            <h1 className="hero-title" style={{ fontFamily: "var(--serif)", fontSize: "clamp(52px, 10vw, 128px)", fontWeight: 300, fontStyle: "italic", letterSpacing: "-0.04em", color: "var(--paper)", lineHeight: 0.92, marginBottom: "32px" }}>
               <span className="split-line"><span style={{ animationDelay: "0ms" }}>From the</span></span>
               <span className="split-line"><span style={{ animationDelay: "120ms" }}>Sandbox to</span></span>
               <span className="split-line"><span style={{ animationDelay: "240ms" }}>the Stage.</span></span>

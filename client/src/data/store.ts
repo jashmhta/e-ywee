@@ -577,7 +577,7 @@ export const JOURNAL: JournalArticle[] = [
 // ─── Hero ─────────────────────────────────────────────────────────────────
 // AI-generated golden hour hero — Indian girl in YWEE denim, cinematic
 export const HERO_VIDEO = "";
-export const HERO_POSTER = "/images/ywee-hero-golden-hour-v1_0546180c.jpg";
+export const HERO_POSTER = "/images/ywee-hero-heroimage.jpg";
 
 // ─── Lifestyle & Brand Images ────────────────────────────────────────────
 // AI-generated with Indian child models — for homepage, lookbook, atelier

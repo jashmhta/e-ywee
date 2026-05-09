@@ -128,7 +128,7 @@ export default function Nav() {
       </header>
 
       {/* ── Mobile floating glass pills ───────────────────────── */}
-      <div className="mobile-pills" style={{ position: "fixed", top: "clamp(12px, 3vw, 20px)", left: 0, right: 0, zIndex: 45, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 16px", pointerEvents: "none", transition: "transform 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s", transform: navVisible ? "translateY(0)" : "translateY(-120%)", opacity: navVisible ? 1 : 0 }}>
+      <div className="mobile-pills" style={{ position: "fixed", top: "clamp(12px, 3vw, 20px)", left: 0, right: 0, zIndex: 55, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 16px", pointerEvents: "none", transition: "transform 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s", transform: navVisible ? "translateY(0)" : "translateY(-120%)", opacity: navVisible ? 1 : 0 }}>
         {/* Left pill — branding */}
         <Link href="/" style={{ pointerEvents: "auto", display: "inline-flex", alignItems: "center", padding: "10px 18px", background: "rgba(244,239,230,0.88)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", borderRadius: "100px", border: "1px solid rgba(26,25,22,0.10)", boxShadow: "0 4px 20px rgba(26,25,22,0.12)", fontFamily: "var(--serif)", fontSize: "18px", fontWeight: 300, fontStyle: "italic", letterSpacing: "-0.02em", color: "var(--ink)", textDecoration: "none", userSelect: "none" }}>
           y<strong style={{ fontWeight: 600, fontStyle: "normal" }}>w</strong>ee

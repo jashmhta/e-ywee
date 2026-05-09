@@ -2,15 +2,13 @@ import { useEffect, useState, useCallback, useRef } from "react";
 import { HERO_POSTER, HERO_VIDEO } from "@/data/store";
 
 /**
- * YweeLoader — YWEE brand loader
- * - Denim-blue background (#1B3A5C) with parchment text
- * - Denim-stitch progress bar
- * - YWEE wordmark + cycling brand phrases
- * - Curtain-wipe exit (denim panel sweeps up, parchment reveals)
- * - 6-second hard timeout safety net
+ * YweeLoader — Premium brand loader
+ * Denim canvas background with animated weave texture
+ * Stitched wordmark, thread-stitch progress bar, crossfading phrases
+ * Split-curtain exit (denim panels sweep apart)
  */
 
-const HARD_TIMEOUT_MS = 6000;
+const HARD_TIMEOUT_MS = 5500;
 const CRITICAL_IMAGES = [HERO_POSTER];
 const CRITICAL_VIDEO = HERO_VIDEO;
 
@@ -18,8 +16,8 @@ const PHRASES = [
   "From the sandbox to the stage.",
   "Soft on the skin. Fierce in fit.",
   "Denim that grows with her.",
-  "Cotton-Lycra comfort. Ages 1–14.",
-  "Made in India. Priced under ₹1,500.",
+  "Cotton-Lycra comfort. Ages 1\u201314.",
+  "Made in India. Priced under \u20B91,500.",
 ];
 
 export default function YweeLoader({ onDone }: { onDone: () => void }) {
@@ -28,12 +26,25 @@ export default function YweeLoader({ onDone }: { onDone: () => void }) {
   const [phraseIdx, setPhraseIdx] = useState(0);
   const progressRef = useRef(0);
   const doneRef = useRef(false);
+  const [shimmer, setShimmer] = useState(0);
 
-  // Cycle brand phrases every 1.4s
+  // Shimmer sweep across wordmark
+  useEffect(() => {
+    if (phase !== "loading") return;
+    let raf: number;
+    const animate = () => {
+      setShimmer(p => (p >= 200 ? -50 : p + 0.6));
+      raf = requestAnimationFrame(animate);
+    };
+    raf = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(raf);
+  }, [phase]);
+
+  // Cycle brand phrases every 1.3s
   useEffect(() => {
     const t = setInterval(() => {
       setPhraseIdx(i => (i + 1) % PHRASES.length);
-    }, 1400);
+    }, 1300);
     return () => clearInterval(t);
   }, []);
 
@@ -41,11 +52,11 @@ export default function YweeLoader({ onDone }: { onDone: () => void }) {
     if (doneRef.current) return;
     doneRef.current = true;
     setProgress(100);
-    setTimeout(() => setPhase("curtain"), 300);
+    setTimeout(() => setPhase("curtain"), 250);
     setTimeout(() => {
       setPhase("exit");
       setTimeout(onDone, 50);
-    }, 1100);
+    }, 900);
   }, [onDone]);
 
   useEffect(() => {
@@ -56,9 +67,9 @@ export default function YweeLoader({ onDone }: { onDone: () => void }) {
     const animateProgress = () => {
       if (cancelled || doneRef.current) return;
       const current = progressRef.current;
-      const remaining = 85 - current;
-      const step = Math.max(0.3, remaining * 0.04);
-      const next = Math.min(85, current + step);
+      const remaining = 88 - current;
+      const step = Math.max(0.4, remaining * 0.045);
+      const next = Math.min(88, current + step);
       progressRef.current = next;
       setProgress(next);
       progressRaf = requestAnimationFrame(animateProgress);
@@ -109,125 +120,190 @@ export default function YweeLoader({ onDone }: { onDone: () => void }) {
 
   if (phase === "exit") return null;
 
-  const curtainStyle: React.CSSProperties = phase === "curtain" ? {
-    position: "fixed", inset: 0, zIndex: 10001,
-    background: "#1B3A5C",
-    transform: "translateY(-100%)",
-    transition: "transform 0.75s cubic-bezier(0.76,0,0.24,1)",
-    pointerEvents: "none",
-  } : {
-    position: "fixed", inset: 0, zIndex: 10001,
-    background: "#1B3A5C",
-    transform: "translateY(0)",
-    transition: "none",
-    pointerEvents: "none",
-  };
+  const isCurtain = phase === "curtain";
 
   return (
     <>
-      {/* Curtain sweep */}
-      <div style={curtainStyle} aria-hidden="true" />
+      {/* Split-curtain exit panels */}
+      <div style={{
+        position: "fixed", inset: 0, zIndex: 10001,
+        display: "flex", pointerEvents: "none",
+      }} aria-hidden="true">
+        <div style={{
+          flex: 1, background: "#1B3A5C",
+          transform: isCurtain ? "translateX(-101%)" : "translateX(0)",
+          transition: "transform 0.9s cubic-bezier(0.76,0,0.24,1)",
+        }} />
+        <div style={{
+          flex: 1, background: "#1B3A5C",
+          transform: isCurtain ? "translateX(101%)" : "translateX(0)",
+          transition: "transform 0.9s cubic-bezier(0.76,0,0.24,1) 0.08s",
+        }} />
+      </div>
 
       {/* Main loader panel */}
       <div
         aria-label="Loading YWEE"
         role="status"
         style={{
-          position: "fixed",
-          inset: 0,
-          zIndex: 10000,
+          position: "fixed", inset: 0, zIndex: 10000,
           background: "#1B3A5C",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: "clamp(16px, 3.5vw, 28px)",
-          pointerEvents: phase === "curtain" ? "none" : "all",
-          opacity: phase === "curtain" ? 0 : 1,
-          transition: "opacity 0.25s ease",
+          gap: "clamp(14px, 3vw, 24px)",
+          pointerEvents: isCurtain ? "none" : "all",
+          opacity: isCurtain ? 0 : 1,
+          transition: "opacity 0.35s ease",
         }}
       >
-        {/* Denim weave texture */}
+        {/* Animated denim weave texture */}
         <div style={{
-          position: "absolute", inset: 0, pointerEvents: "none",
-          backgroundImage: `repeating-linear-gradient(
-            45deg,
-            rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px,
-            transparent 1px, transparent 8px
-          ), repeating-linear-gradient(
-            -45deg,
-            rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px,
-            transparent 1px, transparent 8px
-          )`,
-        }} />
-
-        {/* YWEE wordmark */}
-        <div style={{
-          fontFamily: "'Fraunces', Georgia, serif",
-          fontSize: "clamp(56px, 12vw, 96px)",
-          fontWeight: 300,
-          fontStyle: "italic",
-          letterSpacing: "-0.04em",
-          color: "#F4EFE6",
-          lineHeight: 1,
-          animation: "ywee-fade-up 0.8s cubic-bezier(0.16,1,0.3,1) both",
+          position: "absolute", inset: 0, pointerEvents: "none", overflow: "hidden",
         }}>
-          ywee
+          <div className="loader-weave" style={{
+            position: "absolute", inset: "-50%",
+            width: "200%", height: "200%",
+            backgroundImage: `
+              repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 10px),
+              repeating-linear-gradient(-45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 10px)
+            `,
+            animation: "loader-weave-drift 20s linear infinite",
+          }} />
         </div>
 
-        {/* Sub-brand line */}
+        {/* ── YWEE Brand Lockup ─────────────────────────── */}
         <div style={{
-          fontFamily: "'Geist', system-ui, sans-serif",
-          fontSize: "clamp(9px, 1.8vw, 11px)",
-          letterSpacing: "0.22em",
-          textTransform: "uppercase",
-          color: "rgba(244,239,230,0.4)",
-          animation: "ywee-fade-up 0.8s 0.1s cubic-bezier(0.16,1,0.3,1) both",
-          marginTop: "-4px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "clamp(10px, 2vw, 18px)",
+          animation: "loader-fade-up 0.7s cubic-bezier(0.16,1,0.3,1) both",
         }}>
-          Girls&apos; Stretch Denim · India
+          {/* Stitched circular seal with Y */}
+          <div style={{
+            width: "clamp(72px, 14vw, 110px)",
+            height: "clamp(72px, 14vw, 110px)",
+            borderRadius: "50%",
+            border: "2px solid rgba(244,239,230,0.18)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            marginBottom: "2px",
+          }}>
+            {/* Inner stitch ring */}
+            <div style={{
+              position: "absolute", inset: "8px",
+              borderRadius: "50%",
+              border: "1px dashed rgba(244,239,230,0.12)",
+            }} />
+            {/* Y mark */}
+            <span style={{
+              fontFamily: "'Fraunces', Georgia, serif",
+              fontSize: "clamp(28px, 5.5vw, 44px)",
+              fontWeight: 300,
+              fontStyle: "italic",
+              color: "rgba(244,239,230,0.55)",
+              lineHeight: 1,
+              letterSpacing: "-0.02em",
+            }}>Y</span>
+          </div>
+
+          {/* YWEE wordmark — large and central */}
+          <div style={{
+            position: "relative",
+            fontFamily: "'Fraunces', Georgia, serif",
+            fontSize: "clamp(64px, 13vw, 104px)",
+            fontWeight: 300,
+            fontStyle: "italic",
+            letterSpacing: "-0.04em",
+            color: "#F4EFE6",
+            lineHeight: 0.9,
+            overflow: "hidden",
+          }}>
+            {/* Shimmer sweep */}
+            <div style={{
+              position: "absolute", inset: 0,
+              background: `linear-gradient(110deg, transparent ${shimmer}%, rgba(255,255,255,0.07) ${shimmer + 12}%, transparent ${shimmer + 25}%)`,
+              pointerEvents: "none",
+            }} />
+            y<strong style={{ fontWeight: 600, fontStyle: "normal" }}>w</strong>ee
+          </div>
+
+          {/* Sub-brand line */}
+          <div style={{
+            fontFamily: "'Geist', system-ui, sans-serif",
+            fontSize: "clamp(10px, 2vw, 13px)",
+            letterSpacing: "0.28em",
+            textTransform: "uppercase",
+            color: "rgba(244,239,230,0.45)",
+          }}>
+            Girls&apos; Stretch Denim &middot; India
+          </div>
         </div>
 
-        {/* Denim-stitch progress bar */}
+        {/* Thread-stitch progress bar */}
         <div style={{
-          width: "clamp(160px, 32vw, 280px)",
-          height: "2px",
-          background: "rgba(244,239,230,0.1)",
+          width: "clamp(140px, 30vw, 240px)",
+          height: "3px",
+          background: "rgba(244,239,230,0.08)",
           position: "relative",
           overflow: "hidden",
           borderRadius: "2px",
-          animation: "ywee-fade-up 0.8s 0.2s cubic-bezier(0.16,1,0.3,1) both",
-          marginTop: "8px",
+          animation: "loader-fade-up 0.7s 0.24s cubic-bezier(0.16,1,0.3,1) both",
+          marginTop: "6px",
         }}>
+          {/* Fill track */}
           <div style={{
-            position: "absolute",
-            left: 0, top: 0, bottom: 0,
+            position: "absolute", left: 0, top: 0, bottom: 0,
             width: `${progress}%`,
-            background: "linear-gradient(90deg, rgba(244,239,230,0.5) 0%, #F4EFE6 100%)",
-            transition: "width 0.25s linear",
+            background: "rgba(244,239,230,0.55)",
+            transition: "width 0.2s linear",
             borderRadius: "2px",
           }} />
+          {/* Stitch dots overlay */}
+          <div style={{
+            position: "absolute", left: 0, top: 0, bottom: 0,
+            width: `${progress}%`,
+            backgroundImage: "repeating-linear-gradient(90deg, transparent 0px, transparent 6px, rgba(27,58,92,0.6) 6px, rgba(27,58,92,0.6) 8px)",
+            transition: "width 0.2s linear",
+          }} />
+          {/* Leading glow */}
           <div style={{
             position: "absolute",
-            left: 0, top: 0, bottom: 0,
-            width: `${progress}%`,
-            backgroundImage: "repeating-linear-gradient(90deg, transparent 0px, transparent 5px, rgba(27,58,92,0.5) 5px, rgba(27,58,92,0.5) 7px)",
-            transition: "width 0.25s linear",
+            left: `${progress}%`, top: "-2px",
+            width: "8px", height: "7px",
+            borderRadius: "50%",
+            background: "rgba(244,239,230,0.3)",
+            filter: "blur(3px)",
+            transform: "translateX(-50%)",
+            transition: "left 0.2s linear",
+            opacity: progress > 5 ? 1 : 0,
           }} />
         </div>
 
-        {/* Cycling brand phrase */}
-        <div key={phraseIdx} style={{
-          fontFamily: "'Geist', system-ui, sans-serif",
-          fontSize: "clamp(10px, 2vw, 12px)",
-          letterSpacing: "0.06em",
-          color: "rgba(244,239,230,0.3)",
-          animation: "ywee-phrase-in 0.5s cubic-bezier(0.16,1,0.3,1) both",
-          textAlign: "center",
-          maxWidth: "280px",
-          lineHeight: 1.5,
+        {/* Cycling brand phrase with crossfade */}
+        <div style={{
+          position: "relative",
+          height: "24px",
+          overflow: "hidden",
+          marginTop: "4px",
+          animation: "loader-fade-up 0.7s 0.32s cubic-bezier(0.16,1,0.3,1) both",
         }}>
-          {PHRASES[phraseIdx]}
+          <div key={phraseIdx} style={{
+            fontFamily: "'Geist', system-ui, sans-serif",
+            fontSize: "clamp(10px, 2vw, 12px)",
+            letterSpacing: "0.06em",
+            color: "rgba(244,239,230,0.28)",
+            animation: "loader-phrase-in 0.45s cubic-bezier(0.16,1,0.3,1) both",
+            textAlign: "center",
+            lineHeight: 1.5,
+            whiteSpace: "nowrap",
+          }}>
+            {PHRASES[phraseIdx]}
+          </div>
         </div>
 
         {/* Bottom brand line */}
@@ -240,21 +316,25 @@ export default function YweeLoader({ onDone }: { onDone: () => void }) {
           fontSize: "9px",
           letterSpacing: "0.22em",
           textTransform: "uppercase",
-          color: "rgba(244,239,230,0.15)",
-          animation: "ywee-fade-up 0.8s 0.4s cubic-bezier(0.16,1,0.3,1) both",
+          color: "rgba(244,239,230,0.12)",
+          animation: "loader-fade-up 0.7s 0.48s cubic-bezier(0.16,1,0.3,1) both",
         }}>
-          Generations Clothing LLP · Est. 2024
+          Generations Clothing LLP &middot; Est. 2024
         </div>
       </div>
 
       <style>{`
-        @keyframes ywee-fade-up {
-          from { opacity: 0; transform: translateY(12px); }
+        @keyframes loader-fade-up {
+          from { opacity: 0; transform: translateY(14px); }
           to   { opacity: 1; transform: translateY(0); }
         }
-        @keyframes ywee-phrase-in {
-          from { opacity: 0; transform: translateY(6px); }
+        @keyframes loader-phrase-in {
+          from { opacity: 0; transform: translateY(10px); }
           to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes loader-weave-drift {
+          0%   { transform: translate(0, 0); }
+          100% { transform: translate(10px, 10px); }
         }
       `}</style>
     </>
