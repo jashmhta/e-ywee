@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE6">
+<title>Account · ywee</title>
+<meta name="description" content="Your ywee account — orders, wishlist, and preferences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23F4EFE6'>y</text></svg>">
+</head>
+<body>
+
+<div class="announce">
+  <div class="announce__track">
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot"></span>
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot"></span>
+  </div>
+</div>
+
+<header class="nav">
+  <nav class="nav__group" aria-label="Primary">
+    <a href="shop.html" class="nav__link">Shop</a>
+    <a href="lookbook.html" class="nav__link">Lookbook</a>
+    <a href="about.html" class="nav__link">Atelier</a>
+    <a href="journal.html" class="nav__link">Journal</a>
+  </nav>
+  <a href="index.html" class="nav__brand" aria-label="ywee — home">y<b>w</b>ee</a>
+  <div class="nav__group nav__group--right">
+    <a href="#" class="nav__link" aria-label="Search">Search ⌕</a>
+    <a href="account.html" class="nav__link" aria-label="Account" aria-current="page">Account</a>
+    <a href="#" class="nav__chip" data-cart-open><span>Bag</span><span class="count" id="cart-count">0</span></a>
+    <button class="nav__hamb" aria-label="Open menu"></button>
+  </div>
+  <div class="nav__drawer">
+    <a href="shop.html">Shop</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="about.html">Atelier</a>
+    <a href="journal.html">Journal</a>
+    <a href="#" data-cart-open>Bag (<span id="cart-count-2">0</span>)</a>
+  </div>
+</header>
+
+<section class="container container--narrow" style="padding: clamp(48px, 8vw, 120px) var(--pad) var(--section)">
+  <div id="account-logged-out">
+    <span class="eyebrow" data-reveal style="display:inline-block;color:var(--ink-faint);margin-bottom:24px">— Account</span>
+    <h1 data-reveal style="font-family:var(--serif);font-weight:350;font-size:var(--t-display);line-height:0.88;letter-spacing:-0.04em;max-width:900px">Welcome<br><em>to the studio.</em></h1>
+    <p class="lede" data-reveal data-reveal-delay="1" style="max-width:640px;margin-top:32px">
+      Sign in to access your orders, wishlist, and preferences. Or create an account to join the house list.
+    </p>
+
+    <div style="margin-top:48px;max-width:400px" data-reveal data-reveal-delay="2">
+      <div id="login-form">
+        <div class="checkout__field">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required>
+        </div>
+        <div class="checkout__field" style="margin-top:16px">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" placeholder="Your password" required>
+        </div>
+        <button class="btn" style="width:100%;justify-content:center;margin-top:24px" id="login-btn" data-magnet>
+          <span>Sign in</span>
+          <span class="arrow">↗</span>
+        </button>
+        <p style="text-align:center;margin-top:16px;font-size:14px;color:var(--ink-mute)">
+          No account? <a href="#" id="show-register" style="text-decoration:underline;text-underline-offset:3px">Create one</a>
+        </p>
+      </div>
+
+      <div id="register-form" style="display:none">
+        <div class="checkout__row">
+          <div class="checkout__field">
+            <label for="reg-first">First name</label>
+            <input type="text" id="reg-first" required>
+          </div>
+          <div class="checkout__field">
+            <label for="reg-last">Last name</label>
+            <input type="text" id="reg-last" required>
+          </div>
+        </div>
+        <div class="checkout__field" style="margin-top:16px">
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" placeholder="you@example.com" required>
+        </div>
+        <div class="checkout__field" style="margin-top:16px">
+          <label for="reg-pass">Password</label>
+          <input type="password" id="reg-pass" placeholder="Min. 8 characters" required>
+        </div>
+        <button class="btn" style="width:100%;justify-content:center;margin-top:24px" id="register-btn" data-magnet>
+          <span>Create account</span>
+          <span class="arrow">↗</span>
+        </button>
+        <p style="text-align:center;margin-top:16px;font-size:14px;color:var(--ink-mute)">
+          Already have an account? <a href="#" id="show-login" style="text-decoration:underline;text-underline-offset:3px">Sign in</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="account-logged-in" style="display:none">
+    <span class="eyebrow" data-reveal style="display:inline-block;color:var(--ink-faint);margin-bottom:24px">— Account</span>
+    <h1 data-reveal style="font-family:var(--serif);font-weight:350;font-size:var(--t-display);line-height:0.88;letter-spacing:-0.04em;max-width:900px">Welcome back,<br><em id="account-name">friend.</em></h1>
+
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(2,1fr);gap:var(--gap)">
+      <div style="background:var(--paper-soft);border:1px solid var(--hair);border-radius:var(--r-card);padding:32px">
+        <h3 style="font-family:var(--serif);font-weight:380;font-size:22px;letter-spacing:-0.018em;margin-bottom:16px">Orders</h3>
+        <p style="color:var(--ink-mute);font-size:14.5px;line-height:1.6">No orders yet. Browse the <a href="shop.html" style="text-decoration:underline;text-underline-offset:3px">shop</a> to place your first order.</p>
+      </div>
+      <div style="background:var(--paper-soft);border:1px solid var(--hair);border-radius:var(--r-card);padding:32px">
+        <h3 style="font-family:var(--serif);font-weight:380;font-size:22px;letter-spacing:-0.018em;margin-bottom:16px">Wishlist</h3>
+        <p style="color:var(--ink-mute);font-size:14.5px;line-height:1.6">No saved items yet. Browse the <a href="shop.html" style="text-decoration:underline;text-underline-offset:3px">shop</a> to save items for later.</p>
+      </div>
+      <div style="background:var(--paper-soft);border:1px solid var(--hair);border-radius:var(--r-card);padding:32px">
+        <h3 style="font-family:var(--serif);font-weight:380;font-size:22px;letter-spacing:-0.018em;margin-bottom:16px">Addresses</h3>
+        <p style="color:var(--ink-mute);font-size:14.5px;line-height:1.6">No saved addresses. Add an address during checkout to save it for future orders.</p>
+      </div>
+      <div style="background:var(--paper-soft);border:1px solid var(--hair);border-radius:var(--r-card);padding:32px">
+        <h3 style="font-family:var(--serif);font-weight:380;font-size:22px;letter-spacing:-0.018em;margin-bottom:16px">Newsletter</h3>
+        <p style="color:var(--ink-mute);font-size:14.5px;line-height:1.6">You are subscribed to the studio newsletter. Four letters a year, nothing more.</p>
+      </div>
+    </div>
+
+    <button class="btn btn--ghost" style="margin-top:32px" id="logout-btn" data-magnet>
+      <span>Sign out</span>
+      <span class="arrow">↗</span>
+    </button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="lock">y<i style="font-style:italic">w</i>ee.</div>
+        <p>A small clothing house in Lisbon. Cut and finished by hand in family-run ateliers across Portugal, Spain and northern Italy. Founded 2018.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?cat=Outerwear">Outerwear</a></li>
+          <li><a href="shop.html?cat=Knitwear">Knitwear</a></li>
+          <li><a href="shop.html?cat=Tops">Tops</a></li>
+          <li><a href="shop.html?cat=Bottoms">Bottoms</a></li>
+          <li><a href="shop.html?cat=Dresses">Dresses</a></li>
+          <li><a href="shop.html?cat=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>House</h4>
+        <ul>
+          <li><a href="about.html">The atelier</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="mending.html">Mending program</a></li>
+          <li><a href="stockists.html">Stockists</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="shipping.html">Shipping &amp; returns</a></li>
+          <li><a href="sizing.html">Sizing &amp; fit</a></li>
+          <li><a href="care.html">Garment care</a></li>
+          <li><a href="contact.html">Contact studio</a></li>
+          <li><a href="press.html">Press &amp; trade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ywee Lda. · Rua das Janelas Verdes 21, 1200 Lisbon</span>
+      <span class="legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/data.window.js"></script>
+<script src="js/app.js"></script>
+<script>
+(function() {
+  const { showToast } = window;
+  const ACC_KEY = "ywee.account.v1";
+
+  function getAccount() {
+    try { return JSON.parse(localStorage.getItem(ACC_KEY)); } catch { return null; }
+  }
+  function setAccount(data) {
+    if (data) localStorage.setItem(ACC_KEY, JSON.stringify(data));
+    else localStorage.removeItem(ACC_KEY);
+  }
+
+  function showLoggedIn(acc) {
+    document.getElementById("account-logged-out").style.display = "none";
+    document.getElementById("account-logged-in").style.display = "";
+    document.getElementById("account-name").textContent = (acc.name || "friend") + ".";
+  }
+  function showLoggedOut() {
+    document.getElementById("account-logged-out").style.display = "";
+    document.getElementById("account-logged-in").style.display = "none";
+  }
+
+  const acc = getAccount();
+  if (acc) showLoggedIn(acc);
+
+  document.getElementById("show-register").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("login-form").style.display = "none";
+    document.getElementById("register-form").style.display = "";
+  });
+  document.getElementById("show-login").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("login-form").style.display = "";
+    document.getElementById("register-form").style.display = "none";
+  });
+
+  document.getElementById("login-btn").addEventListener("click", () => {
+    const email = document.getElementById("login-email").value.trim();
+    const pass = document.getElementById("login-pass").value;
+    if (!email || !pass) { showToast("Please fill in all fields"); return; }
+    const stored = getAccount();
+    if (stored && stored.email === email) {
+      showLoggedIn(stored);
+      showToast("Welcome back, " + (stored.name || "friend"));
+    } else {
+      showToast("Account not found. Please create one.");
+      document.getElementById("login-form").style.display = "none";
+      document.getElementById("register-form").style.display = "";
+    }
+  });
+
+  document.getElementById("register-btn").addEventListener("click", () => {
+    const first = document.getElementById("reg-first").value.trim();
+    const last = document.getElementById("reg-last").value.trim();
+    const email = document.getElementById("reg-email").value.trim();
+    const pass = document.getElementById("reg-pass").value;
+    if (!first || !last || !email || !pass) { showToast("Please fill in all fields"); return; }
+    if (pass.length < 8) { showToast("Password must be at least 8 characters"); return; }
+    const acc = { name: first + " " + last, email, created: new Date().toISOString() };
+    setAccount(acc);
+    showLoggedIn(acc);
+    showToast("Account created. Welcome to the house.");
+  });
+
+  document.getElementById("logout-btn").addEventListener("click", () => {
+    setAccount(null);
+    showLoggedOut();
+    showToast("Signed out");
+  });
+})();
+</script>
+</body>
+</html>

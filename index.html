@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE6">
+<title>ywee — Considered Clothing · Lisbon</title>
+<meta name="description" content="ywee is a small clothing house. Cut and finished by hand, in family-run ateliers across Portugal, Spain and northern Italy. Resort 26 now in studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23F4EFE6'>y</text></svg>">
+</head>
+<body>
+
+<!-- announcement -->
+<div class="announce" aria-label="Announcement">
+  <div class="announce__track">
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot" aria-hidden="true"></span>
+    <!-- duplicate for seamless loop -->
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot" aria-hidden="true"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot" aria-hidden="true"></span>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav">
+  <nav class="nav__group" aria-label="Primary">
+    <a href="shop.html" class="nav__link">Shop <span class="mono" style="font-size:10px;color:var(--ink-mute)">30</span></a>
+    <a href="lookbook.html" class="nav__link">Lookbook</a>
+    <a href="about.html" class="nav__link">Atelier</a>
+    <a href="journal.html" class="nav__link">Journal</a>
+  </nav>
+  <a href="index.html" class="nav__brand" aria-label="ywee — home">y<b>w</b>ee</a>
+  <div class="nav__group nav__group--right">
+    <a href="#" class="nav__link" aria-label="Search">Search ⌕</a>
+    <a href="account.html" class="nav__link" aria-label="Account">Account</a>
+    <a href="#" class="nav__chip" data-cart-open aria-label="Cart">
+      <span>Bag</span>
+      <span class="count" id="cart-count">0</span>
+    </a>
+    <button class="nav__hamb" aria-label="Open menu" aria-expanded="false"></button>
+  </div>
+  <div class="nav__drawer" aria-label="Mobile menu">
+    <a href="shop.html">Shop</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="about.html">Atelier</a>
+    <a href="journal.html">Journal</a>
+    <a href="#" data-cart-open>Bag (<span id="cart-count-2">0</span>)</a>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero__grid">
+    <div class="hero__content">
+      <div class="hero__eyebrow" data-reveal>
+        <span class="tag"><span class="pulse"></span><span>Resort 26 · in studio</span></span>
+        <span class="mono" style="font-size:11px;color:var(--ink-faint);letter-spacing:0.06em">Edition n° 04</span>
+      </div>
+      <h1 class="hero__title" data-reveal>
+        Considered<br>
+        clothing<br>
+        for the<br>
+        <em>long&nbsp;wear.</em>
+      </h1>
+      <p class="hero__sub" data-reveal data-reveal-delay="1">
+        ywee is a small clothing house in Lisbon. We cut deliberate, quiet
+        garments in mills we know — and finish them by hand in ateliers we
+        return to, season after season.
+      </p>
+      <div class="hero__ctas" data-reveal data-reveal-delay="2">
+        <a href="shop.html" class="btn btn--lg" data-magnet>
+          <span>Shop the season</span>
+          <span class="arrow">↗</span>
+        </a>
+        <a href="lookbook.html" class="btn btn--ghost btn--lg" data-magnet>
+          <span>See the lookbook</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+      <div class="hero__meta" data-reveal data-reveal-delay="3">
+        <div><b>Lisbon · Porto</b><span>Studio &amp; ateliers</span></div>
+        <div><b>OEKO-TEX · GOTS</b><span>Mill certifications</span></div>
+        <div><b>Mended for life</b><span>Lifetime program</span></div>
+      </div>
+    </div>
+
+    <div class="hero__media" data-reveal>
+      <div class="hero__media__inner">
+        <img class="hero__media__poster" alt="" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        <div class="hero__media__cover"></div>
+        <div class="hero__media__caption">
+          <div>
+            <span>Film n°08</span><br>
+            <b>The Verre Coat</b>
+          </div>
+          <div class="hero__media__rec">
+            <span class="dot"></span>
+            <span>LIVE · 00:31</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__floater" aria-hidden="true">
+        <span class="swatch" style="background:#dfd3ba"></span>
+        <span><b style="font-family:var(--serif);font-size:14px">Bone</b> · 1 of 4 colourways</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- marquee strip -->
+<section class="strip" aria-hidden="true">
+  <div class="strip__track">
+    <div class="strip__item">considered</div>
+    <span class="dot"></span>
+    <div class="strip__item">cut</div>
+    <span class="dot"></span>
+    <div class="strip__item">conscious</div>
+    <span class="dot"></span>
+    <div class="strip__item"><i>made to last</i></div>
+    <span class="dot"></span>
+    <div class="strip__item">considered</div>
+    <span class="dot"></span>
+    <div class="strip__item">cut</div>
+    <span class="dot"></span>
+    <div class="strip__item">conscious</div>
+    <span class="dot"></span>
+    <div class="strip__item"><i>made to last</i></div>
+    <span class="dot"></span>
+  </div>
+</section>
+
+<!-- new arrivals bento -->
+<section class="section">
+  <div class="container">
+    <header class="shead" data-reveal>
+      <div class="shead__lead">
+        <span class="eyebrow"><span style="display:inline-block;width:18px;height:1px;background:currentColor"></span>New for resort 26</span>
+        <h2>The first cuts<br><em>of the season.</em></h2>
+      </div>
+      <div class="shead__aside">
+        <p>Eight pieces, finished this week in Porto and shipping from Friday. The full season releases through summer in five weekly drops.</p>
+        <a href="shop.html" class="btn btn--ghost" data-magnet style="margin-top:18px">
+          <span>View all 30 pieces</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </header>
+    <div class="bento" id="new-arrivals" aria-label="New arrivals"></div>
+  </div>
+</section>
+
+<!-- collection split -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="csplit">
+      <div class="csplit__left" data-csplit-left>
+        <span class="eyebrow" data-reveal>Atelier collection · Featured</span>
+        <h2 data-reveal data-reveal-delay="1">A wardrobe<br>for the<br><em>workroom.</em></h2>
+        <p data-reveal data-reveal-delay="2">
+          Twenty-four pieces, cut and considered for those who treat
+          their clothes as instruments. Each piece is dyed in batches
+          of fifty or fewer, and never restocked.
+        </p>
+        <div class="stats" data-reveal data-reveal-delay="3">
+          <div><b>24</b><span>Pieces in series</span></div>
+          <div><b>04</b><span>Northern Portugal ateliers</span></div>
+          <div><b>50</b><span>Max units per colourway</span></div>
+        </div>
+        <div class="ctas" data-reveal data-reveal-delay="4">
+          <a href="shop.html" class="btn" data-magnet>
+            <span>Shop Atelier</span>
+            <span class="arrow">↗</span>
+          </a>
+          <a href="lookbook.html" class="btn btn--ghost" data-magnet>
+            <span>The lookbook</span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="csplit__right" data-csplit-right></div>
+    </div>
+  </div>
+</section>
+
+<!-- lookbook horizontal rail -->
+<section class="lookbook" aria-label="Resort 26 lookbook">
+  <div class="lookbook__head">
+    <div class="container">
+      <header class="shead" data-reveal>
+        <div class="shead__lead">
+          <span class="eyebrow"><span style="display:inline-block;width:18px;height:1px;background:currentColor"></span>The lookbook</span>
+          <h2>Twelve looks,<br><em>one continuous frame.</em></h2>
+        </div>
+        <div class="shead__aside">
+          <p>Photographed by Léa Béjuy on a single afternoon in Trafaria. Use arrow keys or scroll horizontally to walk through the season.</p>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="lookbook__rail" id="lookbook-rail" aria-label="Lookbook rail"></div>
+</section>
+
+<!-- collections trio -->
+<section class="section">
+  <div class="container">
+    <header class="shead" data-reveal>
+      <div class="shead__lead">
+        <span class="eyebrow"><span style="display:inline-block;width:18px;height:1px;background:currentColor"></span>Three series, one house</span>
+        <h2 data-split>Choose your wardrobe.</h2>
+      </div>
+      <div class="shead__aside">
+        <p>We design three series for three modes of dress. Each shares the same atelier, the same yardage, and the same lifetime mending program — but moves at its own pace.</p>
+      </div>
+    </header>
+    <div class="trio" id="collections"></div>
+  </div>
+</section>
+
+<!-- craft / process -->
+<section class="section" style="background: var(--paper-warm); border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair);">
+  <div class="container">
+    <div class="craft">
+      <div class="craft__intro">
+        <span class="eyebrow">Craft</span>
+        <h2 data-reveal>How a ywee garment<br><em>comes to be.</em></h2>
+        <p data-reveal data-reveal-delay="1">No shortcuts, no subcontracting, no algorithmic fits. Three steps, repeated for every piece we put our name on.</p>
+      </div>
+      <div class="craft__list" id="craft-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- big quote -->
+<section class="quote">
+  <div class="container">
+    <span class="eyebrow" data-reveal>From the studio</span>
+    <blockquote data-reveal data-reveal-delay="1">
+      "We make fewer pieces than we could,<br>
+      <em>at a slower pace than we should</em> —<br>
+      so that what leaves the workshop is<br>
+      worth the trouble of keeping."
+    </blockquote>
+    <div class="who" data-reveal data-reveal-delay="2">
+      <span class="ava"></span>
+      <div>
+        <b>Inês Veloso</b>
+        <span>Co-founder &amp; head of cloth</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- journal -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <header class="shead" data-reveal>
+      <div class="shead__lead">
+        <span class="eyebrow"><span style="display:inline-block;width:18px;height:1px;background:currentColor"></span>The journal</span>
+        <h2>Field notes from<br><em>the workroom.</em></h2>
+      </div>
+      <div class="shead__aside">
+        <p>Three or four entries a season. We write about cloth, the people who cut it, and the customers who wear it for years.</p>
+        <a href="journal.html" class="btn btn--ghost" data-magnet style="margin-top:18px">
+          <span>All entries</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </header>
+    <div class="journal" id="journal"></div>
+  </div>
+</section>
+
+<!-- cta / newsletter -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="cta" data-reveal>
+      <div>
+        <span class="eyebrow" style="color: rgba(244,239,230,0.6); margin-bottom: 28px; display:inline-block">The list</span>
+        <h2>One letter<br>a season,<br><em>nothing more.</em></h2>
+      </div>
+      <div class="cta__form">
+        <span class="eyebrow">Studio newsletter</span>
+        <form class="cta__input" onsubmit="event.preventDefault(); window.showToast('Thanks — we will write to you in May.');">
+          <input type="email" name="email" placeholder="you@goodletters.co" required>
+          <button type="submit" aria-label="Subscribe">
+            <span>Subscribe</span>
+            <span>↗</span>
+          </button>
+        </form>
+        <small>We send four letters a year. No promotions, no discount codes — just notes from the workroom and access to private editions before they leave the studio.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="lock">y<i style="font-style:italic">w</i>ee.</div>
+        <p>A small clothing house in Lisbon. Cut and finished by hand in family-run ateliers across Portugal, Spain and northern Italy. Founded 2018.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?cat=Outerwear">Outerwear</a></li>
+          <li><a href="shop.html?cat=Knitwear">Knitwear</a></li>
+          <li><a href="shop.html?cat=Tops">Tops</a></li>
+          <li><a href="shop.html?cat=Bottoms">Bottoms</a></li>
+          <li><a href="shop.html?cat=Dresses">Dresses</a></li>
+          <li><a href="shop.html?cat=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>House</h4>
+        <ul>
+          <li><a href="about.html">The atelier</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="mending.html">Mending program</a></li>
+          <li><a href="stockists.html">Stockists</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="shipping.html">Shipping &amp; returns</a></li>
+          <li><a href="sizing.html">Sizing &amp; fit</a></li>
+          <li><a href="care.html">Garment care</a></li>
+          <li><a href="contact.html">Contact studio</a></li>
+          <li><a href="press.html">Press &amp; trade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ywee Lda. · Rua das Janelas Verdes 21, 1200 Lisbon</span>
+      <span class="legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </span>
+      <span class="pexels">
+        Imagery licensed via <a href="https://www.pexels.com" target="_blank" rel="noreferrer" style="margin-left:4px;text-decoration:underline;text-underline-offset:2px">Pexels</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/data.window.js"></script>
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

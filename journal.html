@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE6">
+<title>Journal · ywee</title>
+<meta name="description" content="Field notes from the ywee workroom. We write about cloth, the people who cut it, and the customers who wear it for years.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23F4EFE6'>y</text></svg>">
+<style>
+  .jr__hero {
+    padding: clamp(48px, 8vw, 120px) var(--pad) clamp(40px, 6vw, 80px);
+    display: grid; grid-template-columns: 1.1fr 1fr;
+    gap: clamp(24px, 4vw, 80px);
+    align-items: end;
+  }
+  .jr__hero h1 {
+    font-family: var(--serif); font-weight: 350;
+    font-size: var(--t-display); line-height: 0.88; letter-spacing: -0.04em;
+  }
+  .jr__hero h1 em { font-style: italic; font-weight: 320; color: var(--ink-mute); }
+  .jr__categories {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    padding: 18px var(--pad);
+    border-top: 1px solid var(--hair);
+    border-bottom: 1px solid var(--hair);
+    background: var(--paper-soft);
+  }
+  .jr__feature {
+    margin: var(--section) 0 0;
+    display: grid; grid-template-columns: 1.15fr 1fr;
+    gap: clamp(24px, 4vw, 80px);
+    align-items: stretch;
+    padding: 0 var(--pad);
+  }
+  .jr__feature .pic {
+    border-radius: var(--r-card);
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    background: var(--paper-warm);
+    border: 1px solid var(--hair);
+    padding: 6px;
+  }
+  .jr__feature .pic img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--r-card-i); opacity: 0; transition: opacity .8s var(--ease); }
+  .jr__feature .pic img.loaded { opacity: 1; }
+  .jr__feature .info { padding: clamp(12px, 4vw, 48px) 0; display: flex; flex-direction: column; justify-content: end; }
+  .jr__feature .meta {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    margin-bottom: 22px;
+  }
+  .jr__feature .meta b { color: var(--ink); font-weight: 500; }
+  .jr__feature .meta .dot { width: 4px; height: 4px; border-radius: 999px; background: currentColor; opacity: .5; }
+  .jr__feature h2 {
+    font-family: var(--serif); font-weight: 350;
+    font-size: clamp(36px, 4.5vw, 72px); line-height: 0.95; letter-spacing: -0.025em;
+  }
+  .jr__feature h2 em { font-style: italic; font-weight: 320; color: var(--ink-mute); }
+  .jr__feature p {
+    font-family: var(--serif); font-style: italic;
+    font-size: 20px; color: var(--ink-soft); line-height: 1.45;
+    margin-top: 22px; max-width: 560px;
+  }
+  .jr__list { padding: var(--section) var(--pad) 0; }
+  .jr__list h3 {
+    font-family: var(--serif); font-weight: 350; font-size: var(--t-h2); letter-spacing: -0.025em;
+    margin-bottom: 56px;
+  }
+  .jr__items {
+    display: grid; gap: 0;
+  }
+  .jr__item {
+    display: grid;
+    grid-template-columns: 200px 1.4fr 1fr;
+    gap: clamp(20px, 4vw, 56px);
+    align-items: center;
+    border-top: 1px solid var(--hair);
+    padding: 28px 0;
+    transition: padding-left var(--d-med) var(--ease);
+  }
+  .jr__item:last-child { border-bottom: 1px solid var(--hair); }
+  .jr__item:hover { padding-left: 14px; }
+  .jr__item .when {
+    font-family: var(--mono); font-size: 12px; color: var(--ink-mute);
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .jr__item h4 {
+    font-family: var(--serif); font-weight: 380;
+    font-size: clamp(22px, 1.8vw, 28px); letter-spacing: -0.018em;
+  }
+  .jr__item h4 .cat { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-right: 12px; }
+  .jr__item p { color: var(--ink-mute); font-size: 14.5px; line-height: 1.55; }
+  .jr__item:hover h4 { font-style: italic; }
+  @media (max-width: 1100px) {
+    .jr__hero { grid-template-columns: 1fr; }
+    .jr__feature { grid-template-columns: 1fr; }
+    .jr__item { grid-template-columns: 1fr; gap: 8px; padding: 22px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <div class="announce__track">
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot"></span>
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot"></span>
+  </div>
+</div>
+
+<header class="nav">
+  <nav class="nav__group" aria-label="Primary">
+    <a href="shop.html" class="nav__link">Shop <span class="mono" style="font-size:10px;color:var(--ink-mute)">30</span></a>
+    <a href="lookbook.html" class="nav__link">Lookbook</a>
+    <a href="about.html" class="nav__link">Atelier</a>
+    <a href="journal.html" class="nav__link" aria-current="page">Journal</a>
+  </nav>
+  <a href="index.html" class="nav__brand" aria-label="ywee — home">y<b>w</b>ee</a>
+  <div class="nav__group nav__group--right">
+    <a href="#" class="nav__link" aria-label="Search">Search ⌕</a>
+    <a href="account.html" aria-label="Account">Account</a>
+    <a href="#" class="nav__chip" data-cart-open><span>Bag</span><span class="count" id="cart-count">0</span></a>
+    <button class="nav__hamb" aria-label="Open menu"></button>
+  </div>
+  <div class="nav__drawer">
+    <a href="shop.html">Shop</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="about.html">Atelier</a>
+    <a href="journal.html">Journal</a>
+    <a href="#" data-cart-open>Bag (<span id="cart-count-2">0</span>)</a>
+  </div>
+</header>
+
+<section class="jr__hero">
+  <div>
+    <span class="eyebrow" data-reveal style="display:inline-block;color:var(--ink-faint);margin-bottom:24px">— Journal · Field notes</span>
+    <h1 data-reveal>The journal —<br><em>the slow part</em><br>of the studio.</h1>
+  </div>
+  <div>
+    <p class="lede" data-reveal data-reveal-delay="2">
+      Three or four entries a season. We write about cloth, the people who
+      cut it, the customers who wear it for years, and the small things
+      we keep getting wrong on the way to a better seam.
+    </p>
+    <div data-reveal data-reveal-delay="3" style="margin-top: 36px;">
+      <a href="#latest" class="btn" data-magnet><span>Read the latest</span><span class="arrow">↓</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="jr__categories" data-reveal>
+  <button class="chip active">All entries · 12</button>
+  <button class="chip">Field notes</button>
+  <button class="chip">Material</button>
+  <button class="chip">Worn-in</button>
+  <button class="chip">Atelier</button>
+  <button class="chip">Mending</button>
+  <button class="chip">People</button>
+</div>
+
+<section id="latest" class="jr__feature">
+  <div class="pic" data-reveal>
+    <img id="jr-feature-img" alt="">
+  </div>
+  <div class="info" data-reveal data-reveal-delay="1">
+    <div class="meta">
+      <span>Resort 26 / Field Notes</span>
+      <span class="dot"></span>
+      <b>Posted 5 May 2026</b>
+      <span class="dot"></span>
+      <span>9 min read</span>
+    </div>
+    <h2 id="jr-feature-title">On Slow Cloth.<br><em>Why we still finish<br>seams by hand.</em></h2>
+    <p id="jr-feature-deck">A week with the spinners of Biella, where worsted yarn is still made on looms older than the studio that orders them.</p>
+    <div style="margin-top: 36px; display: flex; gap: 12px;">
+      <a href="#latest" class="btn" data-magnet><span>Read the entry</span><span class="arrow">↗</span></a>
+      <a href="#" class="btn btn--ghost" onclick="event.preventDefault(); window.showToast('Article saved to your reading list.'); return false;" data-magnet><span>Save for later</span><span class="arrow">+</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="jr__list">
+  <h3 data-reveal>The full archive.</h3>
+  <div class="jr__items" id="jr-items"></div>
+</section>
+
+<section class="section" style="padding-top: var(--section)">
+  <div class="container">
+    <div class="cta" data-reveal>
+      <div>
+        <span class="eyebrow" style="color:rgba(244,239,230,0.6);display:inline-block;margin-bottom:24px">House newsletter</span>
+        <h2>One letter<br>a season,<br><em>nothing more.</em></h2>
+      </div>
+      <div class="cta__form">
+        <span class="eyebrow">Field notes by post</span>
+        <form class="cta__input" onsubmit="event.preventDefault(); window.showToast('Thanks — we will write to you in May.');">
+          <input type="email" placeholder="you@goodletters.co" required>
+          <button type="submit"><span>Subscribe</span><span>↗</span></button>
+        </form>
+        <small>Four letters a year. No promotions, no discount codes.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="lock">y<i style="font-style:italic">w</i>ee.</div>
+        <p>A small clothing house in Lisbon. Cut and finished by hand in family-run ateliers across Portugal, Spain and northern Italy. Founded 2018.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?cat=Outerwear">Outerwear</a></li>
+          <li><a href="shop.html?cat=Knitwear">Knitwear</a></li>
+          <li><a href="shop.html?cat=Tops">Tops</a></li>
+          <li><a href="shop.html?cat=Bottoms">Bottoms</a></li>
+          <li><a href="shop.html?cat=Dresses">Dresses</a></li>
+          <li><a href="shop.html?cat=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>House</h4>
+        <ul>
+          <li><a href="about.html">The atelier</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="mending.html">Mending program</a></li>
+          <li><a href="stockists.html">Stockists</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="shipping.html">&amp; returns</a></li>
+          <li><a href="sizing.html">&amp; fit</a></li>
+          <li><a href="care.html">Garment care</a></li>
+          <li><a href="contact.html">Contact studio</a></li>
+          <li><a href="press.html">&amp; trade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ywee Lda. · Rua das Janelas Verdes 21, 1200 Lisbon</span>
+      <span class="legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></span>
+      <span class="pexels">Imagery licensed via <a href="https://www.pexels.com" target="_blank" rel="noreferrer" style="margin-left:4px;text-decoration:underline;text-underline-offset:2px">Pexels</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/data.window.js"></script>
+<script src="js/app.js"></script>
+<script src="js/journal.js"></script>
+</body>
+</html>

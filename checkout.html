@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE6">
+<title>Checkout · ywee</title>
+<meta name="description" content="Secure checkout for your ywee order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23F4EFE6'>y</text></svg>">
+</head>
+<body>
+
+<header class="nav">
+  <nav class="nav__group" aria-label="Primary">
+    <a href="shop.html" class="nav__link">Shop</a>
+    <a href="lookbook.html" class="nav__link">Lookbook</a>
+    <a href="about.html" class="nav__link">Atelier</a>
+    <a href="journal.html" class="nav__link">Journal</a>
+  </nav>
+  <a href="index.html" class="nav__brand" aria-label="ywee — home">y<b>w</b>ee</a>
+  <div class="nav__group nav__group--right">
+    <a href="#" class="nav__link" aria-label="Search">Search ⌕</a>
+    <a href="account.html" class="nav__link" aria-label="Account">Account</a>
+    <a href="#" class="nav__chip" data-cart-open><span>Bag</span><span class="count" id="cart-count">0</span></a>
+    <button class="nav__hamb" aria-label="Open menu"></button>
+  </div>
+  <div class="nav__drawer">
+    <a href="shop.html">Shop</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="about.html">Atelier</a>
+    <a href="journal.html">Journal</a>
+    <a href="#" data-cart-open>Bag (<span id="cart-count-2">0</span>)</a>
+  </div>
+</header>
+
+<section class="checkout">
+  <h1 style="font-family:var(--serif);font-weight:350;font-size:var(--t-display);line-height:0.88;letter-spacing:-0.04em;margin-bottom:48px" data-reveal>Checkout.</h1>
+  <div class="checkout__grid">
+    <div>
+      <div class="checkout__form" id="checkout-form">
+        <div>
+          <span class="eyebrow" style="margin-bottom:18px;display:block">Contact</span>
+          <div class="checkout__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow" style="margin-bottom:18px;display:block">Shipping address</span>
+          <div class="checkout__row">
+            <div class="checkout__field">
+              <label for="first">First name</label>
+              <input type="text" id="first" required>
+            </div>
+            <div class="checkout__field">
+              <label for="last">Last name</label>
+              <input type="text" id="last" required>
+            </div>
+          </div>
+          <div class="checkout__field" style="margin-top:16px">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Rua das Janelas Verdes 21" required>
+          </div>
+          <div class="checkout__row" style="margin-top:16px">
+            <div class="checkout__field">
+              <label for="city">City</label>
+              <input type="text" id="city" required>
+            </div>
+            <div class="checkout__field">
+              <label for="postal">Postal code</label>
+              <input type="text" id="postal" required>
+            </div>
+          </div>
+          <div class="checkout__field" style="margin-top:16px">
+            <label for="country">Country</label>
+            <select id="country" required>
+              <option value="">Select country</option>
+              <option value="PT">Portugal</option>
+              <option value="ES">Spain</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+              <option value="IT">Italy</option>
+              <option value="UK">United Kingdom</option>
+              <option value="US">United States</option>
+              <option value="OTHER">Other</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow" style="margin-bottom:18px;display:block">Payment</span>
+          <div class="checkout__field">
+            <label for="card">Card number</label>
+            <input type="text" id="card" placeholder="4242 4242 4242 4242" maxlength="19" required>
+          </div>
+          <div class="checkout__row" style="margin-top:16px">
+            <div class="checkout__field">
+              <label for="expiry">Expiry</label>
+              <input type="text" id="expiry" placeholder="MM / YY" maxlength="7" required>
+            </div>
+            <div class="checkout__field">
+              <label for="cvc">CVC</label>
+              <input type="text" id="cvc" placeholder="123" maxlength="4" required>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn--lg" style="width:100%;justify-content:center;margin-top:8px" id="checkout-btn" data-magnet>
+          <span>Place order</span>
+          <span class="arrow">↗</span>
+        </button>
+        <small style="text-align:center;color:var(--ink-mute);display:block">Secure checkout · SSL encrypted · Free returns within 30 days</small>
+      </div>
+    </div>
+    <div>
+      <div class="checkout__summary" id="checkout-summary">
+        <span class="eyebrow" style="margin-bottom:18px;display:block">Order summary</span>
+        <div id="checkout-items"></div>
+        <div class="checkout__total">
+          <span>Total</span>
+          <b id="checkout-total">$0</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom">
+      <span>© 2026 ywee Lda. · Rua das Janelas Verdes 21, 1200 Lisbon</span>
+      <span class="legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/data.window.js"></script>
+<script src="js/app.js"></script>
+<script>
+(function() {
+  const D = window.YWEE;
+  const { fmtMoney } = window.YWEEUtil;
+  const Cart = window.Cart;
+
+  function render() {
+    const items = document.getElementById("checkout-items");
+    const total = document.getElementById("checkout-total");
+    if (!Cart.items.length) {
+      items.innerHTML = '<div style="padding:24px 0;text-align:center;color:var(--ink-mute)"><p>Your bag is empty.</p><a href="shop.html" class="btn btn--ghost" style="margin-top:14px"><span>Browse the shop</span><span class="arrow">↗</span></a></div>';
+    } else {
+      items.innerHTML = Cart.items.map((it) => `
+        <div class="checkout__item">
+          <img src="${it.img}" alt="${it.name}">
+          <div>
+            <h4>${it.name}</h4>
+            <div class="meta">${it.category} · ${it.size || "One Size"} · Qty ${it.qty}</div>
+            <div class="mono" style="font-size:13px;margin-top:4px">${fmtMoney(it.price * it.qty, it.currency)}</div>
+          </div>
+        </div>`).join("");
+    }
+    total.textContent = fmtMoney(Cart.subtotal());
+  }
+
+  Cart.on(render);
+
+  document.getElementById("checkout-btn").addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!Cart.items.length) { window.showToast("Your bag is empty"); return; }
+    const form = document.getElementById("checkout-form");
+    const inputs = form.querySelectorAll("input[required], select[required]");
+    let valid = true;
+    inputs.forEach((inp) => { if (!inp.value.trim()) { valid = false; inp.style.borderColor = "#d8665c"; } else { inp.style.borderColor = ""; } });
+    if (!valid) { window.showToast("Please fill in all required fields"); return; }
+    window.showToast("Order confirmed · confirmation sent to your email ✓", 3000);
+    Cart.clear();
+    setTimeout(() => { window.location.href = "index.html"; }, 3000);
+  });
+})();
+</script>
+</body>
+</html>

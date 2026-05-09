@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE6">
+<title>Lookbook — Resort 26 · ywee</title>
+<meta name="description" content="Twelve looks photographed by Léa Béjuy on a single afternoon in Trafaria. The complete ywee Resort 26 lookbook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23F4EFE6'>y</text></svg>">
+<style>
+  .lb__hero {
+    padding: clamp(48px, 8vw, 120px) var(--pad) clamp(40px, 6vw, 80px);
+    display: grid; grid-template-columns: 1.1fr 1fr;
+    gap: clamp(24px, 4vw, 80px);
+    align-items: end;
+  }
+  .lb__hero h1 {
+    font-family: var(--serif); font-weight: 350;
+    font-size: var(--t-display); line-height: 0.88; letter-spacing: -0.04em;
+  }
+  .lb__hero h1 em { font-style: italic; font-weight: 320; color: var(--ink-mute); }
+  .lb__hero .meta {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+    border-top: 1px solid var(--hair); padding-top: 24px; margin-top: 28px;
+  }
+  .lb__hero .meta b { display:block; font-family: var(--serif); font-weight:380; font-size: 18px; letter-spacing:-0.01em; margin-bottom: 4px; }
+  .lb__hero .meta span { font-size: 12.5px; color: var(--ink-mute); }
+  .lb__pieces {
+    display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--gap);
+    padding: var(--section) var(--pad);
+  }
+  .lb__look {
+    border-radius: var(--r-card);
+    overflow: hidden;
+    position: relative;
+    background: var(--paper-warm);
+    border: 1px solid var(--hair);
+    padding: 6px;
+  }
+  .lb__look .pic {
+    position: relative;
+    border-radius: var(--r-card-i);
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+  }
+  .lb__look .pic.wide { aspect-ratio: 4 / 3; }
+  .lb__look .pic.square { aspect-ratio: 1 / 1; }
+  .lb__look .pic.tall { aspect-ratio: 3 / 4.5; }
+  .lb__look img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1.6s var(--ease);
+    opacity: 0;
+  }
+  .lb__look img.loaded { opacity: 1; }
+  .lb__look:hover img { transform: scale(1.04); }
+  .lb__look .meta {
+    position: absolute; left: 22px; right: 22px; bottom: 22px;
+    color: var(--paper);
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+    text-transform: uppercase;
+    z-index: 2;
+    text-shadow: 0 1px 12px rgba(0,0,0,.4);
+  }
+  .lb__look::after {
+    content: ""; position: absolute; inset: 6px;
+    border-radius: var(--r-card-i);
+    background: linear-gradient(180deg, transparent 60%, rgba(26,25,22,.55));
+    pointer-events: none; z-index: 1;
+  }
+  .lb__look .meta b {
+    display: block; font-family: var(--serif); font-weight: 350;
+    font-size: 22px; letter-spacing: -0.015em; line-height: 1;
+    margin-bottom: 6px; text-transform: none;
+    text-shadow: 0 2px 14px rgba(0,0,0,.5);
+  }
+  .span-12 { grid-column: span 12; }
+  .span-8  { grid-column: span 8; }
+  .span-6  { grid-column: span 6; }
+  .span-5  { grid-column: span 5; }
+  .span-4  { grid-column: span 4; }
+  .span-7  { grid-column: span 7; }
+  .span-3  { grid-column: span 3; }
+  @media (max-width: 1100px) {
+    .lb__hero { grid-template-columns: 1fr; }
+    .lb__pieces { grid-template-columns: repeat(6, 1fr); }
+    .lb__pieces .span-12 { grid-column: span 6; }
+    .lb__pieces .span-8 { grid-column: span 6; }
+    .lb__pieces .span-7 { grid-column: span 6; }
+    .lb__pieces .span-6 { grid-column: span 6; }
+    .lb__pieces .span-5 { grid-column: span 6; }
+    .lb__pieces .span-4 { grid-column: span 3; }
+    .lb__pieces .span-3 { grid-column: span 3; }
+  }
+  @media (max-width: 800px) {
+    .lb__pieces { grid-template-columns: 1fr; }
+    .lb__pieces > * { grid-column: span 1 !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <div class="announce__track">
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot"></span>
+    <div class="announce__item">Resort 26 — Now in studio</div><span class="dot"></span>
+    <div class="announce__item">Free worldwide shipping over $250</div><span class="dot"></span>
+    <div class="announce__item">Mended for free, for life</div><span class="dot"></span>
+    <div class="announce__item">Tailored in Portugal &amp; northern Italy</div><span class="dot"></span>
+    <div class="announce__item">Members preview opens 14 May</div><span class="dot"></span>
+  </div>
+</div>
+
+<header class="nav">
+  <nav class="nav__group" aria-label="Primary">
+    <a href="shop.html" class="nav__link">Shop <span class="mono" style="font-size:10px;color:var(--ink-mute)">30</span></a>
+    <a href="lookbook.html" class="nav__link" aria-current="page">Lookbook</a>
+    <a href="about.html" class="nav__link">Atelier</a>
+    <a href="journal.html" class="nav__link">Journal</a>
+  </nav>
+  <a href="index.html" class="nav__brand" aria-label="ywee — home">y<b>w</b>ee</a>
+  <div class="nav__group nav__group--right">
+    <a href="#" class="nav__link" aria-label="Search">Search ⌕</a>
+    <a href="account.html" aria-label="Account">Account</a>
+    <a href="#" class="nav__chip" data-cart-open><span>Bag</span><span class="count" id="cart-count">0</span></a>
+    <button class="nav__hamb" aria-label="Open menu"></button>
+  </div>
+  <div class="nav__drawer">
+    <a href="shop.html">Shop</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="about.html">Atelier</a>
+    <a href="journal.html">Journal</a>
+    <a href="#" data-cart-open>Bag (<span id="cart-count-2">0</span>)</a>
+  </div>
+</header>
+
+<section class="lb__hero">
+  <div>
+    <span class="eyebrow" data-reveal style="display:inline-block;color:var(--ink-faint);margin-bottom:24px">— Lookbook · Resort 26 · Edition n°04</span>
+    <h1 data-reveal>Twelve looks,<br><em>one continuous frame.</em></h1>
+    <div class="meta" data-reveal data-reveal-delay="2">
+      <div><b>Léa Béjuy</b><span>Photography · Atlas Studio, Paris</span></div>
+      <div><b>Ana Sofia Pereira</b><span>Styling &amp; movement · Lisbon</span></div>
+      <div><b>Trafaria, Portugal</b><span>Location · single afternoon, March 2026</span></div>
+      <div><b>Atelier Henriques</b><span>Tailoring · Porto</span></div>
+    </div>
+  </div>
+  <div>
+    <p class="lede" data-reveal data-reveal-delay="3">A single afternoon. A single roll of large-format film. Twelve looks, photographed against the river light at Trafaria — and a few quieter portraits made on the way back to the studio.</p>
+    <div data-reveal data-reveal-delay="4" style="margin-top: 40px; display:flex; gap:12px;">
+      <a href="shop.html" class="btn" data-magnet><span>Shop the season</span><span class="arrow">↗</span></a>
+      <a href="#looks" class="btn btn--ghost" data-magnet><span>View the lookbook</span><span class="arrow">↓</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="looks">
+  <div class="lb__pieces" id="lb-pieces"></div>
+</section>
+
+<section class="quote">
+  <div class="container">
+    <span class="eyebrow" data-reveal>From the photographer</span>
+    <blockquote data-reveal data-reveal-delay="1">
+      "Resort 26 was photographed in soft, late-day Atlantic light.<br>
+      <em>I wanted the cloth to feel like air —</em><br>
+      held by the body, not by the frame."
+    </blockquote>
+    <div class="who" data-reveal data-reveal-delay="2">
+      <span class="ava"></span>
+      <div>
+        <b>Léa Béjuy</b>
+        <span>Photographer · Atlas Studio, Paris</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta" data-reveal>
+      <div>
+        <span class="eyebrow" style="color:rgba(244,239,230,0.6);display:inline-block;margin-bottom:24px">Studio newsletter</span>
+        <h2>Subscribe<br>to the<br><em>field notes.</em></h2>
+      </div>
+      <div class="cta__form">
+        <span class="eyebrow">Four letters a year</span>
+        <form class="cta__input" onsubmit="event.preventDefault(); window.showToast('Welcome — first letter posts in May.');">
+          <input type="email" placeholder="you@goodletters.co" required>
+          <button type="submit"><span>Subscribe</span><span>↗</span></button>
+        </form>
+        <small>Behind-the-scenes notes from the workroom. We do not share your address.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="lock">y<i style="font-style:italic">w</i>ee.</div>
+        <p>A small clothing house in Lisbon. Cut and finished by hand in family-run ateliers across Portugal, Spain and northern Italy. Founded 2018.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?cat=Outerwear">Outerwear</a></li>
+          <li><a href="shop.html?cat=Knitwear">Knitwear</a></li>
+          <li><a href="shop.html?cat=Tops">Tops</a></li>
+          <li><a href="shop.html?cat=Bottoms">Bottoms</a></li>
+          <li><a href="shop.html?cat=Dresses">Dresses</a></li>
+          <li><a href="shop.html?cat=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>House</h4>
+        <ul>
+          <li><a href="about.html">The atelier</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="mending.html">Mending program</a></li>
+          <li><a href="stockists.html">Stockists</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="shipping.html">&amp; returns</a></li>
+          <li><a href="sizing.html">&amp; fit</a></li>
+          <li><a href="care.html">Garment care</a></li>
+          <li><a href="contact.html">Contact studio</a></li>
+          <li><a href="press.html">&amp; trade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ywee Lda. · Rua das Janelas Verdes 21, 1200 Lisbon</span>
+      <span class="legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></span>
+      <span class="pexels">Imagery licensed via <a href="https://www.pexels.com" target="_blank" rel="noreferrer" style="margin-left:4px;text-decoration:underline;text-underline-offset:2px">Pexels</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/data.window.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lookbook.js"></script>
+</body>
+</html>
