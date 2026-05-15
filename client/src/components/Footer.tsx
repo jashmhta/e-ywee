@@ -2,21 +2,23 @@ import { Link } from "wouter";
 
 const LINKS = {
   Shop: [
-    { label: "All Products", path: "/shop" },
-    { label: "Classic Blues", path: "/shop?c=classic-blues" },
-    { label: "Bold Prints", path: "/shop?c=bold-prints" },
-    { label: "Midnight Black", path: "/shop?c=midnight-black" },
-    { label: "Summer Shorts", path: "/shop?c=summer-shorts" },
-    { label: "New Arrivals", path: "/shop?sort=newest" },
+    { label: "All pieces", path: "/shop" },
+    { label: "Light Wash", path: "/shop/light-wash" },
+    { label: "Dark Indigo", path: "/shop/dark-indigo" },
+    { label: "Embellished", path: "/shop/embellished" },
+    { label: "Onyx Black", path: "/shop/black" },
+    { label: "Saved", path: "/wishlist" },
   ],
   Brand: [
     { label: "Atelier", path: "/atelier" },
     { label: "Lookbook", path: "/lookbook" },
     { label: "Journal", path: "/journal" },
     { label: "Stockists", path: "/stockists" },
-    { label: "Press", path: "/press" },
+    { label: "Press kit", path: "/press-kit" },
+    { label: "ywee Insiders", path: "/loyalty" },
   ],
   Service: [
+    { label: "Track an order", path: "/track" },
     { label: "Shipping", path: "/shipping" },
     { label: "Sizing", path: "/sizing" },
     { label: "Care", path: "/care" },

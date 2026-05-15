@@ -1,52 +1,63 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
-import { useLocation } from "wouter";
+import { Link } from "wouter";
+import { Meta } from "@/components/system/Meta";
 
 export default function NotFound() {
-  const [, setLocation] = useLocation();
-
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
-          </div>
-
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
-
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
-
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
-          </p>
-
-          <div
-            id="not-found-button-group"
-            className="flex flex-col sm:flex-row gap-3 justify-center"
-          >
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
+    <main
+      style={{
+        background: "var(--paper)",
+        minHeight: "100dvh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "clamp(40px, 8vw, 120px) clamp(20px, 4vw, 64px)",
+      }}
+    >
+      <Meta title="Page not found" canonicalPath="/404" />
+      <div style={{ maxWidth: "640px", textAlign: "center" }}>
+        <p
+          style={{
+            fontSize: "11px",
+            letterSpacing: "0.20em",
+            textTransform: "uppercase",
+            color: "var(--ink-faint)",
+            marginBottom: "clamp(20px, 3vw, 32px)",
+          }}
+        >
+          404 · Page not found
+        </p>
+        <h1
+          style={{
+            fontFamily: "var(--serif)",
+            fontStyle: "italic",
+            fontWeight: 300,
+            fontSize: "clamp(56px, 12vw, 200px)",
+            letterSpacing: "-0.04em",
+            lineHeight: 0.92,
+            color: "var(--ink)",
+            marginBottom: "clamp(20px, 3vw, 32px)",
+          }}
+        >
+          Lost in the<br />studio.
+        </h1>
+        <p
+          style={{
+            fontSize: "clamp(15px, 1.6vw, 18px)",
+            color: "var(--ink-mute)",
+            lineHeight: 1.7,
+            marginBottom: "clamp(28px, 4vw, 40px)",
+            maxWidth: "440px",
+            marginInline: "auto",
+          }}
+        >
+          The piece you were looking for isn't here. Perhaps it's still in the cutting room.
+          Let's get you back to something more wearable.
+        </p>
+        <div style={{ display: "inline-flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
+          <Link href="/" className="btn btn-primary">Home</Link>
+          <Link href="/shop" className="btn btn-ghost">Shop the collection</Link>
+        </div>
+      </div>
+    </main>
   );
 }

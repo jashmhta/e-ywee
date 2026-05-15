@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 import { useBag } from "@/contexts/BagContext";
+import { useWishlist } from "@/contexts/WishlistContext";
 
 // ── SVG icons (inline, no dependency) ────────────────────────────────────────
 const HomeIcon = ({ active }: { active: boolean }) => (
@@ -49,18 +50,26 @@ const BagIcon = ({ active }: { active: boolean }) => (
   </svg>
 );
 
+const HeartIcon = ({ active }: { active: boolean }) => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill={active ? "var(--ink)" : "none"}
+    stroke={active ? "var(--ink)" : "var(--ink-faint)"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+  </svg>
+);
+
 // ── Nav items ─────────────────────────────────────────────────────────────────
 const NAV_ITEMS = [
   { href: "/", label: "Home", icon: HomeIcon },
   { href: "/shop", label: "Shop", icon: ShopIcon },
   { href: "/lookbook", label: "Lookbook", icon: LookbookIcon },
-  { href: "/journal", label: "Journal", icon: JournalIcon },
+  { href: "/wishlist", label: "Saved", icon: HeartIcon },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function SnitchNav() {
   const [location, navigate] = useLocation();
   const { totalItems, openBag } = useBag();
+  const { count: wishCount } = useWishlist();
   const [navVisible, setNavVisible] = useState(true);
   const lastScrollY = useRef(0);
   const scrollTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -98,9 +107,13 @@ export default function SnitchNav() {
           onClick={() => navigate(item.href)}
           aria-label={item.label}
           aria-current={isActive(item.href) ? "page" : undefined}
+          style={{ position: "relative" }}
         >
           <item.icon active={isActive(item.href)} />
           <span>{item.label}</span>
+          {item.href === "/wishlist" && wishCount > 0 && (
+            <span className="snitch-badge">{wishCount > 9 ? "9+" : wishCount}</span>
+          )}
         </button>
       ))}
 

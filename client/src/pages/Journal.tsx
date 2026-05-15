@@ -39,7 +39,7 @@ export default function Journal() {
             <Link href={`/journal/${featured.slug}`}>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "clamp(24px, 4vw, 48px)", alignItems: "center" }}>
                 <div className="product-img-wrap" style={{ aspectRatio: "16/10", overflow: "hidden", background: "var(--paper-warm)" }}>
-                  <img src={featured.img} alt={featured.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
+                  <img src={featured.cover} alt={featured.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
                 </div>
                 <div>
                   <p style={{ fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-faint)", marginBottom: "12px" }}>
@@ -80,7 +80,7 @@ function ArticleCard({ article, delay }: { article: typeof JOURNAL[0]; delay: nu
     <div ref={ref}>
       <Link href={`/journal/${article.slug}`}>
         <div className="product-img-wrap" style={{ aspectRatio: "16/10", overflow: "hidden", background: "var(--paper-warm)", marginBottom: "16px" }}>
-          <img loading="lazy" src={article.img} alt={article.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <img loading="lazy" src={article.cover} alt={article.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
         <p style={{ fontSize: "10px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-faint)", marginBottom: "8px" }}>
           {article.category} · {article.read}
@@ -117,7 +117,7 @@ export function JournalArticle() {
     <main style={{ background: "var(--paper)", minHeight: "100dvh" }}>
       {/* Hero image */}
       <div style={{ height: "60dvh", minHeight: "360px", overflow: "hidden", position: "relative" }}>
-        <img loading="lazy" src={article.img} alt={article.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <img loading="lazy" src={article.cover} alt={article.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(26,25,22,0.5) 0%, transparent 60%)" }} />
       </div>
 
@@ -167,7 +167,7 @@ export function JournalArticle() {
               {others.map(a => (
                 <Link key={a.slug} href={`/journal/${a.slug}`}>
                   <div className="product-img-wrap" style={{ aspectRatio: "16/10", overflow: "hidden", background: "var(--paper-deep)", marginBottom: "14px" }}>
-                    <img src={a.img} alt={a.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
+                    <img src={a.cover} alt={a.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
                   </div>
                   <p style={{ fontSize: "10px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-faint)", marginBottom: "6px" }}>{a.category} · {a.read}</p>
                   <h3 style={{ fontFamily: "var(--serif)", fontSize: "18px", fontStyle: "italic", fontWeight: 300, color: "var(--ink)", lineHeight: 1.2 }}>{a.title}</h3>

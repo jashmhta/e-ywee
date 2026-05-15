@@ -1,18 +1,46 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useBag } from "@/contexts/BagContext";
-import { ChevronLeft, Lock } from "lucide-react";
+import { ChevronLeft, Lock, Gift } from "lucide-react";
+import { imageSrc } from "@/data/store";
+import { Meta } from "@/components/system/Meta";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 type Step = "shipping" | "payment" | "confirmation";
+type PaymentMethod = "upi" | "card" | "cod";
+
+const GIFT_WRAP_INR = 99;
 
 export default function Checkout() {
   const { items, subtotal, clearBag } = useBag();
   const [, navigate] = useLocation();
   const [step, setStep] = useState<Step>("shipping");
   const [orderNumber] = useState(() => `YW-${Date.now().toString().slice(-6)}`);
+  const { format, currency } = useCurrency();
 
-  const shipping = subtotal >= 999 ? 0 : 99;
-  const total = subtotal + shipping;
+  // Extras
+  const [giftWrap, setGiftWrap] = useState(false);
+  const [giftMessage, setGiftMessage] = useState("");
+  const [needsGstInvoice, setNeedsGstInvoice] = useState(false);
+  const [gstNumber, setGstNumber] = useState("");
+  const [gstName, setGstName] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("upi");
+  const [promo, setPromo] = useState("");
+  const [promoApplied, setPromoApplied] = useState<{ code: string; pct: number } | null>(null);
+
+  const shippingCost = subtotal >= 999 ? 0 : 99;
+  const giftCost = giftWrap ? GIFT_WRAP_INR : 0;
+  const codFee = paymentMethod === "cod" ? 49 : 0;
+  const discount = promoApplied ? Math.round(subtotal * promoApplied.pct) : 0;
+  const total = subtotal + shippingCost + giftCost + codFee - discount;
+
+  function applyPromo() {
+    const c = promo.trim().toUpperCase();
+    if (c === "WELCOME10") setPromoApplied({ code: c, pct: 0.10 });
+    else if (c === "STAY15") setPromoApplied({ code: c, pct: 0.15 });
+    else if (c === "ATELIER20") setPromoApplied({ code: c, pct: 0.20 });
+    else setPromoApplied(null);
+  }
 
   const [form, setForm] = useState({
     firstName: "", lastName: "", email: "", phone: "",
@@ -86,6 +114,7 @@ export default function Checkout() {
 
   return (
     <main style={{ background: "var(--paper)", minHeight: "100dvh" }}>
+      <Meta title="Checkout" canonicalPath="/checkout" />
       {/* Header */}
       <div style={{ padding: "16px clamp(20px, 4vw, 48px)", borderBottom: "1px solid rgba(26,25,22,0.08)", maxWidth: "1440px", margin: "0 auto" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", color: "var(--ink-faint)" }}>
@@ -162,17 +191,152 @@ export default function Checkout() {
                 </span>
               </div>
 
-              <FormField label="Name on Card" name="cardName" value={form.cardName} onChange={handleChange} required style={{ marginBottom: "12px" }} />
-              <FormField label="Card Number" name="cardNumber" value={form.cardNumber} onChange={handleChange} placeholder="•••• •••• •••• ••••" required style={{ marginBottom: "12px" }} />
-              <div className="form-row-2" style={{ marginBottom: "28px" }}>
-                <FormField label="Expiry (MM/YY)" name="expiry" value={form.expiry} onChange={handleChange} placeholder="MM/YY" required />
-                <FormField label="CVV" name="cvv" value={form.cvv} onChange={handleChange} placeholder="•••" required />
+              {/* Payment method tabs */}
+              <p style={{ fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-faint)", marginBottom: "10px" }}>
+                Choose payment method
+              </p>
+              <div role="tablist" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "6px", marginBottom: "20px" }}>
+                {[
+                  { id: "upi" as const, label: "UPI", sub: "GPay · PhonePe · Paytm" },
+                  { id: "card" as const, label: "Card", sub: "Credit / Debit / Netbanking" },
+                  { id: "cod" as const, label: "Cash on Delivery", sub: "+ ₹49 fee" },
+                ].map((m) => {
+                  const active = paymentMethod === m.id;
+                  return (
+                    <button
+                      key={m.id}
+                      type="button"
+                      role="tab"
+                      aria-selected={active}
+                      onClick={() => setPaymentMethod(m.id)}
+                      style={{
+                        background: active ? "var(--ink)" : "var(--paper)",
+                        color: active ? "var(--paper)" : "var(--ink)",
+                        border: `1px solid ${active ? "var(--ink)" : "rgba(26,25,22,0.18)"}`,
+                        padding: "12px 10px",
+                        fontFamily: "var(--sans)",
+                        fontSize: "11px",
+                        letterSpacing: "0.10em",
+                        textTransform: "uppercase",
+                        cursor: "pointer",
+                        transition: "all 0.22s var(--ease-out)",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        gap: "4px",
+                      }}
+                    >
+                      <span>{m.label}</span>
+                      <span style={{ fontSize: "9px", letterSpacing: "0.08em", opacity: 0.7, textTransform: "none" }}>{m.sub}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Per-method panel */}
+              {paymentMethod === "upi" && (
+                <div style={{ background: "var(--paper-warm)", padding: "20px", marginBottom: "24px", display: "flex", flexDirection: "column", gap: "12px" }}>
+                  <p style={{ fontSize: "13px", color: "var(--ink-mute)", lineHeight: 1.5 }}>
+                    On submit, you'll be redirected to your UPI app to approve the payment. Money never leaves until you tap approve.
+                  </p>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", alignItems: "center" }}>
+                    {["GPay", "PhonePe", "Paytm", "BHIM", "Razorpay"].map((p) => (
+                      <span key={p} style={{ fontSize: "10px", letterSpacing: "0.10em", textTransform: "uppercase", padding: "6px 10px", background: "var(--paper)", border: "1px solid rgba(26,25,22,0.10)" }}>
+                        {p}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {paymentMethod === "card" && (
+                <>
+                  <FormField label="Name on Card" name="cardName" value={form.cardName} onChange={handleChange} required style={{ marginBottom: "12px" }} />
+                  <FormField label="Card Number" name="cardNumber" value={form.cardNumber} onChange={handleChange} placeholder="•••• •••• •••• ••••" required style={{ marginBottom: "12px" }} />
+                  <div className="form-row-2" style={{ marginBottom: "20px" }}>
+                    <FormField label="Expiry (MM/YY)" name="expiry" value={form.expiry} onChange={handleChange} placeholder="MM/YY" required />
+                    <FormField label="CVV" name="cvv" value={form.cvv} onChange={handleChange} placeholder="•••" required />
+                  </div>
+                  <p style={{ fontSize: "11px", color: "var(--ink-faint)", marginBottom: "20px" }}>
+                    All major cards accepted via Razorpay. International cards supported.
+                  </p>
+                </>
+              )}
+              {paymentMethod === "cod" && (
+                <div style={{ background: "var(--paper-warm)", padding: "20px", marginBottom: "24px" }}>
+                  <p style={{ fontSize: "13px", color: "var(--ink-mute)", lineHeight: 1.6 }}>
+                    Pay <strong style={{ color: "var(--ink)" }}>{format(total)}</strong> in cash to the courier on delivery.
+                    A small ₹49 handling fee applies. Available across India for orders below ₹10,000.
+                  </p>
+                </div>
+              )}
+
+              {/* Gift wrapping */}
+              <div style={{ background: "var(--paper-soft)", padding: "16px 18px", marginBottom: "12px", borderRadius: "2px", border: "1px solid rgba(26,25,22,0.08)" }}>
+                <label style={{ display: "flex", alignItems: "flex-start", gap: "10px", cursor: "pointer" }}>
+                  <input type="checkbox" checked={giftWrap} onChange={(e) => setGiftWrap(e.target.checked)} style={{ marginTop: "3px" }} />
+                  <span>
+                    <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--serif)", fontStyle: "italic", fontSize: "16px", color: "var(--ink)" }}>
+                      <Gift size={14} strokeWidth={1.5} /> Gift wrap this order · {format(GIFT_WRAP_INR)}
+                    </span>
+                    <span style={{ display: "block", fontSize: "12px", color: "var(--ink-mute)", marginTop: "2px" }}>
+                      Hand-tied ribbon, recyclable kraft paper, and a personalised note.
+                    </span>
+                  </span>
+                </label>
+                {giftWrap && (
+                  <textarea
+                    placeholder="Note for the recipient (optional)"
+                    rows={2}
+                    value={giftMessage}
+                    onChange={(e) => setGiftMessage(e.target.value)}
+                    maxLength={140}
+                    style={{
+                      width: "100%",
+                      marginTop: "10px",
+                      padding: "10px 12px",
+                      border: "1px solid rgba(26,25,22,0.18)",
+                      background: "var(--paper)",
+                      fontFamily: "var(--sans)",
+                      fontSize: "13px",
+                      color: "var(--ink)",
+                      resize: "vertical",
+                    }}
+                  />
+                )}
+              </div>
+
+              {/* GST invoice */}
+              <div style={{ background: "var(--paper-soft)", padding: "16px 18px", marginBottom: "20px", borderRadius: "2px", border: "1px solid rgba(26,25,22,0.08)" }}>
+                <label style={{ display: "flex", alignItems: "flex-start", gap: "10px", cursor: "pointer" }}>
+                  <input type="checkbox" checked={needsGstInvoice} onChange={(e) => setNeedsGstInvoice(e.target.checked)} style={{ marginTop: "3px" }} />
+                  <span>
+                    <span style={{ fontFamily: "var(--serif)", fontStyle: "italic", fontSize: "16px", color: "var(--ink)" }}>
+                      I need a GST invoice
+                    </span>
+                    <span style={{ display: "block", fontSize: "12px", color: "var(--ink-mute)", marginTop: "2px" }}>
+                      For business buyers. Invoice will be emailed once dispatched.
+                    </span>
+                  </span>
+                </label>
+                {needsGstInvoice && (
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "10px", marginTop: "10px" }}>
+                    <input type="text" required placeholder="Registered business name" value={gstName} onChange={(e) => setGstName(e.target.value)}
+                      style={{ padding: "10px 12px", border: "1px solid rgba(26,25,22,0.18)", background: "var(--paper)", fontSize: "13px", fontFamily: "var(--sans)" }}
+                    />
+                    <input type="text" required placeholder="GSTIN (15 chars)" value={gstNumber} onChange={(e) => setGstNumber(e.target.value.toUpperCase())} maxLength={15}
+                      style={{ padding: "10px 12px", border: "1px solid rgba(26,25,22,0.18)", background: "var(--paper)", fontSize: "13px", fontFamily: "var(--mono)", letterSpacing: "0.04em" }}
+                    />
+                  </div>
+                )}
               </div>
 
               <button type="submit" style={{ width: "100%", padding: "16px", background: "var(--ink)", color: "var(--paper)", fontSize: "12px", letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 500, border: "none", cursor: "pointer", fontFamily: "var(--sans)", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
                 <Lock size={13} strokeWidth={2} />
-                Place Order · ₹{total.toLocaleString("en-IN")}
+                {paymentMethod === "cod" ? "Place order · pay on delivery" : "Place order"} · {format(total)}
               </button>
+              <p style={{ textAlign: "center", fontSize: "10px", letterSpacing: "0.10em", textTransform: "uppercase", color: "var(--ink-faint)", marginTop: "12px" }}>
+                256-bit SSL · PCI DSS · Razorpay secured
+              </p>
             </form>
           )}
         </div>
@@ -187,7 +351,7 @@ export default function Checkout() {
             {items.map(({ product, size, quantity }) => (
               <li key={`${product.id}-${size}`} style={{ display: "grid", gridTemplateColumns: "56px 1fr", gap: "12px" }}>
                 <div style={{ aspectRatio: "3/4", overflow: "hidden", background: "var(--paper-deep)", position: "relative" }}>
-                  <img src={product.imgPortrait} alt={product.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
+                  <img src={imageSrc(product, 0, 480)} alt={product.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
                   <span style={{ position: "absolute", top: "-6px", right: "-6px", width: "18px", height: "18px", borderRadius: "50%", background: "var(--ink)", color: "var(--paper)", fontSize: "10px", fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center" }}>
                     {quantity}
                   </span>
@@ -203,21 +367,100 @@ export default function Checkout() {
 
           <div style={{ height: "1px", background: "rgba(26,25,22,0.10)", margin: "16px 0" }} />
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", color: "var(--ink-mute)" }}>
-              <span>Subtotal</span><span>₹{subtotal.toLocaleString("en-IN")}</span>
+          {/* Promo code */}
+          <div style={{ marginBottom: "12px" }}>
+            <div style={{ display: "flex", gap: "6px" }}>
+              <input
+                type="text"
+                value={promo}
+                onChange={(e) => setPromo(e.target.value.toUpperCase())}
+                placeholder="Promo code"
+                aria-label="Promo code"
+                style={{
+                  flex: 1,
+                  padding: "10px 12px",
+                  border: "1px solid rgba(26,25,22,0.18)",
+                  background: "var(--paper)",
+                  fontSize: "12px",
+                  fontFamily: "var(--mono)",
+                  letterSpacing: "0.06em",
+                  color: "var(--ink)",
+                }}
+              />
+              <button
+                type="button"
+                onClick={applyPromo}
+                style={{
+                  background: "var(--ink)",
+                  color: "var(--paper)",
+                  border: "none",
+                  padding: "10px 16px",
+                  fontSize: "11px",
+                  letterSpacing: "0.10em",
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                  fontFamily: "var(--sans)",
+                }}
+              >
+                Apply
+              </button>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", color: "var(--ink-mute)" }}>
-              <span>Shipping</span><span>{shipping === 0 ? "Free" : `₹${shipping}`}</span>
-            </div>
+            {promoApplied && (
+              <p style={{ fontSize: "11px", color: "var(--sage)", marginTop: "6px" }}>
+                ✓ <strong>{promoApplied.code}</strong> applied — {Math.round(promoApplied.pct * 100)}% off subtotal
+              </p>
+            )}
+            {promo && !promoApplied && (
+              <p style={{ fontSize: "11px", color: "#993a3a", marginTop: "6px" }}>
+                Code not recognised. Try WELCOME10, STAY15, ATELIER20.
+              </p>
+            )}
+          </div>
+
+          <div style={{ height: "1px", background: "rgba(26,25,22,0.10)", margin: "12px 0" }} />
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Row label="Subtotal" value={format(subtotal)} />
+            <Row label="Shipping" value={shippingCost === 0 ? "Free" : format(shippingCost)} accent={shippingCost === 0 ? "var(--sage)" : undefined} />
+            {giftWrap && <Row label="Gift wrap" value={format(GIFT_WRAP_INR)} />}
+            {paymentMethod === "cod" && <Row label="COD handling" value={format(codFee)} />}
+            {discount > 0 && <Row label={`Promo (${promoApplied?.code})`} value={`− ${format(discount)}`} accent="var(--sage)" />}
             <div style={{ height: "1px", background: "rgba(26,25,22,0.10)", margin: "4px 0" }} />
             <div style={{ display: "flex", justifyContent: "space-between", fontSize: "16px", fontWeight: 500, color: "var(--ink)" }}>
-              <span>Total</span><span>₹{total.toLocaleString("en-IN")}</span>
+              <span>Total</span>
+              <span>{format(total)}{currency.code !== "INR" && (
+                <span style={{ display: "block", fontSize: "10px", letterSpacing: "0.10em", color: "var(--ink-faint)", textTransform: "uppercase", marginTop: "2px", fontWeight: 400 }}>
+                  ≈ ₹{total.toLocaleString("en-IN")}
+                </span>
+              )}</span>
+            </div>
+          </div>
+
+          {/* Trust strip */}
+          <div style={{ marginTop: "20px", paddingTop: "16px", borderTop: "1px solid rgba(26,25,22,0.10)" }}>
+            <p style={{ fontSize: "10px", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--ink-faint)", marginBottom: "10px" }}>
+              We accept
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+              {["UPI", "Visa", "MC", "Amex", "RuPay", "Netbanking", "COD"].map((p) => (
+                <span key={p} style={{ fontSize: "10px", letterSpacing: "0.10em", textTransform: "uppercase", padding: "4px 8px", background: "var(--paper)", border: "1px solid rgba(26,25,22,0.10)", color: "var(--ink-mute)", fontFamily: "var(--sans)" }}>
+                  {p}
+                </span>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </main>
+  );
+}
+
+function Row({ label, value, accent }: { label: string; value: string; accent?: string }) {
+  return (
+    <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", color: accent ?? "var(--ink-mute)" }}>
+      <span>{label}</span>
+      <span>{value}</span>
+    </div>
   );
 }
 

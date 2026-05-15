@@ -1,20 +1,25 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { useBag } from "@/contexts/BagContext";
+import { useWishlist } from "@/contexts/WishlistContext";
+import { useCurrency, CURRENCIES, type CurrencyCode } from "@/contexts/CurrencyContext";
+import { Heart } from "lucide-react";
+import { SearchOverlay } from "./SearchOverlay";
+import { FreeShippingBar } from "./FreeShippingBar";
 
 const ANNOUNCEMENTS = [
-  "New Arrivals — Bold Prints Now In",
   "Free delivery across India on every order",
-  "Adjustable waistband — grows with her",
+  "Mended for life — guaranteed",
+  "Adjustable waistband · grows with her",
   "Premium Cotton-Lycra stretch denim",
   "Girls' denim for ages 1–14 years",
-  "Priced under ₹1,500 · Made in India",
+  "Made in Surat · since 2024",
 ];
 
 const NAV_LINKS = [
-  { label: "Shop", path: "/shop", sub: ["New Arrivals", "Classic Blues", "Bold Prints", "Midnight Black", "Ages 1–4", "Ages 5–8", "Ages 9–14"] },
-  { label: "Lookbook", path: "/lookbook", sub: ["New Arrivals", "Classic Blues", "Bold Prints", "Archive"] },
-  { label: "Atelier", path: "/atelier", sub: ["Our Story", "Our Fabric", "Made in India", "Sustainability"] },
+  { label: "Shop", path: "/shop", sub: ["Light Wash", "Dark Indigo", "Embellished", "Onyx Black", "Ages 1–4", "Ages 5–8", "Ages 9–14"] },
+  { label: "Lookbook", path: "/lookbook", sub: ["Resort 26", "Light Wash", "Dark Indigo", "Onyx"] },
+  { label: "Atelier", path: "/atelier", sub: ["Our Story", "Our Fabric", "Made in India", "Mended for Life"] },
   { label: "Journal", path: "/journal", sub: ["Brand Story", "Material", "Style Guide", "Care Tips"] },
 ];
 
@@ -24,10 +29,11 @@ export default function Nav() {
   const [navVisible, setNavVisible] = useState(true);
   const [activeHover, setActiveHover] = useState<string | null>(null);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
   const { openBag, totalItems } = useBag();
+  const { count: wishCount } = useWishlist();
+  const { currency, setCurrency } = useCurrency();
   const [location] = useLocation();
-  const searchRef = useRef<HTMLInputElement>(null);
+  const [currencyOpen, setCurrencyOpen] = useState(false);
   const hoverTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const lastScrollY = useRef(0);
   const scrollTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -51,14 +57,11 @@ export default function Nav() {
     return () => { window.removeEventListener("scroll", onScroll); clearTimeout(scrollTimer.current); };
   }, []);
 
-  useEffect(() => { setMobileOpen(false); setSearchOpen(false); }, [location]);
+  useEffect(() => { setMobileOpen(false); setSearchOpen(false); setCurrencyOpen(false); }, [location]);
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
-  useEffect(() => {
-    if (searchOpen) setTimeout(() => searchRef.current?.focus(), 80);
-  }, [searchOpen]);
 
   const isActive = (path: string) => location === path || location.startsWith(path + "/");
   const onNavEnter = (label: string) => { clearTimeout(hoverTimer.current); setActiveHover(label); };
@@ -115,17 +118,97 @@ export default function Nav() {
         </Link>
 
         {/* Right actions */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "clamp(12px, 2vw, 24px)" }}>
-          <button onClick={() => setSearchOpen(!searchOpen)} style={{ background: "none", border: "none", cursor: "pointer", color: "var(--ink-mute)", display: "flex", alignItems: "center", transition: "color 0.22s" }} onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")} onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")} aria-label="Search">
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "clamp(10px, 1.6vw, 20px)" }}>
+          {/* Currency switcher */}
+          <div style={{ position: "relative" }}>
+            <button
+              onClick={() => setCurrencyOpen((v) => !v)}
+              aria-haspopup="menu"
+              aria-expanded={currencyOpen}
+              data-cursor="hover"
+              style={{ background: "none", border: "none", cursor: "pointer", color: "var(--ink-mute)", fontSize: "11px", letterSpacing: "0.10em", textTransform: "uppercase", display: "inline-flex", alignItems: "center", gap: "4px", padding: "4px 6px" }}
+              onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
+              onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}
+            >
+              {currency.flag} {currency.code}
+            </button>
+            {currencyOpen && (
+              <div
+                role="menu"
+                style={{
+                  position: "absolute",
+                  top: "calc(100% + 8px)",
+                  right: 0,
+                  background: "var(--paper-soft)",
+                  border: "1px solid rgba(26,25,22,0.10)",
+                  boxShadow: "0 12px 36px rgba(26,25,22,0.12)",
+                  minWidth: "160px",
+                  padding: "6px",
+                  zIndex: 12,
+                }}
+              >
+                {Object.entries(CURRENCIES).map(([code, c]) => (
+                  <button
+                    key={code}
+                    role="menuitem"
+                    onClick={() => { setCurrency(code as CurrencyCode); setCurrencyOpen(false); }}
+                    style={{
+                      width: "100%",
+                      textAlign: "left",
+                      background: code === currency.code ? "var(--paper-warm)" : "transparent",
+                      border: "none",
+                      padding: "8px 12px",
+                      fontSize: "12px",
+                      cursor: "pointer",
+                      color: "var(--ink)",
+                      fontFamily: "var(--sans)",
+                      letterSpacing: "0.06em",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                    }}
+                  >
+                    <span>{c.flag}</span>
+                    <span>{c.code}</span>
+                    <span style={{ marginInlineStart: "auto", color: "var(--ink-faint)", fontSize: "11px" }}>{c.symbol}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <button
+            onClick={() => setSearchOpen(true)}
+            data-cursor="hover"
+            style={{ background: "none", border: "none", cursor: "pointer", color: "var(--ink-mute)", display: "flex", alignItems: "center", transition: "color 0.22s" }}
+            onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
+            onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}
+            aria-label="Search products"
+          >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </button>
-          <Link href="/account" className="desktop-nav-link" style={{ fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-mute)", transition: "color 0.22s", textDecoration: "none" }} onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")} onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}>Account</Link>
-          <button onClick={openBag} style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-mute)", cursor: "pointer", background: "none", border: "none", transition: "color 0.22s", fontFamily: "var(--sans)" }} onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")} onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}>
+
+          <Link href="/wishlist" data-cursor="hover" aria-label={`Saved (${wishCount})`}
+            style={{ display: "inline-flex", alignItems: "center", gap: "4px", color: "var(--ink-mute)", textDecoration: "none", position: "relative" }}
+            onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
+            onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}
+          >
+            <Heart size={16} strokeWidth={1.5} fill={wishCount > 0 ? "currentColor" : "none"} />
+            {wishCount > 0 && (
+              <span style={{ position: "absolute", top: "-6px", right: "-10px", minWidth: "16px", height: "16px", borderRadius: "8px", background: "var(--ink)", color: "var(--paper)", fontSize: "9px", fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 4px" }}>{wishCount > 9 ? "9+" : wishCount}</span>
+            )}
+          </Link>
+
+          <Link href="/account" data-cursor="hover" className="desktop-nav-link" style={{ fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-mute)", transition: "color 0.22s", textDecoration: "none" }} onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")} onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}>Account</Link>
+          <button onClick={openBag} data-cursor="hover" style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-mute)", cursor: "pointer", background: "none", border: "none", transition: "color 0.22s", fontFamily: "var(--sans)" }} onMouseEnter={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")} onMouseLeave={e => ((e.currentTarget as HTMLElement).style.color = "var(--ink-mute)")}>
             Bag
             {totalItems > 0 && <span style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", minWidth: "18px", height: "18px", borderRadius: "9px", background: "var(--ink)", color: "var(--paper)", fontSize: "10px", fontWeight: 600, letterSpacing: 0, padding: "0 4px" }}>{totalItems > 9 ? "9+" : totalItems}</span>}
           </button>
         </div>
       </header>
+
+      {/* Free shipping progress bar — only renders when bag has items */}
+      <FreeShippingBar />
 
       {/* ── Mobile floating glass pills ───────────────────────── */}
       <div className="mobile-pills" style={{ position: "fixed", top: "clamp(12px, 3vw, 20px)", left: 0, right: 0, zIndex: 55, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 16px", pointerEvents: "none", transition: "transform 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s", transform: navVisible ? "translateY(0)" : "translateY(-120%)", opacity: navVisible ? 1 : 0 }}>
@@ -152,13 +235,8 @@ export default function Nav() {
         </div>
       </div>
 
-      {/* ── Search overlay ───────────────────────────────────── */}
-      <div style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 60, background: "var(--paper-soft)", borderBottom: "1px solid rgba(26,25,22,0.10)", padding: "clamp(16px, 3vw, 28px) clamp(20px, 4vw, 48px)", transform: searchOpen ? "translateY(0)" : "translateY(-100%)", transition: "transform 0.5s cubic-bezier(0.16,1,0.3,1)", display: "flex", alignItems: "center", gap: "16px" }}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ink-faint)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input ref={searchRef} type="search" placeholder="Search pieces, materials, collections…" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} onKeyDown={e => { if (e.key === "Escape") setSearchOpen(false); }} style={{ flex: 1, border: "none", background: "transparent", fontSize: "clamp(16px, 2vw, 20px)", color: "var(--ink)", outline: "none", fontFamily: "var(--sans)" }} />
-        <button onClick={() => setSearchOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "var(--ink-faint)", fontSize: "20px", lineHeight: 1, padding: "4px" }}>×</button>
-      </div>
-      {searchOpen && <div style={{ position: "fixed", inset: 0, zIndex: 59 }} onClick={() => setSearchOpen(false)} />}
+      {/* ── Full search overlay (replaces old inline input) ── */}
+      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
 
       {/* ── Mobile nav overlay ───────────────────────────────── */}
       <div className={`mobile-nav ${mobileOpen ? "open" : ""}`}>
@@ -166,7 +244,16 @@ export default function Nav() {
         <div style={{ position: "absolute", top: "20px", left: "50%", transform: "translateX(-50%)", fontFamily: "var(--serif)", fontSize: "20px", fontStyle: "italic", color: "var(--ink-faint)" }}>
           y<strong style={{ fontWeight: 600, fontStyle: "normal" }}>w</strong>ee
         </div>
-        {[{ label: "Shop", path: "/shop" }, { label: "Lookbook", path: "/lookbook" }, { label: "Atelier", path: "/atelier" }, { label: "Journal", path: "/journal" }, { label: "Account", path: "/account" }].map(({ label, path }) => (
+        {[
+          { label: "Shop", path: "/shop" },
+          { label: "Lookbook", path: "/lookbook" },
+          { label: "Atelier", path: "/atelier" },
+          { label: "Journal", path: "/journal" },
+          { label: "Saved", path: "/wishlist" },
+          { label: "Track", path: "/track" },
+          { label: "Insiders", path: "/loyalty" },
+          { label: "Account", path: "/account" },
+        ].map(({ label, path }) => (
           <Link key={path} href={path} onClick={() => setMobileOpen(false)}>{label}</Link>
         ))}
         <button onClick={() => { setMobileOpen(false); openBag(); }} style={{ fontFamily: "var(--serif)", fontSize: "clamp(32px, 6vw, 52px)", fontWeight: 300, fontStyle: "italic", letterSpacing: "-0.02em", color: "var(--ink)", background: "none", border: "none", cursor: "pointer", opacity: 0, transform: "translateY(20px)", transition: "opacity 0.5s cubic-bezier(0.16,1,0.3,1) 330ms, transform 0.5s cubic-bezier(0.16,1,0.3,1) 330ms" }} className={mobileOpen ? "mobile-nav-visible" : ""}>

@@ -1,23 +1,74 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>ywee — Considered Clothing</title>    
-    <meta name="description" content="YWEE — Premium Cotton-Lycra stretch denim for girls aged 1 to 14. Adjustable waistband, free delivery across India. Made in Surat.">
-    <meta name="theme-color" content="#F4EFE6">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23F4EFE6'>y</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Default meta — pages override via <Meta /> -->
+    <title>ywee — Considered Clothing</title>
+    <meta name="description" content="ywee — premium Cotton-Lycra stretch denim for girls aged 1 to 14. Adjustable waistband, free delivery across India. Made in Surat." />
+    <meta name="theme-color" content="#F4EFE6" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Open Graph defaults -->
+    <meta property="og:title" content="ywee — Considered Clothing" />
+    <meta property="og:description" content="Premium Cotton-Lycra stretch denim for girls aged 1 to 14. Made in Surat, India." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ywee" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ywee" />
+
+    <!-- Preconnect + preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,30..100,0..1;1,9..144,300..500,30..100,0..1&family=Geist:wght@300..600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet" />
+
+    <!-- Brand favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-style='italic' fill='%23F4EFE6'>y</text></svg>" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231A1916'/><text x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-style='italic' fill='%23F4EFE6'>y</text></svg>" />
+
+    <!-- Avoid white flash before bundle hydrates -->
+    <style>
+      html, body {
+        background: #F4EFE6;
+        margin: 0;
+        padding: 0;
+        font-family: "Geist", system-ui, -apple-system, sans-serif;
+        color: #1A1916;
+        overflow-x: clip;
+      }
+      body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+      #root { isolation: isolate; min-height: 100dvh; }
+      img { max-width: 100%; display: block; }
+      *, *::before, *::after { box-sizing: border-box; }
+      ::selection { background: #1A1916; color: #F4EFE6; }
+    </style>
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ywee",
+        "url": "https://ywee.in",
+        "description": "Premium Cotton-Lycra stretch denim for girls aged 1 to 14, made in Surat, India.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Surat", "addressRegion": "Gujarat", "addressCountry": "IN" }
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <div style="padding: 40px; text-align: center; font-family: Georgia, serif; font-style: italic;">
+        ywee requires JavaScript. Please enable it in your browser to continue.
+      </div>
+    </noscript>
   </body>
-
 </html>

@@ -118,3 +118,6 @@ api/index.js
 
 # Intermediate download files
 *_main.jpg
+
+# OneDrive raw asset import (regenerated locally; do not commit 1.3GB)
+OneDrive_*.zip

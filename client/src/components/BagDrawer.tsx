@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { useBag } from "@/contexts/BagContext";
 import { X, Minus, Plus } from "lucide-react";
-import { PRODUCTS } from "@/data/store";
+import { PRODUCTS, imageSrc } from "@/data/store";
 
 const FREE_SHIPPING_THRESHOLD = 999;
 
@@ -30,10 +30,10 @@ export default function BagDrawer() {
   const remaining = Math.max(0, FREE_SHIPPING_THRESHOLD - subtotal);
   const progress = Math.min(100, (subtotal / FREE_SHIPPING_THRESHOLD) * 100);
 
-  // Suggested items (not in bag, same category as first bag item)
-  const bagCategories = items.map(i => i.product.category);
+  // Suggested items (not in bag, same family as first bag item)
+  const bagFamilies = items.map(i => i.product.family);
   const suggestions = PRODUCTS
-    .filter(p => !items.find(i => i.product.id === p.id) && bagCategories.includes(p.category))
+    .filter(p => !items.find(i => i.product.id === p.id) && (bagFamilies.length === 0 || bagFamilies.includes(p.family)))
     .slice(0, 3);
 
   return (
@@ -128,7 +128,7 @@ export default function BagDrawer() {
                       {/* Image */}
                       <Link href={`/product/${product.slug}`} onClick={closeBag}>
                         <div style={{ aspectRatio: "3/4", overflow: "hidden", background: "var(--paper-warm)" }}>
-                          <img src={product.imgPortrait} alt={product.alt}
+                          <img src={imageSrc(product, 0, 480)} alt={product.alt}
                             style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.6s" }}
                             onMouseEnter={e => ((e.currentTarget as HTMLElement).style.transform = "scale(1.05)")}
                             onMouseLeave={e => ((e.currentTarget as HTMLElement).style.transform = "scale(1)")}
@@ -191,7 +191,7 @@ export default function BagDrawer() {
                       <div key={p.id} style={{ flexShrink: 0, width: "90px" }}>
                         <Link href={`/product/${p.slug}`} onClick={closeBag}>
                           <div style={{ aspectRatio: "3/4", overflow: "hidden", background: "var(--paper-warm)", marginBottom: "6px" }}>
-                            <img src={p.imgPortrait} alt={p.alt} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.5s" }}
+                            <img src={imageSrc(p, 0, 480)} alt={p.alt} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.5s" }}
                               onMouseEnter={e => ((e.currentTarget as HTMLElement).style.transform = "scale(1.06)")}
                               onMouseLeave={e => ((e.currentTarget as HTMLElement).style.transform = "scale(1)")} />
                           </div>

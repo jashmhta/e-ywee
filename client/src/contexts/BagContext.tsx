@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback } from "react";
+import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
 import type { Product } from "@/data/store";
 
 export interface BagItem {
@@ -21,10 +21,30 @@ interface BagContextValue {
 }
 
 const BagContext = createContext<BagContextValue | null>(null);
+const STORAGE_KEY = "ywee:bag:v1";
+
+function loadBag(): BagItem[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
 
 export function BagProvider({ children }: { children: React.ReactNode }) {
-  const [items, setItems] = useState<BagItem[]>([]);
+  const [items, setItems] = useState<BagItem[]>(loadBag);
   const [isOpen, setIsOpen] = useState(false);
+
+  // Persist bag to localStorage on every change
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    } catch {
+      /* ignore quota errors */
+    }
+  }, [items]);
 
   const openBag = useCallback(() => setIsOpen(true), []);
   const closeBag = useCallback(() => setIsOpen(false), []);
@@ -36,7 +56,7 @@ export function BagProvider({ children }: { children: React.ReactNode }) {
         return prev.map(i =>
           i.product.id === product.id && i.size === size
             ? { ...i, quantity: i.quantity + quantity }
-            : i
+            : i,
         );
       }
       return [...prev, { product, size, quantity }];
@@ -54,8 +74,8 @@ export function BagProvider({ children }: { children: React.ReactNode }) {
     } else {
       setItems(prev =>
         prev.map(i =>
-          i.product.id === productId && i.size === size ? { ...i, quantity } : i
-        )
+          i.product.id === productId && i.size === size ? { ...i, quantity } : i,
+        ),
       );
     }
   }, []);

@@ -1,5 +1,7 @@
 import { useEffect, useState, useCallback, useRef } from "react";
-import { HERO_POSTER, HERO_VIDEO } from "@/data/store";
+import { HERO_POSTER } from "@/data/store";
+
+const HERO_VIDEO = "";
 
 /**
  * YweeLoader — Premium brand loader
