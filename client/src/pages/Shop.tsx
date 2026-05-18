@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams, useSearch } from "wouter";
-import { PRODUCTS, COLLECTIONS } from "@/data/store";
+import { PRODUCTS_PUBLIC as PRODUCTS, COLLECTIONS } from "@/data/store";
 import { ProductCard } from "@/components/ProductCard";
 import { Meta } from "@/components/system/Meta";
 

@@ -12,26 +12,50 @@ import { UGCFeed } from "@/components/UGCFeed";
 import { RecentlyViewedRail } from "@/components/RecentlyViewedRail";
 
 // ─── Curation ─────────────────────────────────────────────────────────────
+// Featured: hero motifs that read instantly on a thumbnail (rainbow patches,
+// embroidered scripts, silver chain yokes). Pulled from QC-passed v2 catalog.
 const FEATURED_SLUGS = [
-  "yw126-light-wash", "yw073-dark-indigo", "yw081-onyx-black",
-  "yw123-embroidered", "yw131-light-wash", "yw188-dark-indigo",
-  "yw232-light-wash", "yw228-light-wash",
+  "yw004-original",       // SKU01 — GOOD VIBES rainbow + YEEZEE 722
+  "yw124-dark-indigo",    // SKU10 — HUG smiley + frayed flare
+  "yw124-light-wash",     // SKU11 — HUG smiley light wash
+  "yw174-dark-indigo",    // SKU27 — DONUT STOP DREAMING + HOPE
+  "yw126-dark-indigo",    // SKU14 — bunny + heart-love charm skort
+  "yw037-rinse-wash",     // SKU15 — happiness GORGEOUS YOU sequin
+  "yw073-dark-indigo",    // SKU29 — wide-leg cargo with YZ rhinestone
+  "yw131-dark-indigo",    // SKU33 — rainbow + cloud applique
 ];
 
+// Trending: 3-button hi-waist + cursive scripts, the second wave to watch.
 const TRENDING_SLUGS = [
-  "yw174-dark-indigo", "yw174-light-wash", "yw131-dark-indigo", "yw132-dark-indigo",
-  "yw037-rinse-wash", "yw028-light-wash", "yw023-dark-indigo", "yw124-dark-indigo",
-  "yw126-dark-indigo", "yw125-light-wash", "yw005-light-wash",
+  "yw005-dark-indigo",    // SKU02 — Lovely Girl heart-hands
+  "yw005-light-wash",     // SKU03 — same in light wash
+  "yw007-dark-indigo",    // SKU05 — Forever Hearts dark
+  "yw007-light-wash",     // SKU06 — Forever Hearts light
+  "yw023-dark-indigo",    // SKU32 — rainbow cloud dark wide-leg
+  "yw032-light-wash",     // SKU41 — Pretty Heart fluffy patch
+  "yw046-dark-indigo",    // SKU48 — chain-yoke slim/straight
+  "yw046-light-wash",     // SKU49 — chain-yoke light slim/straight
+  "yw132-dark-indigo",    // SKU34 — placeholder until skip lifted
+  "yw181-light-wash",     // SKU50 — happy smiley wide-leg
 ];
 
+// Bestsellers: signature pieces with the loudest motifs (storyboards well).
 const BESTSELLER_SLUGS = [
-  "yw123-embroidered", "yw123-embellished-c", "yw123-embellished-b",
-  "yw081-onyx-black", "yw098-onyx-black", "yw236-onyx-black",
-  "yw126-light-wash", "yw073-dark-indigo",
+  "yw123-embroidered",    // SKU07 — bunny embroidery
+  "yw123-embellished-b",  // SKU08 — butterfly + ribbon stripes
+  "yw123-embellished-c",  // SKU09 — two-tone with side panels
+  "yw131-light-wash",     // SKU33 light variant — rainbow cloud
+  "yw188-dark-indigo",    // SKU46 — Magic unicorn dark wide-leg
+  "yw228-light-wash",     // SKU31 (restricted — may filter)
+  "yw174-light-wash",     // SKU28 — DONUT STOP DREAMING light
+  "yw188-light-wash",     // SKU47 — SKY rainbow cuffed shorts
 ];
 
+// Drop any restricted SKUs (IP-flagged or skip-list) from the public surface.
 function pick(slugs: string[]) {
-  return slugs.map((s) => PRODUCTS.find((p) => p.slug === s)).filter(Boolean) as typeof PRODUCTS;
+  return slugs
+    .map((s) => PRODUCTS.find((p) => p.slug === s))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p) && !p!.restricted);
 }
 
 // ─── Hero ─────────────────────────────────────────────────────────────────
@@ -135,7 +159,7 @@ function Hero() {
             textShadow: "0 1px 4px rgba(0,0,0,0.5)",
           }}
         >
-          Girls' stretch denim · Ages 1–14 · Made in Surat
+          Indian girls' denim · Sizes 1–13 · 44 styles in stretch cotton
         </p>
         <h1
           ref={heroTitleRef}

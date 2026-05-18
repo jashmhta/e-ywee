@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
 import { Search, X } from "lucide-react";
-import { PRODUCTS, COLLECTIONS, imageSrc } from "@/data/store";
+import { PRODUCTS_PUBLIC as PRODUCTS, COLLECTIONS, imageSrc } from "@/data/store";
 import { useCurrency } from "@/contexts/CurrencyContext";
 
 interface SearchOverlayProps {

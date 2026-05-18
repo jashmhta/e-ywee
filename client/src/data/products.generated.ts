@@ -27,6 +27,8 @@ export interface Product {
   description: string;
   alt: string;
   images: ProductImage[];
+  restricted?: boolean;
+  restrictedReason?: "IP_FLAG" | "SKIP_LIST";
 }
 
 export const PRODUCTS: Product[] = [
@@ -36,7 +38,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw004-original",
     "style": "YW004",
     "pNum": 1,
-    "name": "Mist Wash Tapered Jeans",
+    "name": "GOOD VIBES Mid Indigo Wide-Leg Jeans",
     "family": "Light Wash",
     "cut": "Tapered",
     "color": "Mist Wash",
@@ -53,8 +55,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich mist wash in our premium Cotton-Lycra blend. Tapered fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Mist Wash Tapered Jeans — girls' Cotton-Lycra stretch denim, mist wash.",
+    "description": "Mid indigo wide-leg jeans in soft cotton-stretch denim, styled with the signature GOOD VIBES detail. Built for play, made for posts.",
+    "alt": "YWEE GOOD VIBES Mid Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -168,7 +170,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQABAAAsBMJagCdADwoQDaZcgA/vKTVhdyBCJ/iDEC3qWFqRTAmJifaacEUMI4XbpCcjzjxDOn9B/DzoLYhPrDHLZpFfU0qaAAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 2,
@@ -176,7 +179,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw005-light-wash",
     "style": "YW005",
     "pNum": 2,
-    "name": "Pearl Wash Bootcut Jeans",
+    "name": "YZ Rhinestone Light Wash Slim Jeans",
     "family": "Light Wash",
     "cut": "Bootcut",
     "color": "Pearl Wash",
@@ -193,8 +196,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pearl wash in our premium Cotton-Lycra. Bootcut cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pearl Wash Bootcut Jeans — girls' Cotton-Lycra stretch denim, pearl wash.",
+    "description": "Light wash slim jeans in soft cotton-stretch denim, styled with the signature YZ Rhinestone detail. Built for play, made for posts.",
+    "alt": "YWEE YZ Rhinestone Light Wash Slim Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -308,7 +311,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQABAAAsBMJYgCdAD0jPJytoAA/vqsPZoiTlJaAB+15Vs3/XVzBUqIaGFwsOjnqOOS5XIC3662HO3uO5DiKAAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 3,
@@ -316,7 +320,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw005-dark-indigo",
     "style": "YW005",
     "pNum": 3,
-    "name": "Royal Indigo Bootcut Jeans",
+    "name": "Lovely Girl Dark Indigo Slim Jeans",
     "family": "Dark Indigo",
     "cut": "Bootcut",
     "color": "Royal Indigo",
@@ -333,8 +337,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich royal indigo in our premium Cotton-Lycra blend. Bootcut fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Royal Indigo Bootcut Jeans — girls' Cotton-Lycra stretch denim, royal indigo.",
+    "description": "Dark indigo slim jeans in soft cotton-stretch denim, styled with the signature Lovely Girl detail. Built for play, made for posts.",
+    "alt": "YWEE Lovely Girl Dark Indigo Slim Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -476,7 +480,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJQBOj+ADG6pL9nmZtAD++q3ES41AzYQj+cZMXmTFm4P8GsFaadn0tjskGq5J0a/F9CMrNr+5aWCGWyXi62ykKeKAmMFOlIn40LkHvuzkAH6Uy1IpnBLNfGTsSXPu2fXToMJYAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 4,
@@ -484,7 +489,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw006-dark-indigo",
     "style": "YW006",
     "pNum": 4,
-    "name": "Indigo Skinny Jeans",
+    "name": "Dark Indigo Slim Jeans",
     "family": "Dark Indigo",
     "cut": "Skinny",
     "color": "Indigo",
@@ -501,8 +506,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich indigo in our premium Cotton-Lycra blend. Skinny fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Indigo Skinny Jeans — girls' Cotton-Lycra stretch denim, indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -644,7 +649,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQABAAAsBMJYgCdAEblfVMFgAA/vqtxCCPmaaww2NLtXvkqH4E2NqfsI8otr4RhpkobkkRT1jHXt50/Pr82O0xYmx+4mJXgWnPt74P1DE2xBVgidfa75+/AAA="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 5,
@@ -652,7 +659,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw007-dark-indigo",
     "style": "YW007",
     "pNum": 5,
-    "name": "Midnight Indigo Cropped Jeans",
+    "name": "Lovely Girl Dark Indigo Bootcut Jeans",
     "family": "Dark Indigo",
     "cut": "Cropped",
     "color": "Midnight Indigo",
@@ -669,8 +676,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich midnight indigo in our premium Cotton-Lycra blend. Cropped fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Midnight Indigo Cropped Jeans — girls' Cotton-Lycra stretch denim, midnight indigo.",
+    "description": "Dark indigo bootcut jeans in soft cotton-stretch denim, styled with the signature Lovely Girl detail. Built for play, made for posts.",
+    "alt": "YWEE Lovely Girl Dark Indigo Bootcut Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -812,7 +819,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQABAAAsBMJQBOj+ADIwmn1/oAAP76rcZ4Jv65VyL3xHvn3Xe0+1znx+wVmGqyrWIIYND7JT31tmfkgAmxtCDpZ9ywAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 6,
@@ -820,7 +828,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw007-light-wash",
     "style": "YW007",
     "pNum": 6,
-    "name": "Sky Wash Cropped Jeans",
+    "name": "Forever Hearts Light Wash Bootcut Jeans",
     "family": "Light Wash",
     "cut": "Cropped",
     "color": "Sky Wash",
@@ -837,8 +845,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy sky wash in our premium Cotton-Lycra. Cropped cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Sky Wash Cropped Jeans — girls' Cotton-Lycra stretch denim, sky wash.",
+    "description": "Light wash bootcut jeans in soft cotton-stretch denim, styled with the signature Forever Hearts detail. Built for play, made for posts.",
+    "alt": "YWEE Forever Hearts Light Wash Bootcut Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -952,7 +960,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQABAAAsBMJYgCdADGWg1wAP76rL/pDrmhqqnFNowi+HmlLE+SGsT3ohhpfzYFv/fCtoshadiZdXi8qRYNIAA2RaAAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 7,
@@ -960,7 +969,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw015-dark-indigo",
     "style": "YW015",
     "pNum": 7,
-    "name": "Atlantic Indigo Bootcut Jeans",
+    "name": "Dark Indigo Jeans",
     "family": "Dark Indigo",
     "cut": "Bootcut",
     "color": "Atlantic Indigo",
@@ -977,8 +986,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich atlantic indigo in our premium Cotton-Lycra blend. Bootcut fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Atlantic Indigo Bootcut Jeans — girls' Cotton-Lycra stretch denim, atlantic indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -1092,7 +1101,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQABAAAsBMJQBOj+ADImPY8RrCAP76reHBjX5W8kt6YvwQmQ3mxfye1G+rt/41OkOLZaEd51j1L3j8Zwo+tsz8kAd9hN6kMgFq8ZAA"
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 8,
@@ -1100,7 +1111,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw015-light-wash",
     "style": "YW015",
     "pNum": 8,
-    "name": "Cloud Wash Bootcut Jeans",
+    "name": "Light Wash Jeans",
     "family": "Light Wash",
     "cut": "Bootcut",
     "color": "Cloud Wash",
@@ -1117,8 +1128,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy cloud wash in our premium Cotton-Lycra. Bootcut cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Cloud Wash Bootcut Jeans — girls' Cotton-Lycra stretch denim, cloud wash.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -1232,7 +1243,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQABAAAsBMJYwCdH8AE7BW0sQsAAD++q35nFV+pg8BVYj6tuWtd2KV9O/XFvBdAfQeZN3CHwRyP0FKrlSEN3iU99bZYAS6OpN6cQjFW0AAAA=="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 9,
@@ -1240,7 +1253,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw023-light-wash",
     "style": "YW023",
     "pNum": 9,
-    "name": "Pearl Wash Straight Jeans",
+    "name": "Rainbow Cloud Mid Indigo Wide-Leg Jeans",
     "family": "Light Wash",
     "cut": "Straight",
     "color": "Pearl Wash",
@@ -1257,8 +1270,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pearl wash in our premium Cotton-Lycra. Straight cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pearl Wash Straight Jeans — girls' Cotton-Lycra stretch denim, pearl wash.",
+    "description": "Mid indigo wide-leg jeans in soft cotton-stretch denim, styled with the signature Rainbow Cloud detail. Built for play, made for posts.",
+    "alt": "YWEE Rainbow Cloud Mid Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -1372,7 +1385,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQABAAAsBMJZACdEf/gWNEdCxoYAD++jZhzvK3BRMdouJR9mjUDXh7CUrYPX2+u0Ew/ym+xm4ab5Zj1x5SdLqI0mMUICXh/yAKkxGRAxqDp84A"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 10,
@@ -1380,7 +1394,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw023-dark-indigo",
     "style": "YW023",
     "pNum": 10,
-    "name": "Royal Indigo Straight Jeans",
+    "name": "Rainbow Cloud Dark Indigo Wide-Leg Jeans",
     "family": "Dark Indigo",
     "cut": "Straight",
     "color": "Royal Indigo",
@@ -1397,8 +1411,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich royal indigo in our premium Cotton-Lycra blend. Straight fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Royal Indigo Straight Jeans — girls' Cotton-Lycra stretch denim, royal indigo.",
+    "description": "Dark indigo wide-leg jeans in soft cotton-stretch denim, styled with the signature Rainbow Cloud detail. Built for play, made for posts.",
+    "alt": "YWEE Rainbow Cloud Dark Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -1512,7 +1526,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQABAAAsBMJQBOj+ACrv3CyWwA/vqt/4RkFvAeYbq72/pMb+A0BnoYbrySlq1g0fmhjJRWSg01krUZ7zsbPGegvPuWAAAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 11,
@@ -1520,7 +1535,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw025-dark-indigo",
     "style": "YW025",
     "pNum": 11,
-    "name": "Midnight Indigo Bootcut Jeans",
+    "name": "Love Applique Dark Indigo Capris",
     "family": "Dark Indigo",
     "cut": "Bootcut",
     "color": "Midnight Indigo",
@@ -1537,8 +1552,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich midnight indigo in our premium Cotton-Lycra blend. Bootcut fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Midnight Indigo Bootcut Jeans — girls' Cotton-Lycra stretch denim, midnight indigo.",
+    "description": "Dark indigo capris in soft cotton-stretch denim, styled with the signature Love Applique detail. Built for play, made for posts.",
+    "alt": "YWEE Love Applique Dark Indigo Capris — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -1652,7 +1667,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQABAAAsBMJQBOj+ACMnYl+QAA/vqt/fXLTT7mjU52uQ7oHHu+KS/dUpmpxsN5AcRVm0BKxsXWMFi5Lq+O4csZgoVKdFfFHLOXCDcfAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 12,
@@ -1660,7 +1676,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw028-dark-indigo",
     "style": "YW028",
     "pNum": 12,
-    "name": "Cobalt Indigo Mom-Fit Jeans",
+    "name": "Dark Indigo Jeans",
     "family": "Dark Indigo",
     "cut": "Mom-Fit",
     "color": "Cobalt Indigo",
@@ -1677,8 +1693,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich cobalt indigo in our premium Cotton-Lycra blend. Mom-Fit fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Cobalt Indigo Mom-Fit Jeans — girls' Cotton-Lycra stretch denim, cobalt indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -1820,7 +1836,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQABAAAsBMJZACdH8GJ/gWQn7AHgAA/vqt/4N8lnhWRP3qPZfAbaXxATvOsVpxBnAt6AeDpfSznw5+7nxzVwX1imHvOsU7juNBYsuc+7eAVgQHpRK8LlcfUHtw0+YAAAA="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 13,
@@ -1828,7 +1846,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw028-light-wash",
     "style": "YW028",
     "pNum": 13,
-    "name": "Mist Wash Mom-Fit Jeans",
+    "name": "Butterfly Light Wash Jeans",
     "family": "Light Wash",
     "cut": "Mom-Fit",
     "color": "Mist Wash",
@@ -1845,8 +1863,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy mist wash in our premium Cotton-Lycra. Mom-Fit cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Mist Wash Mom-Fit Jeans — girls' Cotton-Lycra stretch denim, mist wash.",
+    "description": "Light wash jeans in soft cotton-stretch denim, styled with the signature Butterfly detail. Built for play, made for posts.",
+    "alt": "YWEE Butterfly Light Wash Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -1988,7 +2006,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQABAAAsBMJQBOgBjT1p/oAAD++q3zhpTsttdmrb+PP39h/z+5g+k39O5CfAkL3JX2f1owzjtDghYfsTCjW7b427mgRw4ySWcEpGbVzxawAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 14,
@@ -1996,7 +2015,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw031-dark-indigo",
     "style": "YW031",
     "pNum": 14,
-    "name": "Midnight Indigo Wide-Leg Jeans",
+    "name": "Dark Indigo Wide-Leg Jeans",
     "family": "Dark Indigo",
     "cut": "Wide-Leg",
     "color": "Midnight Indigo",
@@ -2013,8 +2032,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich midnight indigo in our premium Cotton-Lycra blend. Wide-Leg fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Midnight Indigo Wide-Leg Jeans — girls' Cotton-Lycra stretch denim, midnight indigo.",
+    "description": "Dark indigo wide-leg jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Dark Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -2128,7 +2147,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQABAAAsBMJQBOj+ACrv1BfMAA/vqt/3Oad2vs83+fu2u1qoxW8rocQ2OMsVVvdoS37PlfoK2piaBwKnPWEpOb9JFt5dcupKHD3SAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 15,
@@ -2136,7 +2156,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw032-light-wash",
     "style": "YW032",
     "pNum": 15,
-    "name": "Sand Wash Flare Jeans",
+    "name": "Mid Indigo Jeans",
     "family": "Light Wash",
     "cut": "Flare",
     "color": "Sand Wash",
@@ -2153,8 +2173,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy sand wash in our premium Cotton-Lycra. Flare cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Sand Wash Flare Jeans — girls' Cotton-Lycra stretch denim, sand wash.",
+    "description": "Mid indigo jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Mid Indigo Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -2268,7 +2288,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAAsBMJZACdEf/gfy36ZrY4AD++qsl08yGHSxK68Vhz9SftOd10xh9qaAM0NtDzMFpSbbkAy2ikOFHtwJxB33dWFG23P0BxrMyqlV0ZGrSsNha9QAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 16,
@@ -2276,7 +2297,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw030-dark-indigo",
     "style": "YW030",
     "pNum": 16,
-    "name": "Indigo Slim Jeans",
+    "name": "Dark Indigo Capris",
     "family": "Dark Indigo",
     "cut": "Slim",
     "color": "Indigo",
@@ -2293,8 +2314,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich indigo in our premium Cotton-Lycra blend. Slim fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Indigo Slim Jeans — girls' Cotton-Lycra stretch denim, indigo.",
+    "description": "Dark indigo capris in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Dark Indigo Capris — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -2408,7 +2429,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAQCdASoQABAAAsBMJQBOgBi9BvQMAP76rf7svBJ+CM5P1JEjRfvsrrGf3plqcUPLDWGT3EEU4y2gaNUu6TN+QRXEZbfrgq3QDEusdHKUlyuNJMmKJc8Wia3yjU1TEUAAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 17,
@@ -2416,7 +2438,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw033-dark-indigo",
     "style": "YW033",
     "pNum": 17,
-    "name": "Atlantic Indigo Straight Jeans",
+    "name": "Dark Indigo Wide-Leg Jeans",
     "family": "Dark Indigo",
     "cut": "Straight",
     "color": "Atlantic Indigo",
@@ -2433,8 +2455,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich atlantic indigo in our premium Cotton-Lycra blend. Straight fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Atlantic Indigo Straight Jeans — girls' Cotton-Lycra stretch denim, atlantic indigo.",
+    "description": "Dark indigo wide-leg jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Dark Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -2548,7 +2570,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQABAAAsBMJQBOgCNC0x5d1wAA/vqtxmaOH7sjrz+9L9Zmk+uq5gsce+y7aXeDb5m/DIN4PbljMGl+BaeuAAAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 18,
@@ -2556,7 +2579,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw036-light-wash",
     "style": "YW036",
     "pNum": 18,
-    "name": "Pebble Wash Skinny Jeans",
+    "name": "Butterfly Dark Indigo Wide-Leg Jeans",
     "family": "Light Wash",
     "cut": "Skinny",
     "color": "Pebble Wash",
@@ -2573,8 +2596,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pebble wash in our premium Cotton-Lycra. Skinny cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pebble Wash Skinny Jeans — girls' Cotton-Lycra stretch denim, pebble wash.",
+    "description": "Dark indigo wide-leg jeans in soft cotton-stretch denim, styled with the signature Butterfly detail. Built for play, made for posts.",
+    "alt": "YWEE Butterfly Dark Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -2716,7 +2739,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQABAAAsBMJQBOj+ADImL+r5LuAAD++q3hyWj3xNzJy9YsUsBSwMpX+d+zjOG3ohNpgWmj059vYXv4wpV4uxuv8jh9HBYAAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 19,
@@ -2724,7 +2748,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw037-dark-indigo",
     "style": "YW037",
     "pNum": 19,
-    "name": "Midnight Indigo Cropped Jeans",
+    "name": "Rainbow Cloud Dark Indigo Slim Straight Jeans",
     "family": "Dark Indigo",
     "cut": "Cropped",
     "color": "Midnight Indigo",
@@ -2741,8 +2765,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich midnight indigo in our premium Cotton-Lycra blend. Cropped fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Midnight Indigo Cropped Jeans — girls' Cotton-Lycra stretch denim, midnight indigo.",
+    "description": "Dark indigo slim straight jeans in soft cotton-stretch denim, styled with the signature Rainbow Cloud detail. Built for play, made for posts.",
+    "alt": "YWEE Rainbow Cloud Dark Indigo Slim Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -2884,7 +2908,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJQBOj+AQUBi9UiBIQyAA/vqtxiqcRpirEZOwWzzQQbZz9jPRSMoSNaIWumfnesT595LpMEE2XtecQKvVQ5YVCVeXQc4nncI7yJl7W4A4tXDsfdQzkFk5BDMpLcAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 20,
@@ -2892,7 +2917,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw037-rinse-wash",
     "style": "YW037",
     "pNum": 20,
-    "name": "Studio Rinse Cropped Jeans",
+    "name": "Indigo Slim Straight Jeans",
     "family": "Rinse",
     "cut": "Cropped",
     "color": "Studio Rinse",
@@ -2909,8 +2934,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Crisp studio rinse in premium Cotton-Lycra stretch denim. Clean cropped silhouette with the signature adjustable waistband.",
-    "alt": "YWEE Studio Rinse Cropped Jeans — girls' Cotton-Lycra stretch denim, studio rinse.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -3024,7 +3049,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJYwCdH8AGN1SIFETmgAA/vqt+ZrV/yK7qVZBMeyYy3+2HzR9Z+kp+Awz1ukebrNl2Bd41nLTck5UzOf5PlPFAQerbwzTmUDvgwfnN66G54owZt1XEQmuZluiuwAA"
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 21,
@@ -3032,7 +3059,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw039-dark-indigo",
     "style": "YW039",
     "pNum": 21,
-    "name": "Atlantic Indigo Carpenter Jeans",
+    "name": "YZ Rhinestone Dark Indigo Capris",
     "family": "Dark Indigo",
     "cut": "Carpenter",
     "color": "Atlantic Indigo",
@@ -3049,8 +3076,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich atlantic indigo in our premium Cotton-Lycra blend. Carpenter fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Atlantic Indigo Carpenter Jeans — girls' Cotton-Lycra stretch denim, atlantic indigo.",
+    "description": "Dark indigo capris in soft cotton-stretch denim, styled with the signature YZ Rhinestone detail. Built for play, made for posts.",
+    "alt": "YWEE YZ Rhinestone Dark Indigo Capris — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -3164,7 +3191,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQABAAAsBMJQBOj+ACrwgnd4tTlAD++q3/vlL9pW8JOlf9bOhOnFZXe0yOYVkvwpsa+wWVJ7vA0+e4IWiafcgSEHHZDVMJ4wq33Tq+KBqn+GCE+RB4SislBprJWxdskElnBKC2AAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 22,
@@ -3172,7 +3200,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw041-light-wash",
     "style": "YW041",
     "pNum": 22,
-    "name": "Pearl Wash Wide-Leg Jeans",
+    "name": "Rainbow Cloud Mid Indigo Shorts",
     "family": "Light Wash",
     "cut": "Wide-Leg",
     "color": "Pearl Wash",
@@ -3189,8 +3217,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pearl wash in our premium Cotton-Lycra. Wide-Leg cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pearl Wash Wide-Leg Jeans — girls' Cotton-Lycra stretch denim, pearl wash.",
+    "description": "Mid indigo shorts in soft cotton-stretch denim, styled with the signature Rainbow Cloud detail. Built for play, made for posts.",
+    "alt": "YWEE Rainbow Cloud Mid Indigo Shorts — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -3304,7 +3332,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQABAAAsBMJbACdADFFRBmAAD++q1/6FF/zCw3fCBzSHCcWnXnznxE3rbXDGAJSpDCdS7REBZHe8+xCZyrea9bb8hkPcCJA07U/kwCifavjvkFUAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 23,
@@ -3312,7 +3341,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw046-dark-indigo",
     "style": "YW046",
     "pNum": 23,
-    "name": "Cobalt Indigo Skinny Jeans",
+    "name": "Chain Yoke Dark Indigo Slim Straight Jeans",
     "family": "Dark Indigo",
     "cut": "Skinny",
     "color": "Cobalt Indigo",
@@ -3329,8 +3358,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich cobalt indigo in our premium Cotton-Lycra blend. Skinny fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Cobalt Indigo Skinny Jeans — girls' Cotton-Lycra stretch denim, cobalt indigo.",
+    "description": "Dark indigo slim straight jeans in soft cotton-stretch denim, styled with the signature Chain Yoke detail. Built for play, made for posts.",
+    "alt": "YWEE Chain Yoke Dark Indigo Slim Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -3444,7 +3473,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQAgCdASoQABAAAsBMJYwCdH8AFXlEki0KoBgA/vqt02NI0gAm9nShsAzrDsF32iJj4bdYSmeJDDxmEMTd+3lJ/O+sT8Kq+CgC+2N6Vnvi7HwZYEb7QipfY1voYi/KhReC3hgA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 24,
@@ -3452,7 +3482,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw046-light-wash",
     "style": "YW046",
     "pNum": 24,
-    "name": "Mist Wash Skinny Jeans",
+    "name": "Chain Yoke Light Wash Slim Straight Jeans",
     "family": "Light Wash",
     "cut": "Skinny",
     "color": "Mist Wash",
@@ -3469,8 +3499,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy mist wash in our premium Cotton-Lycra. Skinny cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Mist Wash Skinny Jeans — girls' Cotton-Lycra stretch denim, mist wash.",
+    "description": "Light wash slim straight jeans in soft cotton-stretch denim, styled with the signature Chain Yoke detail. Built for play, made for posts.",
+    "alt": "YWEE Chain Yoke Light Wash Slim Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -3584,7 +3614,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAgCdASoQABAAAsBMJYwCdH8AGAG8Dia5skAA/vqtWR1aIZXjgy6HgsbhaQ85T/goB+PCwKoQgKsy6CQTCpS236XRaX1uEgrfLY/QAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 25,
@@ -3592,7 +3623,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw047-dark-indigo",
     "style": "YW047",
     "pNum": 25,
-    "name": "Royal Indigo Cropped Jeans",
+    "name": "Dark Indigo Culotte",
     "family": "Dark Indigo",
     "cut": "Cropped",
     "color": "Royal Indigo",
@@ -3609,8 +3640,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich royal indigo in our premium Cotton-Lycra blend. Cropped fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Royal Indigo Cropped Jeans — girls' Cotton-Lycra stretch denim, royal indigo.",
+    "description": "Dark indigo culottes in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Dark Indigo Culotte — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -3724,7 +3755,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJYwCdH8AGN1POn5IVAAA/vo4mR9HT+yIynUAc0fX7RCvwqti41Pq+cY9gNS4qOxp5ze94dvROiaLaVk+P3rxJHXMtAaVe8bK+CbWp8vfo0YwAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 26,
@@ -3732,7 +3764,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw073-light-wash",
     "style": "YW073",
     "pNum": 26,
-    "name": "Sky Wash Straight Jeans",
+    "name": "Light Wash Bootcut Jeans",
     "family": "Light Wash",
     "cut": "Straight",
     "color": "Sky Wash",
@@ -3749,8 +3781,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy sky wash in our premium Cotton-Lycra. Straight cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Sky Wash Straight Jeans — girls' Cotton-Lycra stretch denim, sky wash.",
+    "description": "Light wash bootcut jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Light Wash Bootcut Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -3864,7 +3896,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoQABAAAsBMJZQCdH8AGBrqLZGAAP76rcDkujPOX68fjipNq7Ll7vAlRjlrXkDg52PRAAAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 27,
@@ -3872,7 +3905,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw073-dark-indigo",
     "style": "YW073",
     "pNum": 27,
-    "name": "Midnight Indigo Straight Jeans",
+    "name": "Dark Indigo Bootcut Jeans",
     "family": "Dark Indigo",
     "cut": "Straight",
     "color": "Midnight Indigo",
@@ -3889,8 +3922,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich midnight indigo in our premium Cotton-Lycra blend. Straight fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Midnight Indigo Straight Jeans — girls' Cotton-Lycra stretch denim, midnight indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -4004,7 +4037,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQABAAAsBMJYwCdH8AFN7QSYcAAP76rdQGj0DvVSBIXOIwEJBMIehc1TDReggs9y9ojVtD5ndK1b0RIboK+4q35uEgAA=="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 28,
@@ -4012,7 +4047,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw081-onyx-black",
     "style": "YW081",
     "pNum": 28,
-    "name": "Onyx Wide-Leg Jeans",
+    "name": "Butterfly Onyx Black Capris",
     "family": "Black",
     "cut": "Wide-Leg",
     "color": "Onyx",
@@ -4029,8 +4064,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Deep onyx in premium Cotton-Lycra stretch denim. Wide-Leg cut with the adjustable waistband, made in India by Generations Clothing.",
-    "alt": "YWEE Onyx Wide-Leg Jeans — girls' Cotton-Lycra stretch denim, onyx.",
+    "description": "Onyx black capris in soft cotton-stretch denim, styled with the signature Butterfly detail. Built for play, made for posts.",
+    "alt": "YWEE Butterfly Onyx Black Capris — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -4144,7 +4179,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQABAAAsBMJaQARAAJp6OtoJHUAAD++q3up9tWFEKKJl+85zCNcuzgow63F6vC3r78rquQdsorMihnvnCz+3uoZwtAImM0jJsJ//bgdpEa7BXtTWE6FAjS6H59mtkqMfv0QAAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 29,
@@ -4152,7 +4188,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw098-onyx-black",
     "style": "YW098",
     "pNum": 29,
-    "name": "Carbon Black Mom-Fit Jeans",
+    "name": "Onyx Black Capris",
     "family": "Black",
     "cut": "Mom-Fit",
     "color": "Carbon Black",
@@ -4169,8 +4205,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Deep carbon black in premium Cotton-Lycra stretch denim. Mom-Fit cut with the adjustable waistband, made in India by Generations Clothing.",
-    "alt": "YWEE Carbon Black Mom-Fit Jeans — girls' Cotton-Lycra stretch denim, carbon black.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -4284,7 +4320,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQABAAAsBMJaQAAv+q4vr6x3AA/vqt0T/9xV207p92Rz2V/FW73rff7O56xMonVqnAGLhaGrMgA+hhzVOnc9/7Ry5E9LK48xXbxWt2SgAAAA=="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 30,
@@ -4292,7 +4330,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw124-dark-indigo",
     "style": "YW124",
     "pNum": 30,
-    "name": "Cobalt Indigo Tapered Jeans",
+    "name": "HUG Smiley Dark Indigo Slim Straight Jeans",
     "family": "Dark Indigo",
     "cut": "Tapered",
     "color": "Cobalt Indigo",
@@ -4309,8 +4347,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich cobalt indigo in our premium Cotton-Lycra blend. Tapered fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Cobalt Indigo Tapered Jeans — girls' Cotton-Lycra stretch denim, cobalt indigo.",
+    "description": "Dark indigo slim straight jeans in soft cotton-stretch denim, styled with the signature HUG Smiley detail. Built for play, made for posts.",
+    "alt": "YWEE HUG Smiley Dark Indigo Slim Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -4424,7 +4462,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQABAAAsBMJQBOj+ACxx8/o/AA/vqt55IH98n71xqV7e4d3lroWLzo6dYA9b609W4cxFF8efF/CNl37k9KlVDlQ6PUyJiWsN2rRTAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 31,
@@ -4432,7 +4471,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw124-light-wash",
     "style": "YW124",
     "pNum": 31,
-    "name": "Mist Wash Tapered Jeans",
+    "name": "HUG Smiley Light Wash Wide-Leg Jeans",
     "family": "Light Wash",
     "cut": "Tapered",
     "color": "Mist Wash",
@@ -4449,8 +4488,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy mist wash in our premium Cotton-Lycra. Tapered cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Mist Wash Tapered Jeans — girls' Cotton-Lycra stretch denim, mist wash.",
+    "description": "Light wash wide-leg jeans in soft cotton-stretch denim, styled with the signature HUG Smiley detail. Built for play, made for posts.",
+    "alt": "YWEE HUG Smiley Light Wash Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -4564,7 +4603,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAgCdASoQABAAAsBMJYwCdH8AGN1TH1P8AAD++q3+FhwrwOipP1pniCn/LGRIOiaY4Z6eoQ1MdAAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 32,
@@ -4572,7 +4612,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw129-dark-indigo",
     "style": "YW129",
     "pNum": 32,
-    "name": "Atlantic Indigo Carpenter Jeans",
+    "name": "Dark Indigo Skort",
     "family": "Dark Indigo",
     "cut": "Carpenter",
     "color": "Atlantic Indigo",
@@ -4589,8 +4629,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich atlantic indigo in our premium Cotton-Lycra blend. Carpenter fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Atlantic Indigo Carpenter Jeans — girls' Cotton-Lycra stretch denim, atlantic indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -4704,7 +4744,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQABAAAsBMJYwC7ADwwXIWvv4AAP76qzfqVnP7uZ3Qe8AdrmyXyGOXpOErbBnClw2xkQV5XWqcvjqgke40qMX8MqDfwd3EIxhEPOGBxma4AA=="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 33,
@@ -4712,7 +4754,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw131-light-wash",
     "style": "YW131",
     "pNum": 33,
-    "name": "Pearl Wash Wide-Leg Jeans",
+    "name": "GORGEOUS YOU Light Wash Shorts",
     "family": "Light Wash",
     "cut": "Wide-Leg",
     "color": "Pearl Wash",
@@ -4729,8 +4771,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pearl wash in our premium Cotton-Lycra. Wide-Leg cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pearl Wash Wide-Leg Jeans — girls' Cotton-Lycra stretch denim, pearl wash.",
+    "description": "Light wash shorts in soft cotton-stretch denim, styled with the signature GORGEOUS YOU detail. Built for play, made for posts.",
+    "alt": "YWEE GORGEOUS YOU Light Wash Shorts — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -4844,7 +4886,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQABAAAsBMJQBOj+ADADbUmAwAAP76qRzj0Wcd1R9zaGXoEVH3kF2u9uCUif8FjnujPxRt465+3ZhhAMaWMlKGzAmAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 34,
@@ -4852,7 +4895,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw131-dark-indigo",
     "style": "YW131",
     "pNum": 34,
-    "name": "Royal Indigo Wide-Leg Jeans",
+    "name": "GORGEOUS YOU Dark Indigo Shorts",
     "family": "Dark Indigo",
     "cut": "Wide-Leg",
     "color": "Royal Indigo",
@@ -4869,8 +4912,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich royal indigo in our premium Cotton-Lycra blend. Wide-Leg fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Royal Indigo Wide-Leg Jeans — girls' Cotton-Lycra stretch denim, royal indigo.",
+    "description": "Dark indigo shorts in soft cotton-stretch denim, styled with the signature GORGEOUS YOU detail. Built for play, made for posts.",
+    "alt": "YWEE GORGEOUS YOU Dark Indigo Shorts — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -4984,7 +5027,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoQABAAAsBMJYwCdIIjGAEfDzZ8QAAA/vqsVSXyJ8yVt/yxLMEcWnUTON1vV1mjqG4Yn4p33SEdW3Oitq7BT2qqqgOt7Pfgu8HL83koAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 35,
@@ -4992,7 +5036,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw132-dark-indigo",
     "style": "YW132",
     "pNum": 35,
-    "name": "Indigo Flare Jeans",
+    "name": "Dark Indigo Skort",
     "family": "Dark Indigo",
     "cut": "Flare",
     "color": "Indigo",
@@ -5009,8 +5053,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich indigo in our premium Cotton-Lycra blend. Flare fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Indigo Flare Jeans — girls' Cotton-Lycra stretch denim, indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -5124,7 +5168,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABwAgCdASoQABAAAsBMJZQCdIHAGAPm8ze0RA4gAP76rGwhiQlRnUwx+S5U2Z/mQnArP8pIYA9kP0vKFXfy0RXcwDr+Ph7r9SWAfSqCd/eIXexGMlAAAA=="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   },
   {
     "id": 36,
@@ -5132,7 +5178,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw126-dark-indigo",
     "style": "YW126",
     "pNum": 36,
-    "name": "Indigo Skinny Jeans",
+    "name": "Dark Indigo Skort",
     "family": "Dark Indigo",
     "cut": "Skinny",
     "color": "Indigo",
@@ -5149,8 +5195,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich indigo in our premium Cotton-Lycra blend. Skinny fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Indigo Skinny Jeans — girls' Cotton-Lycra stretch denim, indigo.",
+    "description": "Dark indigo skort in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Dark Indigo Skort — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -5264,7 +5310,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJZQCdIMgFXoKV3m31QAA/vqtjn+Ut40ifCvTenEn7N/fa6jNE4WJLu18wszTOHhaHwgHp7ETSI42cVm5wC0HbFXz5Lz5vOZKnnjevEqAvvy6I7AAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 37,
@@ -5272,7 +5319,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw126-light-wash",
     "style": "YW126",
     "pNum": 37,
-    "name": "Pebble Wash Skinny Jeans",
+    "name": "Light Wash Skort",
     "family": "Light Wash",
     "cut": "Skinny",
     "color": "Pebble Wash",
@@ -5289,8 +5336,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pebble wash in our premium Cotton-Lycra. Skinny cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pebble Wash Skinny Jeans — girls' Cotton-Lycra stretch denim, pebble wash.",
+    "description": "Light wash skort in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Light Wash Skort — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -5404,7 +5451,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoQABAAAsBMJYgCdGaA2wAGXK0pC7AAAP76rfTDoH+/0DdPhA3R0LLQel6IY6lEVMWpoprpOYNM7zl2WOrA3t+/TSRf9xoLF1bfxI8f0ZH/4o7/5ldAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 38,
@@ -5412,7 +5460,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw123-embroidered",
     "style": "YW123",
     "pNum": 38,
-    "name": "Bloom Atelier Jeans",
+    "name": "Butterfly Dark Indigo Slim Straight Jeans",
     "family": "Embellished",
     "cut": "Straight",
     "color": "Bloom",
@@ -5429,8 +5477,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Hand-finished bloom detailing on premium Cotton-Lycra stretch denim. Straight silhouette with the signature adjustable waistband — no compromise on fit, ever.",
-    "alt": "YWEE Bloom Atelier Jeans — girls' Cotton-Lycra stretch denim, bloom.",
+    "description": "Dark indigo slim straight jeans in soft cotton-stretch denim, styled with the signature Butterfly detail. Built for play, made for posts.",
+    "alt": "YWEE Butterfly Dark Indigo Slim Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -5544,7 +5592,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQABAAAsBMJZQCdIIjFXd9e2YAAP76qa/uhkb6zfhQaoA6DV18R8x6N7yEbSGezomLQL3TH/qcOX0400zDfGap85lTiJsT0q9T6OUMS8f1w5M3jtxOGboptAatqPKEk51wAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 39,
@@ -5552,7 +5601,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw123-embellished-b",
     "style": "YW123",
     "pNum": 39,
-    "name": "Crystal Atelier Jeans",
+    "name": "YEEZEE Onyx Black Slim Jeans",
     "family": "Embellished",
     "cut": "Straight",
     "color": "Crystal",
@@ -5569,8 +5618,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Hand-finished crystal detailing on premium Cotton-Lycra stretch denim. Straight silhouette with the signature adjustable waistband — no compromise on fit, ever.",
-    "alt": "YWEE Crystal Atelier Jeans — girls' Cotton-Lycra stretch denim, crystal.",
+    "description": "Onyx black slim jeans in soft cotton-stretch denim, styled with the signature YEEZEE detail. Built for play, made for posts.",
+    "alt": "YWEE YEEZEE Onyx Black Slim Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -5684,7 +5733,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAQCdASoQABAAAsBMJZwAApLyLHnAAP76rcZzxjdkF+F7D0pFDytWlns6ugdZbeqzgz3x0dT5IrV6V6zLXvjuO0vukny2DeibnUF5xmDa9YU/upQ7fhGJD/7IxjIYoAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 40,
@@ -5692,7 +5742,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw123-embellished-c",
     "style": "YW123",
     "pNum": 40,
-    "name": "Garden Atelier Jeans",
+    "name": "Slim Straight Jeans",
     "family": "Embellished",
     "cut": "Straight",
     "color": "Garden",
@@ -5709,8 +5759,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Hand-finished garden detailing on premium Cotton-Lycra stretch denim. Straight silhouette with the signature adjustable waistband — no compromise on fit, ever.",
-    "alt": "YWEE Garden Atelier Jeans — girls' Cotton-Lycra stretch denim, garden.",
+    "description": "Premium soft slim straight jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Slim Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -5824,7 +5874,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQABAAAsBMJZwAAudblFUsAAD++qV/+pvkTIv9ZlxPFFYrpEY9VYGJTXEQHHOmT9czhIyCz7m9tcU/tngPW8YlxSL2KZwiCope9AQA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 41,
@@ -5832,7 +5883,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw125-dark-indigo",
     "style": "YW125",
     "pNum": 41,
-    "name": "Royal Indigo Bootcut Jeans",
+    "name": "Butterfly Dark Indigo Jeans",
     "family": "Dark Indigo",
     "cut": "Bootcut",
     "color": "Royal Indigo",
@@ -5849,8 +5900,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich royal indigo in our premium Cotton-Lycra blend. Bootcut fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Royal Indigo Bootcut Jeans — girls' Cotton-Lycra stretch denim, royal indigo.",
+    "description": "Dark indigo jeans in soft cotton-stretch denim, styled with the signature Butterfly detail. Built for play, made for posts.",
+    "alt": "YWEE Butterfly Dark Indigo Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -5964,7 +6015,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoQABAAAsBMJZQCdICXgpiqyeiCUggkgAD++qy/r+4UGjYvik/xIpkdvSL/PwHMbAlCtkCnCrMdYRFlOgvGxkQTnpXSjHHw2Y7KBHjSrMefYB+zT8GvqkLo++zNOwda03EMB4ZwHCgAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 42,
@@ -5972,7 +6024,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw125-light-wash",
     "style": "YW125",
     "pNum": 42,
-    "name": "Pearl Wash Bootcut Jeans",
+    "name": "Butterfly Light Wash Jeans",
     "family": "Light Wash",
     "cut": "Bootcut",
     "color": "Pearl Wash",
@@ -5989,8 +6041,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pearl wash in our premium Cotton-Lycra. Bootcut cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pearl Wash Bootcut Jeans — girls' Cotton-Lycra stretch denim, pearl wash.",
+    "description": "Light wash jeans in soft cotton-stretch denim, styled with the signature Butterfly detail. Built for play, made for posts.",
+    "alt": "YWEE Butterfly Light Wash Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6104,7 +6156,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQABAAAsBMJYwCdH8AFXeFiEAA/vqtoyZovvq5l3myjCVaEbCPe4m3K3K2alJ1WhwU7+1YTMaZnkSF35hLdPs8Y0XCa8GjZiOVK8yPHYyJ1Y9GQtwAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 43,
@@ -6112,7 +6165,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw133-dark-indigo",
     "style": "YW133",
     "pNum": 43,
-    "name": "Midnight Indigo Straight Jeans",
+    "name": "Cute Cursive Dark Indigo Jeans",
     "family": "Dark Indigo",
     "cut": "Straight",
     "color": "Midnight Indigo",
@@ -6129,8 +6182,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich midnight indigo in our premium Cotton-Lycra blend. Straight fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Midnight Indigo Straight Jeans — girls' Cotton-Lycra stretch denim, midnight indigo.",
+    "description": "Dark indigo jeans in soft cotton-stretch denim, styled with the signature Cute Cursive detail. Built for play, made for posts.",
+    "alt": "YWEE Cute Cursive Dark Indigo Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6244,7 +6297,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQABAAAsBMJZwC7IExgryqtxQBnJQAAP76rcZ41SrtpfnUaQYas8G2y2ZQNOR89ROAocdRby2IFT+RMkFNltn2/3MjnqDEatW21RaaJvu7YfPtDa8IK5FYf0/VQqrAR6pFZkzOAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 44,
@@ -6252,7 +6306,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw133-light-wash",
     "style": "YW133",
     "pNum": 44,
-    "name": "Sky Wash Straight Jeans",
+    "name": "Cute Cursive Light Wash Jeans",
     "family": "Light Wash",
     "cut": "Straight",
     "color": "Sky Wash",
@@ -6269,8 +6323,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy sky wash in our premium Cotton-Lycra. Straight cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Sky Wash Straight Jeans — girls' Cotton-Lycra stretch denim, sky wash.",
+    "description": "Light wash jeans in soft cotton-stretch denim, styled with the signature Cute Cursive detail. Built for play, made for posts.",
+    "alt": "YWEE Cute Cursive Light Wash Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6384,7 +6438,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJQBOj+ADF/iO48AA/vqt70v4F8nWMHMs5+dW6JSmcHYGNITh/EaWBrK3lV0vMp0hbYVlxMhMbz/whttFEHfWMKYxK60f2IFZMM2CTyxyTQAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 45,
@@ -6392,7 +6447,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw174-light-wash",
     "style": "YW174",
     "pNum": 45,
-    "name": "Pebble Wash Tapered Jeans",
+    "name": "YEEZEE Light Wash Shorts",
     "family": "Light Wash",
     "cut": "Tapered",
     "color": "Pebble Wash",
@@ -6409,8 +6464,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pebble wash in our premium Cotton-Lycra. Tapered cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pebble Wash Tapered Jeans — girls' Cotton-Lycra stretch denim, pebble wash.",
+    "description": "Light wash shorts in soft cotton-stretch denim, styled with the signature YEEZEE detail. Built for play, made for posts.",
+    "alt": "YWEE YEEZEE Light Wash Shorts — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6524,7 +6579,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAgCdASoQABAAAsBMJQBOj+EEAAwJdbEaPkAA/vqnByMbCpE+ka3izXpCWVM4eE2nHm4v+AxR3l/D8eY3DHuzMulJrlNT/4aOImO+uAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 46,
@@ -6532,7 +6588,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw174-dark-indigo",
     "style": "YW174",
     "pNum": 46,
-    "name": "Indigo Tapered Jeans",
+    "name": "Dark Indigo Shorts",
     "family": "Dark Indigo",
     "cut": "Tapered",
     "color": "Indigo",
@@ -6549,8 +6605,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich indigo in our premium Cotton-Lycra blend. Tapered fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Indigo Tapered Jeans — girls' Cotton-Lycra stretch denim, indigo.",
+    "description": "Dark indigo shorts in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Dark Indigo Shorts — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6664,7 +6720,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQABAAAsBMJYwCdH8AFcn4rnDgAP76rL7nXNj3i4OabvyLnC7ePT0A++MO808f5Mx1UpsaduH6/3vU7iCvsMDOkuCs1wTHAnG5Kht/3Xm4LDQ4PMAAAA=="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 47,
@@ -6672,7 +6729,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw181-light-wash",
     "style": "YW181",
     "pNum": 47,
-    "name": "Sky Wash Wide-Leg Jeans",
+    "name": "Light Wash Straight Jeans",
     "family": "Light Wash",
     "cut": "Wide-Leg",
     "color": "Sky Wash",
@@ -6689,8 +6746,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy sky wash in our premium Cotton-Lycra. Wide-Leg cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Sky Wash Wide-Leg Jeans — girls' Cotton-Lycra stretch denim, sky wash.",
+    "description": "Light wash straight jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Light Wash Straight Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6804,7 +6861,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQABAAAsBMJYwCdH8AFXifwyqmAAD++q3nh78OK75p4akkAIBsV77b6r34KV5CLhf4taH/q7ay4kY+PdvuZiJhJl3Ud7BX6np+xn7luky9tyOAAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 48,
@@ -6812,7 +6870,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw188-dark-indigo",
     "style": "YW188",
     "pNum": 48,
-    "name": "Twilight Indigo Mom-Fit Jeans",
+    "name": "Donut Stop Dreaming Dark Indigo Jeans",
     "family": "Dark Indigo",
     "cut": "Mom-Fit",
     "color": "Twilight Indigo",
@@ -6829,8 +6887,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich twilight indigo in our premium Cotton-Lycra blend. Mom-Fit fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Twilight Indigo Mom-Fit Jeans — girls' Cotton-Lycra stretch denim, twilight indigo.",
+    "description": "Dark indigo jeans in soft cotton-stretch denim, styled with the signature Donut Stop Dreaming detail. Built for play, made for posts.",
+    "alt": "YWEE Donut Stop Dreaming Dark Indigo Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -6944,7 +7002,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQABAAAsBMJZQCdH8AFXePM53AAP76qzfaD1vsW1HcmtNT+eDwibbeajCmC58cLVI/6xFlIAvvYmdzRaOeBYCIEuPKqX41c8lIHyAA"
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 49,
@@ -6952,7 +7011,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw188-light-wash",
     "style": "YW188",
     "pNum": 49,
-    "name": "Sand Wash Mom-Fit Jeans",
+    "name": "Light Wash Jeans",
     "family": "Light Wash",
     "cut": "Mom-Fit",
     "color": "Sand Wash",
@@ -6969,8 +7028,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy sand wash in our premium Cotton-Lycra. Mom-Fit cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Sand Wash Mom-Fit Jeans — girls' Cotton-Lycra stretch denim, sand wash.",
+    "description": "Light wash jeans in soft cotton-stretch denim — everyday playwear with a premium feel.",
+    "alt": "YWEE Light Wash Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -7084,7 +7143,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQABAAAsBMJQBOj+ACrv9QtkvkAAD++q2iYg3TjbJMiBCjVvl4j41UvArFwQ8NS5i6uZ3j8J78IRtis3dM350uB5qQagfwd/pYlyJAAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 50,
@@ -7092,7 +7152,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw220-dark-indigo",
     "style": "YW220",
     "pNum": 50,
-    "name": "Cobalt Indigo Slim Jeans",
+    "name": "YZ Rhinestone Dark Indigo Wide-Leg Jeans",
     "family": "Dark Indigo",
     "cut": "Slim",
     "color": "Cobalt Indigo",
@@ -7109,8 +7169,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich cobalt indigo in our premium Cotton-Lycra blend. Slim fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Cobalt Indigo Slim Jeans — girls' Cotton-Lycra stretch denim, cobalt indigo.",
+    "description": "Dark indigo wide-leg jeans in soft cotton-stretch denim, styled with the signature YZ Rhinestone detail. Built for play, made for posts.",
+    "alt": "YWEE YZ Rhinestone Dark Indigo Wide-Leg Jeans — Indian girls' kids cotton-stretch denim, ages 1-13.",
     "images": [
       {
         "idx": 0,
@@ -7224,7 +7284,8 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoQABAAAsBMJZQCdAYvXjRBfR0RA5YAAP76rX/B5ynu93OvW4qmUrq9JFayj78hNKksYjvDnvSIV5l+vkDVNW8WNkjyYnu2Okmwuu6PQmmr/Jkuwdn7/bQO/o6uCLQPGt34PvV0Jdn9KuCEBhFtQL0eAAA="
       }
-    ]
+    ],
+    "restricted": false
   },
   {
     "id": 51,
@@ -7232,7 +7293,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw227-dark-indigo",
     "style": "YW227",
     "pNum": 51,
-    "name": "Royal Indigo Cropped Jeans",
+    "name": "Dark Indigo Wide-Leg Jeans",
     "family": "Dark Indigo",
     "cut": "Cropped",
     "color": "Royal Indigo",
@@ -7249,8 +7310,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Rich royal indigo in our premium Cotton-Lycra blend. Cropped fit with the adjustable waistband — built to keep up with her.",
-    "alt": "YWEE Royal Indigo Cropped Jeans — girls' Cotton-Lycra stretch denim, royal indigo.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -7364,7 +7425,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJQBOj+ACxx5S9fzSAAD++qs32hB98Duiu10umNjmZaegIfhpSa/Y5egsFqSaXEzqpKU4uEAOCCPdxU7XyiLpH8BmIe8t+ZFcAqGQs8hiV8TC71tf2y/WbYEqCJ+oI/TTMKAA"
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "IP_FLAG"
   },
   {
     "id": 52,
@@ -7372,7 +7435,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw228-light-wash",
     "style": "YW228",
     "pNum": 52,
-    "name": "Pebble Wash Mom-Fit Jeans",
+    "name": "Light Wash Wide-Leg Jeans",
     "family": "Light Wash",
     "cut": "Mom-Fit",
     "color": "Pebble Wash",
@@ -7389,8 +7452,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy pebble wash in our premium Cotton-Lycra. Mom-Fit cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Pebble Wash Mom-Fit Jeans — girls' Cotton-Lycra stretch denim, pebble wash.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -7504,7 +7567,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJYwCdH8AFXhwL/CP/AAA/vqsv/M41H5gov38tp7O4IK3rdk2ksxVx9X0AuIQXzum/cpD2O9n8nV2GsrzzsW6seJbXft76bDvU8eBwxyNOCEuCZAAAA=="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "IP_FLAG"
   },
   {
     "id": 53,
@@ -7512,7 +7577,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw236-onyx-black",
     "style": "YW236",
     "pNum": 53,
-    "name": "Carbon Black Skinny Jeans",
+    "name": "Onyx Black Wide-Leg Jeans",
     "family": "Black",
     "cut": "Skinny",
     "color": "Carbon Black",
@@ -7529,8 +7594,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Deep carbon black in premium Cotton-Lycra stretch denim. Skinny cut with the adjustable waistband, made in India by Generations Clothing.",
-    "alt": "YWEE Carbon Black Skinny Jeans — girls' Cotton-Lycra stretch denim, carbon black.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -7644,7 +7709,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAAsBMJaQAApMOP9GcPAAA/vqt4freZor1zYjyyLOi68oXjerP16BFVwvM3w3JeLU6QW0yFt+gD2A/lif0K9FpSeY12Cu5C9zQLsTReYlbXx95xhHpnUenVUO2J54osqUigAA="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "IP_FLAG"
   },
   {
     "id": 54,
@@ -7652,7 +7719,7 @@ export const PRODUCTS: Product[] = [
     "slug": "yw232-light-wash",
     "style": "YW232",
     "pNum": 54,
-    "name": "Mist Wash Flare Jeans",
+    "name": "Light Wash Skort",
     "family": "Light Wash",
     "cut": "Flare",
     "color": "Mist Wash",
@@ -7669,8 +7736,8 @@ export const PRODUCTS: Product[] = [
       "11–12 Yrs",
       "13–14 Yrs"
     ],
-    "description": "Soft, breezy mist wash in our premium Cotton-Lycra. Flare cut with adjustable waistband — the everyday pair she'll reach for first.",
-    "alt": "YWEE Mist Wash Flare Jeans — girls' Cotton-Lycra stretch denim, mist wash.",
+    "description": "Premium cotton-stretch denim from the YWEE collection. This style is being prepared for our online listing — check back soon.",
+    "alt": "YWEE premium kids' cotton-stretch denim — preparing for listing.",
     "images": [
       {
         "idx": 0,
@@ -7784,7 +7851,9 @@ export const PRODUCTS: Product[] = [
         ],
         "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABQAgCdASoQABAAAsBMJZQCdH8AGAG3SlDA44AA/vqtsbFw4r1fQQRj/GYmFVhjs0UQ997w9bz2QF/O4mGVMIhKhAA="
       }
-    ]
+    ],
+    "restricted": true,
+    "restrictedReason": "SKIP_LIST"
   }
 ];
 
