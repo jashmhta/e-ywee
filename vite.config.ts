@@ -23,9 +23,14 @@ export default defineConfig({
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {
+        // Chunk strategy: split the largest, most-cacheable vendor libs into
+        // their own chunks, but keep React + small uncategorised libs in
+        // Vite's default vendor split. A previous strategy that pulled
+        // /react/ into "vendor-react" alongside a catchall "vendor" chunk
+        // created a circular import that left React undefined for
+        // next-themes' top-level createContext call (blank-page in prod).
         manualChunks(id) {
           if (id.includes("node_modules")) {
-            // Group large vendor packages into their own chunks for cacheability
             if (id.includes("@radix-ui")) return "vendor-radix";
             if (id.includes("lucide-react")) return "vendor-lucide";
             if (id.includes("recharts")) return "vendor-recharts";
@@ -36,8 +41,8 @@ export default defineConfig({
             if (id.includes("/gsap/") || id.includes("\\gsap\\") || id.endsWith("gsap")) return "vendor-gsap";
             if (id.includes("embla-carousel")) return "vendor-embla";
             if (id.includes("react-hook-form") || id.includes("@hookform") || id.includes("zod")) return "vendor-forms";
-            if (id.includes("/react/") || id.includes("/react-dom/")) return "vendor-react";
-            return "vendor";
+            // Intentionally NOT splitting react / react-dom / small libs:
+            // letting Vite decide avoids the circular-chunk hazard above.
           }
           // Heavy generated product manifest in its own chunk so it's cacheable
           if (id.includes("/data/products.generated")) return "data-products";
