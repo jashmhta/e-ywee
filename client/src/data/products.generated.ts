@@ -62,6 +62,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw004-original/v2/yw004-original_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw004-original/v2/yw004-original_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw004-original/v2/yw004-original_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw004-original/v2/yw004-original_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQAgCdASoQABAAAsBMJZgCdAYub0o1Ngr7758wAAD++q0fnd/C3XZeDKLqtWpyncV6zdZr2totw97xMlhQQy+N5RyKO1MEEJ7gxsazsQ/+jqzV9FgwdvLwpNRx0KOcdvsbec7au9931RkvsuwsnLrzGSXO7uiw61t4RrgDU/NuY0FsAERLuwPro/cWjuVbAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw004-original/v2/yw004-original_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw004-original/v2/yw004-original_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw004-original/v2/yw004-original_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw004-original/v2/yw004-original_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQAgCdASoQABAAAsBMJZgCdAYub0o1Ngr7758wAAD++q0fnd/C3XZeDKLqtWpyncV6zdZr2totw97xMlhQQy+N5RyKO1MEEJ7gxsazsQ/+jqzV9FgwdvLwpNRx0KOcdvsbec7au9931RkvsuwsnLrzGSXO7uiw61t4RrgDU/NuY0FsAERLuwPro/cWjuVbAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw004-original/v2/yw004-original_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw004-original/v2/yw004-original_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw004-original/v2/yw004-original_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw004-original/v2/yw004-original_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQAgCdASoQABAAAsBMJZgCdAYub0o1Ngr7758wAAD++q0fnd/C3XZeDKLqtWpyncV6zdZr2totw97xMlhQQy+N5RyKO1MEEJ7gxsazsQ/+jqzV9FgwdvLwpNRx0KOcdvsbec7au9931RkvsuwsnLrzGSXO7uiw61t4RrgDU/NuY0FsAERLuwPro/cWjuVbAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw004-original/v2/yw004-original_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw004-original/v2/yw004-original_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw004-original/v2/yw004-original_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw004-original/v2/yw004-original_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQAgCdASoQABAAAsBMJZgCdAYub0o1Ngr7758wAAD++q0fnd/C3XZeDKLqtWpyncV6zdZr2totw97xMlhQQy+N5RyKO1MEEJ7gxsazsQ/+jqzV9FgwdvLwpNRx0KOcdvsbec7au9931RkvsuwsnLrzGSXO7uiw61t4RrgDU/NuY0FsAERLuwPro/cWjuVbAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -89,7 +185,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQAgCdASoQABAAAsBMJZgCdAYub0o1Ngr7758wAAD++q0fnd/C3XZeDKLqtWpyncV6zdZr2totw97xMlhQQy+N5RyKO1MEEJ7gxsazsQ/+jqzV9FgwdvLwpNRx0KOcdvsbec7au9931RkvsuwsnLrzGSXO7uiw61t4RrgDU/NuY0FsAERLuwPro/cWjuVbAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -117,7 +213,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwAgCdASoQABAAAsBMJbACdAYv1vsnfO+1YRIAAP76pwRFRz/Ncj/M/L0WsQemVlx2ulA+OWpmz2l4+5yWfbrY61hO/E/nbeAscANVjQRw+fKD8lqRVMait9DGbZDdiqDv45s6d00AAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -145,7 +241,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAACQAgCdASoQABAAAsBMJZACdAYu5zoZEpvn+vGxAAD++q3BLzEF92bQc8BFwizKsycarTR9zfuGXRdZZwHW5+eHXykPE8vPw+PebslQLk64/p31h0yyhCc2s1UgC1nLWQfnzjKvwoYBFyEmGcCKhefqcExEs2dNfHJgTttcKmA1vXcbi5TUS4YeD2bG2VipdpsAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -203,6 +299,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAAsBMJQBOhxAAHjsaQ7wA/vqt7E8+AfmCfLgp6iCz9IkT3ZQzv07zNRFhQP7PkcfFoYHvYrJ0hvIv/vHm1u5K1y/E0gDxygS0BvrOT2LlSU0Byfoect6oXYz/aFE43GAAAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAAsBMJQBOhxAAHjsaQ7wA/vqt7E8+AfmCfLgp6iCz9IkT3ZQzv07zNRFhQP7PkcfFoYHvYrJ0hvIv/vHm1u5K1y/E0gDxygS0BvrOT2LlSU0Byfoect6oXYz/aFE43GAAAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAAsBMJQBOhxAAHjsaQ7wA/vqt7E8+AfmCfLgp6iCz9IkT3ZQzv07zNRFhQP7PkcfFoYHvYrJ0hvIv/vHm1u5K1y/E0gDxygS0BvrOT2LlSU0Byfoect6oXYz/aFE43GAAAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-light-wash/v2/yw005-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAAsBMJQBOhxAAHjsaQ7wA/vqt7E8+AfmCfLgp6iCz9IkT3ZQzv07zNRFhQP7PkcfFoYHvYrJ0hvIv/vHm1u5K1y/E0gDxygS0BvrOT2LlSU0Byfoect6oXYz/aFE43GAAAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -230,7 +422,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAAsBMJQBOhxAAHjsaQ7wA/vqt7E8+AfmCfLgp6iCz9IkT3ZQzv07zNRFhQP7PkcfFoYHvYrJ0hvIv/vHm1u5K1y/E0gDxygS0BvrOT2LlSU0Byfoect6oXYz/aFE43GAAAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -258,7 +450,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQAgCdASoQABAAAsBMJbACdGaAAwSu/0s2QEGMAAD++a3obdb/hmkHTUNM7d1HEPRx1etnNGQRhlOZoqQXNv3AH9BIfsnaGJuxzEeZWHZiKi/M+FVto5VEEFa2PKWGqojdvhsgkbb1+mDop28nAQWHZbUxm293l4boAAAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -286,7 +478,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQAgCdASoQABAAAsBMJYgCdDiAASRGXVYzzcAA/vqt9zOKqA6EgkYiUf7F33F7zebsYRrjcutcYsIrhzF10pNlifPGZflCUlo/2+wtxHYzqpsegTDDKkiwy/a0e0N8wvoK/NqsGCr6Ck3qQWF99Wzin4AAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -344,6 +536,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJQBOgMYO6j67hsYTFfgA/vqsv67MXPZR1N1PnifHqeJMFHy3wZXj/7eq0oVk3Fdw+JwP2zgXWKtKDqs7wea6YW+vAgMAmEaXKQ8oAlWmqPpgIzfvEb5hZFdepSq1H5UR2GQUzlSUrWSOQiZ4DlP3Iz/aFF9KgkAAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJQBOgMYO6j67hsYTFfgA/vqsv67MXPZR1N1PnifHqeJMFHy3wZXj/7eq0oVk3Fdw+JwP2zgXWKtKDqs7wea6YW+vAgMAmEaXKQ8oAlWmqPpgIzfvEb5hZFdepSq1H5UR2GQUzlSUrWSOQiZ4DlP3Iz/aFF9KgkAAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJQBOgMYO6j67hsYTFfgA/vqsv67MXPZR1N1PnifHqeJMFHy3wZXj/7eq0oVk3Fdw+JwP2zgXWKtKDqs7wea6YW+vAgMAmEaXKQ8oAlWmqPpgIzfvEb5hZFdepSq1H5UR2GQUzlSUrWSOQiZ4DlP3Iz/aFF9KgkAAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw005-dark-indigo/v2/yw005-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJQBOgMYO6j67hsYTFfgA/vqsv67MXPZR1N1PnifHqeJMFHy3wZXj/7eq0oVk3Fdw+JwP2zgXWKtKDqs7wea6YW+vAgMAmEaXKQ8oAlWmqPpgIzfvEb5hZFdepSq1H5UR2GQUzlSUrWSOQiZ4DlP3Iz/aFF9KgkAAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -371,7 +659,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJQBOgMYO6j67hsYTFfgA/vqsv67MXPZR1N1PnifHqeJMFHy3wZXj/7eq0oVk3Fdw+JwP2zgXWKtKDqs7wea6YW+vAgMAmEaXKQ8oAlWmqPpgIzfvEb5hZFdepSq1H5UR2GQUzlSUrWSOQiZ4DlP3Iz/aFF9KgkAAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -399,7 +687,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwAgCdASoQABAAAsBMJbACdAYyLv6LYa93pKtAAP75rqJ/zBh7Hrw8lB4DHdg1aFs9o+wdw39Q4kDDl6pQXqieGuJ9A6lsdVPRqOY6N7LzuGpu0FnyBLjcq6nW9thdrWXP9XXZm2AwK1+uDm6Zx8LNanih376EcF+4TdqeoPvTo5EACjvzVEawbhZoJJyAPgAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -427,7 +715,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACQAgCdASoQABAAAsBMJbACdGaAAwe73B1CfJPzoAD+9WJ7gfkz2gP3P4iwBO0LXMrizbeoylBLoOznJss1HiiRFx6YpuDI//WPVhjO/bRRwMF5qDNjGQd7W5trJJupyVR8oN3M6znqEiMWRxKYGav+pP6eVeBReTH1CkzXC4ucpZrCWVy4nC4KzrvFTaNE9zwQ8AAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -455,7 +743,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQABAAAsBMJQBOj+ADImPPXkAA/vqtf7Wv82Rr8diJpSuvomW410NcQ7MhgIOgiYBgXHRY07spfFlx4NcoQCHV6rfW0FyU99blE6joI7Gx40aAAAA="
       },
       {
-        "idx": 4,
+        "idx": 8,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -683,6 +971,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwAgCdASoQABAAAsBMJQBOgN8AVUrnoA14oAD++q39fZ7ObHWYjA/KbLvOUsPsPsRuLhkS9llfUkocqcvW4gdfp2NjbBc04vmFMIyNY/sJn06jeFhfMvb08B2RGUfRCIRtCFS5NzftOcSSnR56YPDWh0lqUn3EPTpX2FH1preddJszYu5Gf7QoK6HAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwAgCdASoQABAAAsBMJQBOgN8AVUrnoA14oAD++q39fZ7ObHWYjA/KbLvOUsPsPsRuLhkS9llfUkocqcvW4gdfp2NjbBc04vmFMIyNY/sJn06jeFhfMvb08B2RGUfRCIRtCFS5NzftOcSSnR56YPDWh0lqUn3EPTpX2FH1preddJszYu5Gf7QoK6HAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwAgCdASoQABAAAsBMJQBOgN8AVUrnoA14oAD++q39fZ7ObHWYjA/KbLvOUsPsPsRuLhkS9llfUkocqcvW4gdfp2NjbBc04vmFMIyNY/sJn06jeFhfMvb08B2RGUfRCIRtCFS5NzftOcSSnR56YPDWh0lqUn3EPTpX2FH1preddJszYu5Gf7QoK6HAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-dark-indigo/v2/yw007-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwAgCdASoQABAAAsBMJQBOgN8AVUrnoA14oAD++q39fZ7ObHWYjA/KbLvOUsPsPsRuLhkS9llfUkocqcvW4gdfp2NjbBc04vmFMIyNY/sJn06jeFhfMvb08B2RGUfRCIRtCFS5NzftOcSSnR56YPDWh0lqUn3EPTpX2FH1preddJszYu5Gf7QoK6HAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -710,7 +1094,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwAgCdASoQABAAAsBMJQBOgN8AVUrnoA14oAD++q39fZ7ObHWYjA/KbLvOUsPsPsRuLhkS9llfUkocqcvW4gdfp2NjbBc04vmFMIyNY/sJn06jeFhfMvb08B2RGUfRCIRtCFS5NzftOcSSnR56YPDWh0lqUn3EPTpX2FH1preddJszYu5Gf7QoK6HAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -738,7 +1122,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQAgCdASoQABAAAsBMJaACdAYv1v6I1VmkiggA/vdvFInowCAtyMLz283uB0IYrXyyWItmwB2xRuq/+r/SojFGRXdLCegovPhR8Zj5D79Mb3O7pBwTw5e0IBV5ny7ORBndcqhcj/3KYXHXQ2zmv8zbG+5ZHoh15pS/XfJkw4l3sJAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -766,7 +1150,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwAgCdASoQABAAAsBMJbACdAEQdNabDOhwAAD+9WMRU3wxMORiD1yyL/Y2Qe/dmcmPVVD8hNq6FqTOGSITD1iuWJtnER8WP5n2kXm2HiDfchPICLwnLh6CN6frF532WSyd611fuofCRplRnYRO3tgu7Mj9nMPlwaLfQFcG9+HAh1Q8tRHRKmZwAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -794,7 +1178,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQABAAAsBMJQBOgCLvKpPGZ/uEAP76rftGaIEu7UEh0CHXKJPMRfjP3RaIOv7YrJFktHlNKzpluw0NmcL+8bK0iQSDj7VRPIER3RlOAa4Y1DEhkR5X92XFpr8l8p1F/dylVlbquIhNde+sks2eXUAA"
       },
       {
-        "idx": 4,
+        "idx": 8,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -852,6 +1236,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAQCdASoQABAAAsBMJZACdADGgqhLdoAA/vqt39oL0wpe/8+KMRcwXoDcpPZwOOHmdPbl0bk3zfCTZaoYyy3/yy7DnnjxGpgiDsY9xg6pJO0x/a5LUJQwHDxk7ElyNE8Dq0CGZRwgIsAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAQCdASoQABAAAsBMJZACdADGgqhLdoAA/vqt39oL0wpe/8+KMRcwXoDcpPZwOOHmdPbl0bk3zfCTZaoYyy3/yy7DnnjxGpgiDsY9xg6pJO0x/a5LUJQwHDxk7ElyNE8Dq0CGZRwgIsAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAQCdASoQABAAAsBMJZACdADGgqhLdoAA/vqt39oL0wpe/8+KMRcwXoDcpPZwOOHmdPbl0bk3zfCTZaoYyy3/yy7DnnjxGpgiDsY9xg6pJO0x/a5LUJQwHDxk7ElyNE8Dq0CGZRwgIsAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw007-light-wash/v2/yw007-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAQCdASoQABAAAsBMJZACdADGgqhLdoAA/vqt39oL0wpe/8+KMRcwXoDcpPZwOOHmdPbl0bk3zfCTZaoYyy3/yy7DnnjxGpgiDsY9xg6pJO0x/a5LUJQwHDxk7ElyNE8Dq0CGZRwgIsAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -879,7 +1359,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAQCdASoQABAAAsBMJZACdADGgqhLdoAA/vqt39oL0wpe/8+KMRcwXoDcpPZwOOHmdPbl0bk3zfCTZaoYyy3/yy7DnnjxGpgiDsY9xg6pJO0x/a5LUJQwHDxk7ElyNE8Dq0CGZRwgIsAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -907,7 +1387,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJbACdGaAAwl8UYGmgAD++QbWUJsVrxnCs1A+s+L6Z5Bf4iJaiLy6SqVQw7n9txd1UzBbtZZeHB6SrsoKYzI+NM1ItMWCsFDiIHIOcvzZwg4IQTjS2JPEOhO1ZP1QrwTTz7u1AAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -935,7 +1415,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJZgCdDiAAO7cPsy9CAD++q3FZC2xwNl9ZZpS7NAI8Fy0CXp8IOb3KKwkpZgDWV325ol/gCDIx19vKc85ByL6owwsw+dMANzzUooVf6qOXiEMnKcpyudwWSeVmieB00yXly4GgAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1277,6 +1757,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwAgCdASoQABAAAsBMJbACdADw2wSk08ZVCAD++q3h3mtjSzKwpsuri9rWE19JeMtsrhHeSU7MfSxGbGFnvYc1kxkp36gWAfBGrhHxXWVbx+dx/1k+5biyGi6ijMUNlVzdYHbL9fT+PDs6UxsSpJAftt76+AAIjYoGcjU1bsKrBhIAAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwAgCdASoQABAAAsBMJbACdADw2wSk08ZVCAD++q3h3mtjSzKwpsuri9rWE19JeMtsrhHeSU7MfSxGbGFnvYc1kxkp36gWAfBGrhHxXWVbx+dx/1k+5biyGi6ijMUNlVzdYHbL9fT+PDs6UxsSpJAftt76+AAIjYoGcjU1bsKrBhIAAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwAgCdASoQABAAAsBMJbACdADw2wSk08ZVCAD++q3h3mtjSzKwpsuri9rWE19JeMtsrhHeSU7MfSxGbGFnvYc1kxkp36gWAfBGrhHxXWVbx+dx/1k+5biyGi6ijMUNlVzdYHbL9fT+PDs6UxsSpJAftt76+AAIjYoGcjU1bsKrBhIAAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-light-wash/v2/yw023-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwAgCdASoQABAAAsBMJbACdADw2wSk08ZVCAD++q3h3mtjSzKwpsuri9rWE19JeMtsrhHeSU7MfSxGbGFnvYc1kxkp36gWAfBGrhHxXWVbx+dx/1k+5biyGi6ijMUNlVzdYHbL9fT+PDs6UxsSpJAftt76+AAIjYoGcjU1bsKrBhIAAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1304,7 +1880,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwAgCdASoQABAAAsBMJbACdADw2wSk08ZVCAD++q3h3mtjSzKwpsuri9rWE19JeMtsrhHeSU7MfSxGbGFnvYc1kxkp36gWAfBGrhHxXWVbx+dx/1k+5biyGi6ijMUNlVzdYHbL9fT+PDs6UxsSpJAftt76+AAIjYoGcjU1bsKrBhIAAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1332,7 +1908,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQABAAAsBMJbACdADxKgXLm1vwAP76quj9MulPXOc+Y8vR6Zc6vFQaJToe/+xYdR4CWirAxvXt8e4pLn+0rZ3O8gGtveqPB7+mseciClG1jQY+/C9dBSzfeJ8+CGyCBrDt7igAcBZAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1360,7 +1936,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwAgCdASoQABAAAsBMJbACdGaAEcUJ2DVlh4kAAP76rfcmissj2VPHGAzilTCzgSqR2faFgfoUlZH4g1tkcjp20mdl3130ppAMnlzhMs2HeVlRHrEHwJqWnVpqxudGqLMTeX5bYczfNNQc9Q9NrIP76OErQP1M8Q6k4szgIKLUwzx0AAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1418,6 +1994,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAQCdASoQABAAAsBMJYgCdAEX5rXd66gA/vqt4ZXwfyggeS6dQb5rrrfYzKR+x2DqqY+89b1tz9xRtrJDXbTY3F2aJ4oMCOsK9iVM2S7Eo7Q64MPbM5U6hklu7dM8MIWzW2NYTMIV7+eknffpXM8OgBJg2Q7QglfL6Pb7Y/QAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAQCdASoQABAAAsBMJYgCdAEX5rXd66gA/vqt4ZXwfyggeS6dQb5rrrfYzKR+x2DqqY+89b1tz9xRtrJDXbTY3F2aJ4oMCOsK9iVM2S7Eo7Q64MPbM5U6hklu7dM8MIWzW2NYTMIV7+eknffpXM8OgBJg2Q7QglfL6Pb7Y/QAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAQCdASoQABAAAsBMJYgCdAEX5rXd66gA/vqt4ZXwfyggeS6dQb5rrrfYzKR+x2DqqY+89b1tz9xRtrJDXbTY3F2aJ4oMCOsK9iVM2S7Eo7Q64MPbM5U6hklu7dM8MIWzW2NYTMIV7+eknffpXM8OgBJg2Q7QglfL6Pb7Y/QAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw023-dark-indigo/v2/yw023-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAQCdASoQABAAAsBMJYgCdAEX5rXd66gA/vqt4ZXwfyggeS6dQb5rrrfYzKR+x2DqqY+89b1tz9xRtrJDXbTY3F2aJ4oMCOsK9iVM2S7Eo7Q64MPbM5U6hklu7dM8MIWzW2NYTMIV7+eknffpXM8OgBJg2Q7QglfL6Pb7Y/QAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1445,7 +2117,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAQCdASoQABAAAsBMJYgCdAEX5rXd66gA/vqt4ZXwfyggeS6dQb5rrrfYzKR+x2DqqY+89b1tz9xRtrJDXbTY3F2aJ4oMCOsK9iVM2S7Eo7Q64MPbM5U6hklu7dM8MIWzW2NYTMIV7+eknffpXM8OgBJg2Q7QglfL6Pb7Y/QAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1473,7 +2145,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABwAgCdASoQABAAAsBMJagCdAYtpjaNrrPB406gAP76yDZOWv/Z1r7JL2+yE6qTe9N6NbOLpctze52R5Mh95bAqfq2fd4JaGstCsANYCfVvIi2zvae5drIG1wi5upvknj+Qw4zUBAQtgCy6fOr2mT4BAAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1501,7 +2173,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQAgCdASoQABAAAsBMJZgCdAEYESUOebNUPSAA/vqtfxHGue0GDskoo3G7P+Ipjq7E3cUUPonEP3HPD67bexpzX3phfdwaHy59bWHml9oYqVOdHUe+f4uy90R2oM1LXoQP7eONLmLfNgMzZLriL+Gev5ZPY2dN2JJ4AA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1559,6 +2231,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQAgCdASoQABAAAsBMJYgCdAEXeZCQ3bxO/kAA/vqsv6/uBPoaWxUvPUOPN/3s9hu5qkg/UXqgN2c3HF5p8TzNNZOkyhrEFYU4NXsSE6oZlLeIwEKrjknD48OMq5wjfeo33pf2/sEk50r15SegeIZ25HNbW89YWaEwvKM/5O5FcU1DAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQAgCdASoQABAAAsBMJYgCdAEXeZCQ3bxO/kAA/vqsv6/uBPoaWxUvPUOPN/3s9hu5qkg/UXqgN2c3HF5p8TzNNZOkyhrEFYU4NXsSE6oZlLeIwEKrjknD48OMq5wjfeo33pf2/sEk50r15SegeIZ25HNbW89YWaEwvKM/5O5FcU1DAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQAgCdASoQABAAAsBMJYgCdAEXeZCQ3bxO/kAA/vqsv6/uBPoaWxUvPUOPN/3s9hu5qkg/UXqgN2c3HF5p8TzNNZOkyhrEFYU4NXsSE6oZlLeIwEKrjknD48OMq5wjfeo33pf2/sEk50r15SegeIZ25HNbW89YWaEwvKM/5O5FcU1DAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw025-dark-indigo/v2/yw025-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQAgCdASoQABAAAsBMJYgCdAEXeZCQ3bxO/kAA/vqsv6/uBPoaWxUvPUOPN/3s9hu5qkg/UXqgN2c3HF5p8TzNNZOkyhrEFYU4NXsSE6oZlLeIwEKrjknD48OMq5wjfeo33pf2/sEk50r15SegeIZ25HNbW89YWaEwvKM/5O5FcU1DAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1586,7 +2354,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQAgCdASoQABAAAsBMJYgCdAEXeZCQ3bxO/kAA/vqsv6/uBPoaWxUvPUOPN/3s9hu5qkg/UXqgN2c3HF5p8TzNNZOkyhrEFYU4NXsSE6oZlLeIwEKrjknD48OMq5wjfeo33pf2/sEk50r15SegeIZ25HNbW89YWaEwvKM/5O5FcU1DAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1614,7 +2382,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwAgCdASoQABAAAsBMJbACdAEOAEQ6EzC3AAD++a3oewaBLp6EMIpbcmm8jQ88WxrpJgqz0vgBcWfpJ11RyvPGkZ2Hw83/5LraozF7zTrNGyj8FXF5Pqbfqzt/luij/wxI0BNDjrGRzy2E/0ThrKADGmVRDw2B0PoxwRviRd1Du4p4LvwAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1642,7 +2410,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwAgCdASoQABAAAsBMJQBOgMY25sHblI5hc9OAAP76rfOaZpYE+QINdTFg3Bzu++6nTJ0Cu8p81ZQA5b+/T0d3VJOeV6kLsxoipRtspN1egR5aCv09XH8V1n0MX0z6m3zrnw0Ha9GIJ0zM/h44kESij8wnKcpyHaZsSAgKRn+z7uHgAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1870,6 +2638,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoQABAAAsBMJZACdAywDBjKVlJUZM4AAP76reHFv7zMoYvWL15GzY9IJNQGVlvfLAeuAd+PXitm39sYW5qjf59u3uNkye+qe2d7uDZnfcs0bahpYs/s5TUDRPpTqdPqGMPCnPWEnEYT/d5vbYaqJBwoAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoQABAAAsBMJZACdAywDBjKVlJUZM4AAP76reHFv7zMoYvWL15GzY9IJNQGVlvfLAeuAd+PXitm39sYW5qjf59u3uNkye+qe2d7uDZnfcs0bahpYs/s5TUDRPpTqdPqGMPCnPWEnEYT/d5vbYaqJBwoAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoQABAAAsBMJZACdAywDBjKVlJUZM4AAP76reHFv7zMoYvWL15GzY9IJNQGVlvfLAeuAd+PXitm39sYW5qjf59u3uNkye+qe2d7uDZnfcs0bahpYs/s5TUDRPpTqdPqGMPCnPWEnEYT/d5vbYaqJBwoAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw028-light-wash/v2/yw028-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoQABAAAsBMJZACdAywDBjKVlJUZM4AAP76reHFv7zMoYvWL15GzY9IJNQGVlvfLAeuAd+PXitm39sYW5qjf59u3uNkye+qe2d7uDZnfcs0bahpYs/s5TUDRPpTqdPqGMPCnPWEnEYT/d5vbYaqJBwoAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1897,7 +2761,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoQABAAAsBMJZACdAywDBjKVlJUZM4AAP76reHFv7zMoYvWL15GzY9IJNQGVlvfLAeuAd+PXitm39sYW5qjf59u3uNkye+qe2d7uDZnfcs0bahpYs/s5TUDRPpTqdPqGMPCnPWEnEYT/d5vbYaqJBwoAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1925,7 +2789,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJbACdADxMeKch4V3GAD++qro+2q3TdepF7Y1wf3EiMIxyLmLNdp6VXWitpYo9CFIBr2tA9ai2noUgfsFwu3UVNT+mZ2axidsR65amFskWrhPMXy+KWDDPnQA1h29ieT+ogAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1953,7 +2817,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAQCdASoQABAAAsBMJQBOgB4bXUU0H6AA/vqtfw2ttLtm6GZe1B6LF/dGdFHQJJHi0ZXHkdNHLjFu01SzGWpv/3o9+EnO3hO437svTG8g0BogWAdvfUqSh8gqdGgAAqekJKGcliZO6VcjpLM1iVsLAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -1981,7 +2845,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAQCdASoQABAAAsBMJagCdAENz5hxQAD++jjpX02ZvNzbWtSPufHM4VRtryWDhoAI8krhEeHblZ8aBuJBVYkedE3muAXp5e94rKEOomVrAChJk64xhuZqAgIWvtDNb8lLcLoA"
       },
       {
-        "idx": 4,
+        "idx": 8,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2039,6 +2903,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQAgCdASoQABAAAsBMJYgCdAEXWCpKP/3J4AAA/vqt4ZXwfyhbbx/0py6ttyl/cL7SE489gpmpEdf36T8Rc9b2Se9ZXJ5mKolcf3p3/m1wHpdNrK019uaWF8ydO+HmW5cT/Hq4894bypqx4bgWAQipupWNRvrTmORnkUdYrOXLXhrZ+GQb8FEWAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQAgCdASoQABAAAsBMJYgCdAEXWCpKP/3J4AAA/vqt4ZXwfyhbbx/0py6ttyl/cL7SE489gpmpEdf36T8Rc9b2Se9ZXJ5mKolcf3p3/m1wHpdNrK019uaWF8ydO+HmW5cT/Hq4894bypqx4bgWAQipupWNRvrTmORnkUdYrOXLXhrZ+GQb8FEWAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQAgCdASoQABAAAsBMJYgCdAEXWCpKP/3J4AAA/vqt4ZXwfyhbbx/0py6ttyl/cL7SE489gpmpEdf36T8Rc9b2Se9ZXJ5mKolcf3p3/m1wHpdNrK019uaWF8ydO+HmW5cT/Hq4894bypqx4bgWAQipupWNRvrTmORnkUdYrOXLXhrZ+GQb8FEWAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw031-dark-indigo/v2/yw031-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQAgCdASoQABAAAsBMJYgCdAEXWCpKP/3J4AAA/vqt4ZXwfyhbbx/0py6ttyl/cL7SE489gpmpEdf36T8Rc9b2Se9ZXJ5mKolcf3p3/m1wHpdNrK019uaWF8ydO+HmW5cT/Hq4894bypqx4bgWAQipupWNRvrTmORnkUdYrOXLXhrZ+GQb8FEWAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2066,7 +3026,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQAgCdASoQABAAAsBMJYgCdAEXWCpKP/3J4AAA/vqt4ZXwfyhbbx/0py6ttyl/cL7SE489gpmpEdf36T8Rc9b2Se9ZXJ5mKolcf3p3/m1wHpdNrK019uaWF8ydO+HmW5cT/Hq4894bypqx4bgWAQipupWNRvrTmORnkUdYrOXLXhrZ+GQb8FEWAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2094,7 +3054,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQABAAAsBMJbACdADxL1xwMM7AAP76rfVYuK78T4WV4+0INWFjvBIfaH+TABaSGYvJ/ucsAOHQTX/cZdKBDuopkTXz1FXmjQMsbaq00dtlh37VUMWIjnxRFNA2B0PjU9Kfrp5N4wAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2122,7 +3082,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQAgCdASoQABAAAsBMJYgCdAEXwwvQ/UBQAP76reHeew0xL/kuthXkwQWfYs7wJBQ+7atDdGeMWi7d7G6Y1mLlDxoZSHjler/X5dil4afutffxcVlntXB6byTMb+JRmjH/TZ7NtXlB9LxN11vFlYKyvBKSQxTOojysGjXEX7icyG9eEZ/s+7h4AAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2182,6 +3142,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAAsBMJZACdBPAB2YNo6XmIKAA/vqtGDdvfWUUIUFrWRzS+wY8Cevl6kIWEiKt/zqtIvkUZxPiTrX2M+Jt0rczM5CneJ8yKkf4/UIp2OvU6/4oh8kuqu/0buiLkKvTnrCTk7ORIBKJvUgjXYAdLAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAAsBMJZACdBPAB2YNo6XmIKAA/vqtGDdvfWUUIUFrWRzS+wY8Cevl6kIWEiKt/zqtIvkUZxPiTrX2M+Jt0rczM5CneJ8yKkf4/UIp2OvU6/4oh8kuqu/0buiLkKvTnrCTk7ORIBKJvUgjXYAdLAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAAsBMJZACdBPAB2YNo6XmIKAA/vqtGDdvfWUUIUFrWRzS+wY8Cevl6kIWEiKt/zqtIvkUZxPiTrX2M+Jt0rczM5CneJ8yKkf4/UIp2OvU6/4oh8kuqu/0buiLkKvTnrCTk7ORIBKJvUgjXYAdLAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw032-light-wash/v2/yw032-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAAsBMJZACdBPAB2YNo6XmIKAA/vqtGDdvfWUUIUFrWRzS+wY8Cevl6kIWEiKt/zqtIvkUZxPiTrX2M+Jt0rczM5CneJ8yKkf4/UIp2OvU6/4oh8kuqu/0buiLkKvTnrCTk7ORIBKJvUgjXYAdLAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2209,7 +3265,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAAsBMJZACdBPAB2YNo6XmIKAA/vqtGDdvfWUUIUFrWRzS+wY8Cevl6kIWEiKt/zqtIvkUZxPiTrX2M+Jt0rczM5CneJ8yKkf4/UIp2OvU6/4oh8kuqu/0buiLkKvTnrCTk7ORIBKJvUgjXYAdLAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2237,7 +3293,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADwAQCdASoQABAAAsBMJbACdADxM34yNiAA/vo4mKEC+mitX0+Iu9phMd6t2kpwF68BgvB1kXEdz3u5r+aX0GBDO4Aj74+brt4DdlHC0Da4a9QC2r+iwVMquwe+EJUUMEB1h/vHCeYvlY+CE6DKZdHGuLW4QAAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2265,7 +3321,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABQAgCdASoQABAAAsBMJZgCdAEXWCppAEIQLQAA/vqrC/47cpSPSTUVHE9TI5IDnu6S0Mf41OppKUzjVdwpXeYthCHZFjjH48+wT+apQU9hjlj0PCbvRdR5JFNAMPjeltkoDtezAZKUmyOm5ynPWH4ZKy2JBZW5Y392FDBkYAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2323,6 +3379,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAgCdASoQABAAAsBMJZACdAYwTzoZuURR1/eMQAD++q30Eay4QoMYAXUeedxNoz7Ek28qfpeRN6PIVSqm/9IXYH374bz79o7tv+Vdy6DWgHu5pBB/1caYuPywODlVPxuYlyJAcn3ZX/IOdCTxATECGe2esO8HtQPs5TlOVzn6YppwdY0ik0AA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAgCdASoQABAAAsBMJZACdAYwTzoZuURR1/eMQAD++q30Eay4QoMYAXUeedxNoz7Ek28qfpeRN6PIVSqm/9IXYH374bz79o7tv+Vdy6DWgHu5pBB/1caYuPywODlVPxuYlyJAcn3ZX/IOdCTxATECGe2esO8HtQPs5TlOVzn6YppwdY0ik0AA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAgCdASoQABAAAsBMJZACdAYwTzoZuURR1/eMQAD++q30Eay4QoMYAXUeedxNoz7Ek28qfpeRN6PIVSqm/9IXYH374bz79o7tv+Vdy6DWgHu5pBB/1caYuPywODlVPxuYlyJAcn3ZX/IOdCTxATECGe2esO8HtQPs5TlOVzn6YppwdY0ik0AA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw030-dark-indigo/v2/yw030-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAgCdASoQABAAAsBMJZACdAYwTzoZuURR1/eMQAD++q30Eay4QoMYAXUeedxNoz7Ek28qfpeRN6PIVSqm/9IXYH374bz79o7tv+Vdy6DWgHu5pBB/1caYuPywODlVPxuYlyJAcn3ZX/IOdCTxATECGe2esO8HtQPs5TlOVzn6YppwdY0ik0AA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2350,7 +3502,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAgCdASoQABAAAsBMJZACdAYwTzoZuURR1/eMQAD++q30Eay4QoMYAXUeedxNoz7Ek28qfpeRN6PIVSqm/9IXYH374bz79o7tv+Vdy6DWgHu5pBB/1caYuPywODlVPxuYlyJAcn3ZX/IOdCTxATECGe2esO8HtQPs5TlOVzn6YppwdY0ik0AA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2378,7 +3530,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJbACdAEQA7ehtE5JoAD++a3orioiMa3RZ4mZ5y81g5UC5+s50Oe9XW2tRV0t75zxLNeqUlucJyv6UhWibhcTDXp8SN7YaPcM4lPb+fG4wovQhdIZLd/yy75Ln1HAascYa8AA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2406,7 +3558,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwAgCdASoQABAAAsBMJZACdAEYESTmWsjUAAD++q30BXsODILoMjkVuPrc8LcrIt1/dY75f5oI29VEmK+p3UFhn/YBawMy5zNMPnD9dy1UYtgYKsIDPcckTga3U6jlEVIR3GNl6l/vyVMgXwfSRlGjPCwo/UkFLeiQSi9jZvvwqvAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2464,6 +3616,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJYgCdAEXwwxBpzl/jwAA/vqtfmicOqIFxHn9dHUjhXtObY061HghtO+1cuYW40M4sHifcnv7l9dOFdcYCYpxAgQX/ONiL34eMS6V2hije7X2bAkbv1qCf5FexuZ0POf2kcNihUgfb32VM4a5SrXONMLyjP9n7XmAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJYgCdAEXwwxBpzl/jwAA/vqtfmicOqIFxHn9dHUjhXtObY061HghtO+1cuYW40M4sHifcnv7l9dOFdcYCYpxAgQX/ONiL34eMS6V2hije7X2bAkbv1qCf5FexuZ0POf2kcNihUgfb32VM4a5SrXONMLyjP9n7XmAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJYgCdAEXwwxBpzl/jwAA/vqtfmicOqIFxHn9dHUjhXtObY061HghtO+1cuYW40M4sHifcnv7l9dOFdcYCYpxAgQX/ONiL34eMS6V2hije7X2bAkbv1qCf5FexuZ0POf2kcNihUgfb32VM4a5SrXONMLyjP9n7XmAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw033-dark-indigo/v2/yw033-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJYgCdAEXwwxBpzl/jwAA/vqtfmicOqIFxHn9dHUjhXtObY061HghtO+1cuYW40M4sHifcnv7l9dOFdcYCYpxAgQX/ONiL34eMS6V2hije7X2bAkbv1qCf5FexuZ0POf2kcNihUgfb32VM4a5SrXONMLyjP9n7XmAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2491,7 +3739,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQAgCdASoQABAAAsBMJYgCdAEXwwxBpzl/jwAA/vqtfmicOqIFxHn9dHUjhXtObY061HghtO+1cuYW40M4sHifcnv7l9dOFdcYCYpxAgQX/ONiL34eMS6V2hije7X2bAkbv1qCf5FexuZ0POf2kcNihUgfb32VM4a5SrXONMLyjP9n7XmAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2519,7 +3767,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJbACdAEQAwQYp+nQAAD+9n7EybYtPYTw5sq2Zy9vU8j72nQ6HtbDK4hy+f3EFmTzLb3TQPoet2MW0lO26HKHEwV8VSNqCNvN9s44cKxJ0mjZejgorN0VS00ChDaBWKHlpxz0AAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2547,7 +3795,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwAgCdASoQABAAAsBMJQBOgN8AVUrzTXXnP6MAAP76rR0XsibU+aKNQ6rfGgxD0V4L1LL1dQ3xDG9BNa+n0E+8+8vc/rRKJU3sCdZceNQePonsq3DHRLEPOccRYPoLkBFErqlJBnX1QMrBVkzgLS0vGX7mmuxbiU4szmWR6AJjs8NZSKVSEgsAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2605,6 +3853,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAQCdASoQABAAAsBMJZACdADwmLrrEAD++q1xbOihxH6TQDIC0NHY9V2vw9oxg/TND8ccdn8Gub2mbjjRocCwofJG1yNkwXwlvgR6sjszDy1VaYee6iqdv9ea7GZ+HDh6qUHHn6sfmc4O3Rhh2V2KMPSreepqC15RoCSVQH+4pAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAQCdASoQABAAAsBMJZACdADwmLrrEAD++q1xbOihxH6TQDIC0NHY9V2vw9oxg/TND8ccdn8Gub2mbjjRocCwofJG1yNkwXwlvgR6sjszDy1VaYee6iqdv9ea7GZ+HDh6qUHHn6sfmc4O3Rhh2V2KMPSreepqC15RoCSVQH+4pAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAQCdASoQABAAAsBMJZACdADwmLrrEAD++q1xbOihxH6TQDIC0NHY9V2vw9oxg/TND8ccdn8Gub2mbjjRocCwofJG1yNkwXwlvgR6sjszDy1VaYee6iqdv9ea7GZ+HDh6qUHHn6sfmc4O3Rhh2V2KMPSreepqC15RoCSVQH+4pAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw036-light-wash/v2/yw036-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAQCdASoQABAAAsBMJZACdADwmLrrEAD++q1xbOihxH6TQDIC0NHY9V2vw9oxg/TND8ccdn8Gub2mbjjRocCwofJG1yNkwXwlvgR6sjszDy1VaYee6iqdv9ea7GZ+HDh6qUHHn6sfmc4O3Rhh2V2KMPSreepqC15RoCSVQH+4pAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2632,7 +3976,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAQCdASoQABAAAsBMJZACdADwmLrrEAD++q1xbOihxH6TQDIC0NHY9V2vw9oxg/TND8ccdn8Gub2mbjjRocCwofJG1yNkwXwlvgR6sjszDy1VaYee6iqdv9ea7GZ+HDh6qUHHn6sfmc4O3Rhh2V2KMPSreepqC15RoCSVQH+4pAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2660,7 +4004,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQAgCdASoQABAAAsBMJbACdAEOegicgm1AAP75BvqHk/jhjCiyL9aO0p+X9HFb+zGZ7u2WZnT3KxNeztjBvJptQD3y8faiRK1Bro6bOY5sYu/B1Rrixdjwoy0BtUHNgXzPt0cM2UPuXCbsXfIJ8RQzKHlqI6KxpUAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2688,7 +4032,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwAgCdASoQABAAAsBMJZACdADw25dkOOGcUAD++q15/Ave5bz/jeIVqHUrG5R97SWbDfB7FyekyK/M7ozpHhAOX56vLnhdSx1QEZ1F3IQAI2R29i+QHUIUzXI/zbQq7aqpQresFbsK2ifoFqWO6OZohDJ3je9B1FLObFlGf7QoH2pAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2716,7 +4060,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQABAAAsBMJbACdADIh/NCAAD+4p9mj2cbMbpQyEst66+db4P343uwfk43DtPoGb/IBoQcjPpahcqNUdNwPT3XRiObP0Aym8Eoq4aBcoLprdBpAAA="
       },
       {
-        "idx": 4,
+        "idx": 8,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2774,6 +4118,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoQABAAAsBMJYwCdH8AGN1SZyBuJyRAAP76re03dFtDRpm/SQCDjp+79bMHJ+40iu3sLnrmq47Jm4KUA/6LPTG5RLy37689G4Wl0axsT2u2l5AE0W4+/CLzw2vj6qCjqUmS6zyHKIyunQ0QnpNgAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoQABAAAsBMJYwCdH8AGN1SZyBuJyRAAP76re03dFtDRpm/SQCDjp+79bMHJ+40iu3sLnrmq47Jm4KUA/6LPTG5RLy37689G4Wl0axsT2u2l5AE0W4+/CLzw2vj6qCjqUmS6zyHKIyunQ0QnpNgAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoQABAAAsBMJYwCdH8AGN1SZyBuJyRAAP76re03dFtDRpm/SQCDjp+79bMHJ+40iu3sLnrmq47Jm4KUA/6LPTG5RLy37689G4Wl0axsT2u2l5AE0W4+/CLzw2vj6qCjqUmS6zyHKIyunQ0QnpNgAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw037-dark-indigo/v2/yw037-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoQABAAAsBMJYwCdH8AGN1SZyBuJyRAAP76re03dFtDRpm/SQCDjp+79bMHJ+40iu3sLnrmq47Jm4KUA/6LPTG5RLy37689G4Wl0axsT2u2l5AE0W4+/CLzw2vj6qCjqUmS6zyHKIyunQ0QnpNgAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2801,7 +4241,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoQABAAAsBMJYwCdH8AGN1SZyBuJyRAAP76re03dFtDRpm/SQCDjp+79bMHJ+40iu3sLnrmq47Jm4KUA/6LPTG5RLy37689G4Wl0axsT2u2l5AE0W4+/CLzw2vj6qCjqUmS6zyHKIyunQ0QnpNgAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2829,7 +4269,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQAgCdASoQABAAAsBMJZgCdAEN5vpTftXAAP75A8G/NC0RyHBEHtPPHikvFCuc96/wY8fgVd4WT+asm6OBXZW/VvBji1uNkDMDdNv0m2GDO8oFcp34ZVdGXS/AIgv+4f8xWuoifK6QQid3Ty8Wwut7lUedZMaJvgA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2857,7 +4297,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQABAAAsBMJYgCdH8AGBs7BsSe5AD++jjnr4YhBlEKA81g/mrv/bQ1iSar0Wcv8z4E0FRm2TicxIK+eEohGiZIuuwFOPuF0jGCo5ADU0Jl7fsN2P0AAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -2885,7 +4325,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQABAAAsBMJQBOj+ACrv42wK0AAP76rf/Ua7o0z8sf3taZGsZxVnOaswWQ7ejRA/tDzhkHVeqG8TsSxu93eiUVkoL3ls2UCSyzyAAA"
       },
       {
-        "idx": 4,
+        "idx": 8,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3085,6 +4525,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwAgCdASoQABAAAsBMJYwCdH8AFnE9hum6AAD++q37U83OugWdTNeN3x1Iqt5zsLfAP5J3jiPmyO+gbw95kwun+dctHgdRwoY4+qtq1ofIvV2/W9ylhP7ms6q1p8bFS2AfRr25WXB95/Fzv34aQ+W6Sl7/mYOim9DX3jdSYAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwAgCdASoQABAAAsBMJYwCdH8AFnE9hum6AAD++q37U83OugWdTNeN3x1Iqt5zsLfAP5J3jiPmyO+gbw95kwun+dctHgdRwoY4+qtq1ofIvV2/W9ylhP7ms6q1p8bFS2AfRr25WXB95/Fzv34aQ+W6Sl7/mYOim9DX3jdSYAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwAgCdASoQABAAAsBMJYwCdH8AFnE9hum6AAD++q37U83OugWdTNeN3x1Iqt5zsLfAP5J3jiPmyO+gbw95kwun+dctHgdRwoY4+qtq1ofIvV2/W9ylhP7ms6q1p8bFS2AfRr25WXB95/Fzv34aQ+W6Sl7/mYOim9DX3jdSYAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw039-dark-indigo/v2/yw039-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwAgCdASoQABAAAsBMJYwCdH8AFnE9hum6AAD++q37U83OugWdTNeN3x1Iqt5zsLfAP5J3jiPmyO+gbw95kwun+dctHgdRwoY4+qtq1ofIvV2/W9ylhP7ms6q1p8bFS2AfRr25WXB95/Fzv34aQ+W6Sl7/mYOim9DX3jdSYAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3112,7 +4648,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwAgCdASoQABAAAsBMJYwCdH8AFnE9hum6AAD++q37U83OugWdTNeN3x1Iqt5zsLfAP5J3jiPmyO+gbw95kwun+dctHgdRwoY4+qtq1ofIvV2/W9ylhP7ms6q1p8bFS2AfRr25WXB95/Fzv34aQ+W6Sl7/mYOim9DX3jdSYAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3140,7 +4676,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAQCdASoQABAAAsBMJYgCdADxLPvfpAD++q33vbhijbb8mWqUvUz8G3rCef9bLqtgzXFir6gXm5xpFGZZR16vrswPlqBOLij0yNxTbC2ZL2HeoLJxCAjVNGbD+IPrGHVN91qdi20/32JW6KSnDgAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3168,7 +4704,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABwAgCdASoQABAAAsBMJYwCdH8AGN1T1efFKPAAAP76rX+d37ceLo4kcOxAJkcYqLLDf87scGzCpW+DCEC9geY4wNWGrHG4MbWV44wNRFfxP4LG3lxxHrg4qGUOM7v8LChTGIAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3226,6 +4762,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAgCdASoQABAAAsBMJbACdGaA2wAHLZdpkYu48AAA/vVie695/+8kLGw+p736/MqrCAUsrCnCFJFsaEYd3qpzlQ3U4J40tUJFh1xvCo0Tg7Me4901BDED1EdmJhWwZ1b1+PhmruvtVbmJSXIU/Q8lOD0T4UMrS6K/HWAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAgCdASoQABAAAsBMJbACdGaA2wAHLZdpkYu48AAA/vVie695/+8kLGw+p736/MqrCAUsrCnCFJFsaEYd3qpzlQ3U4J40tUJFh1xvCo0Tg7Me4901BDED1EdmJhWwZ1b1+PhmruvtVbmJSXIU/Q8lOD0T4UMrS6K/HWAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAgCdASoQABAAAsBMJbACdGaA2wAHLZdpkYu48AAA/vVie695/+8kLGw+p736/MqrCAUsrCnCFJFsaEYd3qpzlQ3U4J40tUJFh1xvCo0Tg7Me4901BDED1EdmJhWwZ1b1+PhmruvtVbmJSXIU/Q8lOD0T4UMrS6K/HWAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw041-light-wash/v2/yw041-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAgCdASoQABAAAsBMJbACdGaA2wAHLZdpkYu48AAA/vVie695/+8kLGw+p736/MqrCAUsrCnCFJFsaEYd3qpzlQ3U4J40tUJFh1xvCo0Tg7Me4901BDED1EdmJhWwZ1b1+PhmruvtVbmJSXIU/Q8lOD0T4UMrS6K/HWAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3253,7 +4885,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAgCdASoQABAAAsBMJbACdGaA2wAHLZdpkYu48AAA/vVie695/+8kLGw+p736/MqrCAUsrCnCFJFsaEYd3qpzlQ3U4J40tUJFh1xvCo0Tg7Me4901BDED1EdmJhWwZ1b1+PhmruvtVbmJSXIU/Q8lOD0T4UMrS6K/HWAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3281,7 +4913,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoQABAAAsBMJbACdGaAAwA4++v/JAAA/vhDxW5QES56iLhBXc2Oe+IyackoWS90nq/9v9t4cPnM08a4Mme+GbrjRFe8Mm4Cp6WtCi4R1Hh8iwXrLII1MenLgqS3nAnrPERptoB1iQAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3309,7 +4941,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQAgCdASoQABAAAsBMJbACdGaAAv/6W9QYsf/DgAD++QNr9f3ZV3KoSQvQvnuLyDiV9EZyobQXHVwSVoxvYOcO3G3JUYHTOsfZc1/6jPpHEFgHjviHZWc6ZHxbT/pTaQAE6nHwFXGR5ATRzlNNIbIA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3369,6 +5001,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQABAAAsBMJZQCdICXFcn92ChAAP76reH3Gw3XndJwhS9l6GkzOaOLNTzKevHp1sxiWL01r/ufTfOY2w7iMwzYeyu1vduzQX7xvXMq5LIyWwEkSkU5xcpQzkTJy30AAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQABAAAsBMJZQCdICXFcn92ChAAP76reH3Gw3XndJwhS9l6GkzOaOLNTzKevHp1sxiWL01r/ufTfOY2w7iMwzYeyu1vduzQX7xvXMq5LIyWwEkSkU5xcpQzkTJy30AAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQABAAAsBMJZQCdICXFcn92ChAAP76reH3Gw3XndJwhS9l6GkzOaOLNTzKevHp1sxiWL01r/ufTfOY2w7iMwzYeyu1vduzQX7xvXMq5LIyWwEkSkU5xcpQzkTJy30AAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-dark-indigo/v2/yw046-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQABAAAsBMJZQCdICXFcn92ChAAP76reH3Gw3XndJwhS9l6GkzOaOLNTzKevHp1sxiWL01r/ufTfOY2w7iMwzYeyu1vduzQX7xvXMq5LIyWwEkSkU5xcpQzkTJy30AAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3396,7 +5124,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQABAAAsBMJZQCdICXFcn92ChAAP76reH3Gw3XndJwhS9l6GkzOaOLNTzKevHp1sxiWL01r/ufTfOY2w7iMwzYeyu1vduzQX7xvXMq5LIyWwEkSkU5xcpQzkTJy30AAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3424,7 +5152,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABwAgCdASoQABAAAsBMJYwCdH8AguSqwrpZ9sAAAP76reVb3jaCwqYC9TOQuLWJYN8y5aFm4CwLMm7emK7rEmusSBk0hHQVT8VpAOj43oEEPMKTviu9nJZcLRqYPUxICOTHqo5A8mWH1xTwgyuj4jAAAAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3452,7 +5180,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQABAAAsBMJZQCdIDZGNx/FTX6EAAA/vqtHmjNKkJ1VtfVjx7/Azl9BFipeyCV7pYt5PB/FIVK8QDE2JrEeEx+cja/1BEe28vniYflIDodHT6/uEjsOd6JfVYgx20oAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3510,6 +5238,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQABAAAsBMJYwCdH8AEZSHHwAA/vqt1ATpNJNzNbed8swJRy+N4KNZ8gsN2ToYA4ojkbtjEi501JtYCrSbRIzfQdI0AAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQABAAAsBMJYwCdH8AEZSHHwAA/vqt1ATpNJNzNbed8swJRy+N4KNZ8gsN2ToYA4ojkbtjEi501JtYCrSbRIzfQdI0AAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQABAAAsBMJYwCdH8AEZSHHwAA/vqt1ATpNJNzNbed8swJRy+N4KNZ8gsN2ToYA4ojkbtjEi501JtYCrSbRIzfQdI0AAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw046-light-wash/v2/yw046-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQABAAAsBMJYwCdH8AEZSHHwAA/vqt1ATpNJNzNbed8swJRy+N4KNZ8gsN2ToYA4ojkbtjEi501JtYCrSbRIzfQdI0AAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3537,7 +5361,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQABAAAsBMJYwCdH8AEZSHHwAA/vqt1ATpNJNzNbed8swJRy+N4KNZ8gsN2ToYA4ojkbtjEi501JtYCrSbRIzfQdI0AAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3565,7 +5389,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQABAAAsBMJYwCdH8IIABXK5o+cgAA/vqt9Q63Om9J3pm95T3qe0cKMYYLC3DN6+Pm6tdDx2HFBciR1JKFVP9y0AA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3593,7 +5417,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQABAAAsBMJYwCdH8AFcn4sAAA/vqt09OqbAlVPEOo4jDpMhxzj4ExebYCizypAtGH9Biy8qr8ST9YDGi627KwmrRWBBNgAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3651,6 +5475,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAAsBMJYwCdICXgrCMY5syFRmAAP76rR8RoQ2vFOWD7WXfHIRK/DD0fSdjicBPgG2GPElCRHfdMSQIOCMUnuv+GP18x80ZJr/WbxDVvAyhgUs4bD7Ra3cfhYnd0cligAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAAsBMJYwCdICXgrCMY5syFRmAAP76rR8RoQ2vFOWD7WXfHIRK/DD0fSdjicBPgG2GPElCRHfdMSQIOCMUnuv+GP18x80ZJr/WbxDVvAyhgUs4bD7Ra3cfhYnd0cligAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAAsBMJYwCdICXgrCMY5syFRmAAP76rR8RoQ2vFOWD7WXfHIRK/DD0fSdjicBPgG2GPElCRHfdMSQIOCMUnuv+GP18x80ZJr/WbxDVvAyhgUs4bD7Ra3cfhYnd0cligAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw047-dark-indigo/v2/yw047-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAAsBMJYwCdICXgrCMY5syFRmAAP76rR8RoQ2vFOWD7WXfHIRK/DD0fSdjicBPgG2GPElCRHfdMSQIOCMUnuv+GP18x80ZJr/WbxDVvAyhgUs4bD7Ra3cfhYnd0cligAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3678,7 +5598,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAAsBMJYwCdICXgrCMY5syFRmAAP76rR8RoQ2vFOWD7WXfHIRK/DD0fSdjicBPgG2GPElCRHfdMSQIOCMUnuv+GP18x80ZJr/WbxDVvAyhgUs4bD7Ra3cfhYnd0cligAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3706,7 +5626,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQAgCdASoQABAAAsBMJZQCdIIjFcrrz1DqAgAA/vqt1AafGmQXZyVL2m00EMXR5CLkXV8flWtP21u/gK5VLsDN7eguMFvRqjS1Bs45689YqoSvmsJWp/B1PS85s373n1r2Ssusw2y7nGiBonPs7Bz6+pUMLgAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3734,7 +5654,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQABAAAsBMJYwCdICXFVsWzB9VwAD++qznftOIFVEFsWbSLaJd+Iryq4kSHSY6eAjWnJut8TkSC/PJZ6AYX8fbIb9KMil1ezSQYuyd3bJNHcAmvh0VAXLPpDVwMUzYaLAVgAAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3792,6 +5712,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAAsBMJYwCdH8AFXipgoIAAP76reeHbA8OXcs6b4iDPd557mP3wz77LaYRw+9Hb6a9NungbHH0DdNBWHHx8z8twAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAAsBMJYwCdH8AFXipgoIAAP76reeHbA8OXcs6b4iDPd557mP3wz77LaYRw+9Hb6a9NungbHH0DdNBWHHx8z8twAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAAsBMJYwCdH8AFXipgoIAAP76reeHbA8OXcs6b4iDPd557mP3wz77LaYRw+9Hb6a9NungbHH0DdNBWHHx8z8twAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw073-light-wash/v2/yw073-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAAsBMJYwCdH8AFXipgoIAAP76reeHbA8OXcs6b4iDPd557mP3wz77LaYRw+9Hb6a9NungbHH0DdNBWHHx8z8twAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3819,7 +5835,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAAsBMJYwCdH8AFXipgoIAAP76reeHbA8OXcs6b4iDPd557mP3wz77LaYRw+9Hb6a9NungbHH0DdNBWHHx8z8twAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3847,7 +5863,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAgCdASoQABAAAsBMJYwCdH8AE7EGZmAgAAD++q3T06qMKZkP7boiPeLTOUB7Z4FmvV49jiGcpP5ETItP68hCYMgAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -3875,7 +5891,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQABAAAsBMJQBOj+ADAAxP8TMAAP76rUb+M8HuGZvzFHOeLHcwXr6MYe5hK/YW+214NqsD/wU6QjqZr3awXVbTAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4075,6 +6091,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJaQAM4APs7/CC5VcAAD++qmvvtfsuFJPIftcQttm6v1U+5PfMr+kkXXPhTxL7tZqGO63EnP0qvkdgC7G6veiCIbmFyga4DqOeP9uVxF3gfjtXj0Zz30Xd87gwKcZjowvbo6LaAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJaQAM4APs7/CC5VcAAD++qmvvtfsuFJPIftcQttm6v1U+5PfMr+kkXXPhTxL7tZqGO63EnP0qvkdgC7G6veiCIbmFyga4DqOeP9uVxF3gfjtXj0Zz30Xd87gwKcZjowvbo6LaAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJaQAM4APs7/CC5VcAAD++qmvvtfsuFJPIftcQttm6v1U+5PfMr+kkXXPhTxL7tZqGO63EnP0qvkdgC7G6veiCIbmFyga4DqOeP9uVxF3gfjtXj0Zz30Xd87gwKcZjowvbo6LaAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw081-onyx-black/v2/yw081-onyx-black_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJaQAM4APs7/CC5VcAAD++qmvvtfsuFJPIftcQttm6v1U+5PfMr+kkXXPhTxL7tZqGO63EnP0qvkdgC7G6veiCIbmFyga4DqOeP9uVxF3gfjtXj0Zz30Xd87gwKcZjowvbo6LaAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4102,7 +6214,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQABAAAsBMJaQAM4APs7/CC5VcAAD++qmvvtfsuFJPIftcQttm6v1U+5PfMr+kkXXPhTxL7tZqGO63EnP0qvkdgC7G6veiCIbmFyga4DqOeP9uVxF3gfjtXj0Zz30Xd87gwKcZjowvbo6LaAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4130,7 +6242,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQABAAAsBMJaQAAv+qS9VdoEEkAP76rfB4+s0vi3kjCMrQM33ltyK9MHoBDm3h0TKOu50fjYFVdp2AHs9WWDJS0rzGN/eLa0C3fSibavoEk8slepv0M/NlGNVXUHHclfsIxH+t+kGAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4158,7 +6270,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQABAAAsBMJaQAEQUJ16angRmAAP76re6nrD86OfT2JYViXMKYdfN6BJQY1l/hEbandCZokeJU0yTmbLLTRgtWMtWkYqA/1E+Vekc3Olri/6W4toZZ3Abiqna68ztAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4358,6 +6470,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoQABAAAsBMJYwCdH8AgpiufYMfjYbAAAD++q3h60cWA1J/IHe/Bq1CaxNdpVpov1Ekdzavvdqa1g9d584wvoT8a7cJR82UCc98SnFHnooGfkh3jI469dAR9atoig9X4hNczLdFsxNgAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoQABAAAsBMJYwCdH8AgpiufYMfjYbAAAD++q3h60cWA1J/IHe/Bq1CaxNdpVpov1Ekdzavvdqa1g9d584wvoT8a7cJR82UCc98SnFHnooGfkh3jI469dAR9atoig9X4hNczLdFsxNgAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoQABAAAsBMJYwCdH8AgpiufYMfjYbAAAD++q3h60cWA1J/IHe/Bq1CaxNdpVpov1Ekdzavvdqa1g9d584wvoT8a7cJR82UCc98SnFHnooGfkh3jI469dAR9atoig9X4hNczLdFsxNgAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-dark-indigo/v2/yw124-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoQABAAAsBMJYwCdH8AgpiufYMfjYbAAAD++q3h60cWA1J/IHe/Bq1CaxNdpVpov1Ekdzavvdqa1g9d584wvoT8a7cJR82UCc98SnFHnooGfkh3jI469dAR9atoig9X4hNczLdFsxNgAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4385,7 +6593,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoQABAAAsBMJYwCdH8AgpiufYMfjYbAAAD++q3h60cWA1J/IHe/Bq1CaxNdpVpov1Ekdzavvdqa1g9d584wvoT8a7cJR82UCc98SnFHnooGfkh3jI469dAR9atoig9X4hNczLdFsxNgAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4413,7 +6621,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJYwCdH8AFXdtHTkgAP76rcZdLeab5rOY4K1vRM7du88hObRenzEqsPlNRZ3UIwVsxT6d2C0I/yfSXU0GxmxPuT394xsYxqyK3mtO+8nPd6JRX8RsdTKn6xpfvnO61zzNdh5SAAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4441,7 +6649,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQABAAAsBMJQBOj+AQTpVXkIzRMAD++q0aAwipKV7OoKB+CN9oc2sCmrS2IoavT47jatavtdaBBibhhtZ7h3vZxSg//WTrjDWU0aSOK0uGwOh9qvb1KxHWSbIAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4499,6 +6707,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQABAAAsBMJQBOj+ACrxguk/QAAP76rfB2Wd9IIvPy0Cr0SuJ8xERjCxUq/e2T9RQH/9E7XB6IQAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQABAAAsBMJQBOj+ACrxguk/QAAP76rfB2Wd9IIvPy0Cr0SuJ8xERjCxUq/e2T9RQH/9E7XB6IQAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQABAAAsBMJQBOj+ACrxguk/QAAP76rfB2Wd9IIvPy0Cr0SuJ8xERjCxUq/e2T9RQH/9E7XB6IQAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw124-light-wash/v2/yw124-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQABAAAsBMJQBOj+ACrxguk/QAAP76rfB2Wd9IIvPy0Cr0SuJ8xERjCxUq/e2T9RQH/9E7XB6IQAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4526,7 +6830,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQABAAAsBMJQBOj+ACrxguk/QAAP76rfB2Wd9IIvPy0Cr0SuJ8xERjCxUq/e2T9RQH/9E7XB6IQAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4554,7 +6858,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAgCdASoQABAAAsBMJZQCdH8AGABs2k9QAAD++q24PKWjKDvG9JCj0bbNsD/HdxFAZHEqiZNr56uj4sNjAAAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4582,7 +6886,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQABAAAsBMJZQCdH8AFco15AAA/vqt50UmrKnbC6+l/UA2aFCPkej+Tstbbn4ai4/cxZLuTXdIUjWAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4782,6 +7086,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVsYwdAuIAA/vqn5eWlt9R5hfpkY8X1TqCcmynS2QcGt2Zja+CkI1K6afgan4P5Nl4AAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVsYwdAuIAA/vqn5eWlt9R5hfpkY8X1TqCcmynS2QcGt2Zja+CkI1K6afgan4P5Nl4AAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVsYwdAuIAA/vqn5eWlt9R5hfpkY8X1TqCcmynS2QcGt2Zja+CkI1K6afgan4P5Nl4AAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-light-wash/v2/yw131-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVsYwdAuIAA/vqn5eWlt9R5hfpkY8X1TqCcmynS2QcGt2Zja+CkI1K6afgan4P5Nl4AAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4809,7 +7209,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVsYwdAuIAA/vqn5eWlt9R5hfpkY8X1TqCcmynS2QcGt2Zja+CkI1K6afgan4P5Nl4AAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4837,7 +7237,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACQAgCdASoQABAAAsBMJQBOj+EEA2wAHK2MSAMZoAD++qV/7Byy/qx+6DEAPJzU84vKhYHc7i+l7jbcYDxSHV1JWvXUzr/2wAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4865,7 +7265,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVsYwBHtAAA/vqlf+7Dk2iEU2V8ciYI3UhwgqtWkWHqIY3scofD11fIOBsWxYXcG2R4AA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4925,6 +7325,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQABAAAsBMJYwCdICXGBrjRnb5swAA/vqlf/zNrVB0Ackt4Nf4OChUzlcx0QnhZF+e5f015z6Vo8GhZ5WJk6tR280W3bIwzCYe4+A8JB0SgYpAAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQABAAAsBMJYwCdICXGBrjRnb5swAA/vqlf/zNrVB0Ackt4Nf4OChUzlcx0QnhZF+e5f015z6Vo8GhZ5WJk6tR280W3bIwzCYe4+A8JB0SgYpAAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQABAAAsBMJYwCdICXGBrjRnb5swAA/vqlf/zNrVB0Ackt4Nf4OChUzlcx0QnhZF+e5f015z6Vo8GhZ5WJk6tR280W3bIwzCYe4+A8JB0SgYpAAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw131-dark-indigo/v2/yw131-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQABAAAsBMJYwCdICXGBrjRnb5swAA/vqlf/zNrVB0Ackt4Nf4OChUzlcx0QnhZF+e5f015z6Vo8GhZ5WJk6tR280W3bIwzCYe4+A8JB0SgYpAAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4952,7 +7448,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQABAAAsBMJYwCdICXGBrjRnb5swAA/vqlf/zNrVB0Ackt4Nf4OChUzlcx0QnhZF+e5f015z6Vo8GhZ5WJk6tR280W3bIwzCYe4+A8JB0SgYpAAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -4980,7 +7476,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQABAAAsBMJQBOkCYivWO16qCUAAD++q34XMCS27UXamNerKfuyX5wT8zDS8YswGL7JpGTZLyHDqCZJr/cZV9xhwZxvHstftHrCYYuru/vYMEGMD0DaPyFDGAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5008,7 +7504,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJZQC7IExGBrjVyBPfsgA/vqlouN/HNoLVdBzplG2dUM9g+stYJQ8d962qvZVtoYu+H+ni7miLMRtfxfGVfFhxC71ThLibFeVJ2wKmDwwWn564AA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5210,6 +7706,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQAgCdASoQABAAAsBMJYwCdAYsPlWE76i88tAA/vqtjn+Ut8whpht54zYnc0f+4okt06N4H3kl+kfcFBg9F4EL8bS/LniZugdnGUuXESU3tBMUxptqZV8PX+t/1uVMb7NJVD0UNuuhFgeHj8uj+uoPgeQAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQAgCdASoQABAAAsBMJYwCdAYsPlWE76i88tAA/vqtjn+Ut8whpht54zYnc0f+4okt06N4H3kl+kfcFBg9F4EL8bS/LniZugdnGUuXESU3tBMUxptqZV8PX+t/1uVMb7NJVD0UNuuhFgeHj8uj+uoPgeQAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQAgCdASoQABAAAsBMJYwCdAYsPlWE76i88tAA/vqtjn+Ut8whpht54zYnc0f+4okt06N4H3kl+kfcFBg9F4EL8bS/LniZugdnGUuXESU3tBMUxptqZV8PX+t/1uVMb7NJVD0UNuuhFgeHj8uj+uoPgeQAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-dark-indigo/v2/yw126-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQAgCdASoQABAAAsBMJYwCdAYsPlWE76i88tAA/vqtjn+Ut8whpht54zYnc0f+4okt06N4H3kl+kfcFBg9F4EL8bS/LniZugdnGUuXESU3tBMUxptqZV8PX+t/1uVMb7NJVD0UNuuhFgeHj8uj+uoPgeQAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5237,7 +7829,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQAgCdASoQABAAAsBMJYwCdAYsPlWE76i88tAA/vqtjn+Ut8whpht54zYnc0f+4okt06N4H3kl+kfcFBg9F4EL8bS/LniZugdnGUuXESU3tBMUxptqZV8PX+t/1uVMb7NJVD0UNuuhFgeHj8uj+uoPgeQAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5265,7 +7857,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQABAAAsBMJZQCdH8AGMJA7xCpAAD++q2eF1rfPD0h7CelQ2VQDoHuR9v49NZzMC+1Pax4KgXrWm+t5sLzV8rG7VQUIZbkdWWh0MEAeiAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5293,7 +7885,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJZQCdAEfXED1KMSQAP76yC5JRuad40tDKuoxW77QSj/WKXuE5adpaFnr4yDYmgdneX8F4n5+wmZ/4Sf5s1LYkfSEK8C8PZ+pVx/cN3JQBU5JtZ/Q2x0FH+NbSD3hqMeI1hvpLAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5351,6 +7943,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoQABAAAsBMJagCdGaA20AGXLRXZNRAAP76rfn5l5+zped1Oa9YrPzkfCcgzCsK2XHHi8WhIYKPKhbz+pNpUW1GjAiyfbHLOJGK5W5KD38Q+ab2AAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoQABAAAsBMJagCdGaA20AGXLRXZNRAAP76rfn5l5+zped1Oa9YrPzkfCcgzCsK2XHHi8WhIYKPKhbz+pNpUW1GjAiyfbHLOJGK5W5KD38Q+ab2AAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoQABAAAsBMJagCdGaA20AGXLRXZNRAAP76rfn5l5+zped1Oa9YrPzkfCcgzCsK2XHHi8WhIYKPKhbz+pNpUW1GjAiyfbHLOJGK5W5KD38Q+ab2AAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw126-light-wash/v2/yw126-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoQABAAAsBMJagCdGaA20AGXLRXZNRAAP76rfn5l5+zped1Oa9YrPzkfCcgzCsK2XHHi8WhIYKPKhbz+pNpUW1GjAiyfbHLOJGK5W5KD38Q+ab2AAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5378,7 +8066,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoQABAAAsBMJagCdGaA20AGXLRXZNRAAP76rfn5l5+zped1Oa9YrPzkfCcgzCsK2XHHi8WhIYKPKhbz+pNpUW1GjAiyfbHLOJGK5W5KD38Q+ab2AAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5406,7 +8094,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAgCdASoQABAAAsBMJZgCdGaA20AHUZ4IufKAAP76rUd2WgRvVF1sk+SDkrFZ+cj2pLSWiEu+0TaL/xt8Xq0kPnn0591w9QN/HhNbz5jg+IomNxCPTMqxqhtcQAAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5434,7 +8122,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwAgCdASoQABAAAsBMJQBOj+EEA2wAGXcDzr4AAP76rfhCAOXXpZi0acKx/2XZeYrpe2WweVrDftlKYNUjv7ceO52pXJD13LrN89/HGaZ5cTeAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5492,6 +8180,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJYwCdH8AGMI+S+9lH1AA/vqtomfYPNN+dRCbvXZ4mO+I1AjD8/CVlCrdWBPCGF80qWjaTHCqw+xRNeDiuF13TgZS9mNgaF+WQ1ewNJGbv6LH8AAAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJYwCdH8AGMI+S+9lH1AA/vqtomfYPNN+dRCbvXZ4mO+I1AjD8/CVlCrdWBPCGF80qWjaTHCqw+xRNeDiuF13TgZS9mNgaF+WQ1ewNJGbv6LH8AAAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJYwCdH8AGMI+S+9lH1AA/vqtomfYPNN+dRCbvXZ4mO+I1AjD8/CVlCrdWBPCGF80qWjaTHCqw+xRNeDiuF13TgZS9mNgaF+WQ1ewNJGbv6LH8AAAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embroidered/v2/yw123-embroidered_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJYwCdH8AGMI+S+9lH1AA/vqtomfYPNN+dRCbvXZ4mO+I1AjD8/CVlCrdWBPCGF80qWjaTHCqw+xRNeDiuF13TgZS9mNgaF+WQ1ewNJGbv6LH8AAAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5519,7 +8303,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQABAAAsBMJYwCdH8AGMI+S+9lH1AA/vqtomfYPNN+dRCbvXZ4mO+I1AjD8/CVlCrdWBPCGF80qWjaTHCqw+xRNeDiuF13TgZS9mNgaF+WQ1ewNJGbv6LH8AAAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5547,7 +8331,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQABAAAsBMJQBOkBsjACv47uY6AAD++q1Fquk/Wd1D129b9+kCVPW9Fa1JAULQflB1tjblslz8r0id3f9qkprwBTSHTsNOy1S25d6oVmqYwswAAAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5575,7 +8359,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABQAgCdASoQABAAAsBMJZQCxDExGN3/fTV66gAA/vqt02O3J4yrYyIDcVSpmQ+gBduHb1xhb9OdG0xzbEKkmcDWg1jfn5Hkk/tc4gAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5633,6 +8417,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQABAAAsBMJZwAApMIDhEcAAD++q30HrcIN3ndOoP1aCFi+3benAmXus7GJyN6THYEkR+0krGJwGlf2rc3a1NE3UHQjMjoE14MLpjp190BjlEDU/A9GQFMUQwCAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQABAAAsBMJZwAApMIDhEcAAD++q30HrcIN3ndOoP1aCFi+3benAmXus7GJyN6THYEkR+0krGJwGlf2rc3a1NE3UHQjMjoE14MLpjp190BjlEDU/A9GQFMUQwCAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQABAAAsBMJZwAApMIDhEcAAD++q30HrcIN3ndOoP1aCFi+3benAmXus7GJyN6THYEkR+0krGJwGlf2rc3a1NE3UHQjMjoE14MLpjp190BjlEDU/A9GQFMUQwCAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-b/v2/yw123-embellished-b_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQABAAAsBMJZwAApMIDhEcAAD++q30HrcIN3ndOoP1aCFi+3benAmXus7GJyN6THYEkR+0krGJwGlf2rc3a1NE3UHQjMjoE14MLpjp190BjlEDU/A9GQFMUQwCAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5660,7 +8540,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQABAAAsBMJZwAApMIDhEcAAD++q30HrcIN3ndOoP1aCFi+3benAmXus7GJyN6THYEkR+0krGJwGlf2rc3a1NE3UHQjMjoE14MLpjp190BjlEDU/A9GQFMUQwCAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5688,7 +8568,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQABAAAsBMJZQC7ADw1CgI1hYAAP76rfTD1fgtlwWXMljeiofcJbVA9OT6d4wW0vrawmpEdk1O5i0+nqZ84DgdA92JpBin+2KgamLAd4ZZwN2MfE1xEaRgAAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5716,7 +8596,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAAsBMJZwC7IExguiqxGWANvkAAP76rfTDoJuUxhtbgzbX3H0UD65bb20m8uVzSqR8HhMf1PVlCq6mL8WLmJ9ddwJZwUgD+RFmv14p4W4gtPiLHKwarcgtEkR+dBOAYAAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5774,6 +8654,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQABAAAsBMJZQC7AD5i1igJqaKvIAA/vqrN+pWsWYs1965WiTdunaJ3S+Siyz/QKqkN8EbqpXhHTqR213k4fF6PnO1byxkFMlIIeXppGEr8hzp+l1JSZTG+ZyXPv/FyHZ2cu4AAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQABAAAsBMJZQC7AD5i1igJqaKvIAA/vqrN+pWsWYs1965WiTdunaJ3S+Siyz/QKqkN8EbqpXhHTqR213k4fF6PnO1byxkFMlIIeXppGEr8hzp+l1JSZTG+ZyXPv/FyHZ2cu4AAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQABAAAsBMJZQC7AD5i1igJqaKvIAA/vqrN+pWsWYs1965WiTdunaJ3S+Siyz/QKqkN8EbqpXhHTqR213k4fF6PnO1byxkFMlIIeXppGEr8hzp+l1JSZTG+ZyXPv/FyHZ2cu4AAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw123-embellished-c/v2/yw123-embellished-c_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQABAAAsBMJZQC7AD5i1igJqaKvIAA/vqrN+pWsWYs1965WiTdunaJ3S+Siyz/QKqkN8EbqpXhHTqR213k4fF6PnO1byxkFMlIIeXppGEr8hzp+l1JSZTG+ZyXPv/FyHZ2cu4AAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5801,7 +8777,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQABAAAsBMJZQC7AD5i1igJqaKvIAA/vqrN+pWsWYs1965WiTdunaJ3S+Siyz/QKqkN8EbqpXhHTqR213k4fF6PnO1byxkFMlIIeXppGEr8hzp+l1JSZTG+ZyXPv/FyHZ2cu4AAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5829,7 +8805,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJZQC7AEO/E1WfcAA/vqpG+vup/e/tkxnrzaBpbBwc5eEFUkR1I0qaaYd/2+kZuyARsfw79+v2WSuH/P9jSzo15DNCuzO9mIzY+DeHur0B8AA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5857,7 +8833,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAQCdASoQABAAAsBMJZwAApMZBrAETAD++q2jJsgj0T7OSpmLN0+yL8Rafz0paLN4W1+9tLC8Rnawr6wb3lI3QTOwPzqbogLtK37SEHo0v98U9YubWg8ieNjpsaFEKa0YHGcLQFMUQwCAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5915,6 +8891,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQABAAAsBMJZwAAqo/LifQ8gAA/vqtxnjVKu2l+dYXb6darIPTu28gBMvdZ6PiyZUMeZ4LmOIxxdmXZZmjynzsyD9i+I9+w1bP93yzN++ukb5v9R6VT3ch1FpDjbG+ZYRG/8P88CEAAA=="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQABAAAsBMJZwAAqo/LifQ8gAA/vqtxnjVKu2l+dYXb6darIPTu28gBMvdZ6PiyZUMeZ4LmOIxxdmXZZmjynzsyD9i+I9+w1bP93yzN++ukb5v9R6VT3ch1FpDjbG+ZYRG/8P88CEAAA=="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQABAAAsBMJZwAAqo/LifQ8gAA/vqtxnjVKu2l+dYXb6darIPTu28gBMvdZ6PiyZUMeZ4LmOIxxdmXZZmjynzsyD9i+I9+w1bP93yzN++ukb5v9R6VT3ch1FpDjbG+ZYRG/8P88CEAAA=="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-dark-indigo/v2/yw125-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQABAAAsBMJZwAAqo/LifQ8gAA/vqtxnjVKu2l+dYXb6darIPTu28gBMvdZ6PiyZUMeZ4LmOIxxdmXZZmjynzsyD9i+I9+w1bP93yzN++ukb5v9R6VT3ch1FpDjbG+ZYRG/8P88CEAAA=="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5942,7 +9014,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQABAAAsBMJZwAAqo/LifQ8gAA/vqtxnjVKu2l+dYXb6darIPTu28gBMvdZ6PiyZUMeZ4LmOIxxdmXZZmjynzsyD9i+I9+w1bP93yzN++ukb5v9R6VT3ch1FpDjbG+ZYRG/8P88CEAAA=="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5970,7 +9042,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZwC7IExFXlEkDAHbAAA/vqtEYpfbe26GbBWvicoZYMh45ecajxM+MKb6rzOgVwdbq0L5vYTCN3SHqgnhlUjRr9f+/6jTwq2nGY5rl90LXo4UjhPEUe6U4ShEWAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -5998,7 +9070,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQABAAAsBMJZwCdIIjjvBOuQAu0AD++qy//owNtzvvn2wi5Erkp0zPHIJdefI9jaikvul4XMeKY1OBbL8uoBNzcfFQrwdy0EVVRJEl6IsA9RvWZ0fkX2wLJrg1iA6QyrYAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6056,6 +9128,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJZQCdH8AFjjoiOgA/vqrN/M+U/e8rJe/ZQn5O85VvthoaBkmQN1cCBN4jIk4Bce6zodmUCqX8PNIJd0yTTGou45vo+TVEu8WHNsbB8lSAAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJZQCdH8AFjjoiOgA/vqrN/M+U/e8rJe/ZQn5O85VvthoaBkmQN1cCBN4jIk4Bce6zodmUCqX8PNIJd0yTTGou45vo+TVEu8WHNsbB8lSAAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJZQCdH8AFjjoiOgA/vqrN/M+U/e8rJe/ZQn5O85VvthoaBkmQN1cCBN4jIk4Bce6zodmUCqX8PNIJd0yTTGou45vo+TVEu8WHNsbB8lSAAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw125-light-wash/v2/yw125-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJZQCdH8AFjjoiOgA/vqrN/M+U/e8rJe/ZQn5O85VvthoaBkmQN1cCBN4jIk4Bce6zodmUCqX8PNIJd0yTTGou45vo+TVEu8WHNsbB8lSAAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6083,7 +9251,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAAsBMJZQCdH8AFjjoiOgA/vqrN/M+U/e8rJe/ZQn5O85VvthoaBkmQN1cCBN4jIk4Bce6zodmUCqX8PNIJd0yTTGou45vo+TVEu8WHNsbB8lSAAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6111,7 +9279,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAgCdASoQABAAAsBMJYwCdH8AGX3O43RFvuCAAP76qy7/U/YGHY7afrU1qomQ9V1Ld7HQXUy/Fhm4LBGF+oIikq16ZmImJ3/Z/tvWeX600M4cZVbmH0cgfphVRSxBt1BAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6139,7 +9307,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQABAAAsBMJQBOjNAAVdwTgjpeAP76re9LvZuaLGV1d7/iOPBKJg9n917USDpybakyOwYVNLfZewV+u8/f0+JQFgXejgyytP50a2gPP4APVw+xwTwAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6197,6 +9365,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQABAAAsBMJZwC7IExFXeW3VWAAP76rX/qf5DJB+WZEmhhUwnNJJx/vWkcEUqdHInq/iCUNWXl8VnSk18L1vH4TLqay+z7+8R6rWL0YT7nCRocUKwzLjuqPrLG8LqD58VF4AAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQABAAAsBMJZwC7IExFXeW3VWAAP76rX/qf5DJB+WZEmhhUwnNJJx/vWkcEUqdHInq/iCUNWXl8VnSk18L1vH4TLqay+z7+8R6rWL0YT7nCRocUKwzLjuqPrLG8LqD58VF4AAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQABAAAsBMJZwC7IExFXeW3VWAAP76rX/qf5DJB+WZEmhhUwnNJJx/vWkcEUqdHInq/iCUNWXl8VnSk18L1vH4TLqay+z7+8R6rWL0YT7nCRocUKwzLjuqPrLG8LqD58VF4AAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-dark-indigo/v2/yw133-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQABAAAsBMJZwC7IExFXeW3VWAAP76rX/qf5DJB+WZEmhhUwnNJJx/vWkcEUqdHInq/iCUNWXl8VnSk18L1vH4TLqay+z7+8R6rWL0YT7nCRocUKwzLjuqPrLG8LqD58VF4AAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6224,7 +9488,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQABAAAsBMJZwC7IExFXeW3VWAAP76rX/qf5DJB+WZEmhhUwnNJJx/vWkcEUqdHInq/iCUNWXl8VnSk18L1vH4TLqay+z7+8R6rWL0YT7nCRocUKwzLjuqPrLG8LqD58VF4AAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6252,7 +9516,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQABAAAsBMJZQBUfo2QBq1l+8T0AD++q2hPrvl9hcFNyJ0Jh3oj+/5qRS1dt2a8PHwzav7q5aC6iH+6TY5+OZAZXJ9bVTa4+vFEygodYDevI7uAGZGWOzlwgAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6280,7 +9544,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQABAAAsBMJZwAAq4KQnMAAP76qzf4Kr9+ovE2/cr7LNRhPvoTmcuGdGKpPcbPqcRmXFGektmpOULv0U23/GFclGhWXtYmgAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6338,6 +9602,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQABAAAsBMJQBOj+ACrvBrIAD++q2jJhSQbxdz7oVtV+q3wvDzQ8cUXG71FWS4F1fgARMQZm4JOBAy55KyCK2p77KZEqoaEBRzd/d8sYbwAAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQABAAAsBMJQBOj+ACrvBrIAD++q2jJhSQbxdz7oVtV+q3wvDzQ8cUXG71FWS4F1fgARMQZm4JOBAy55KyCK2p77KZEqoaEBRzd/d8sYbwAAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQABAAAsBMJQBOj+ACrvBrIAD++q2jJhSQbxdz7oVtV+q3wvDzQ8cUXG71FWS4F1fgARMQZm4JOBAy55KyCK2p77KZEqoaEBRzd/d8sYbwAAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw133-light-wash/v2/yw133-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQABAAAsBMJQBOj+ACrvBrIAD++q2jJhSQbxdz7oVtV+q3wvDzQ8cUXG71FWS4F1fgARMQZm4JOBAy55KyCK2p77KZEqoaEBRzd/d8sYbwAAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6365,7 +9725,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQABAAAsBMJQBOj+ACrvBrIAD++q2jJhSQbxdz7oVtV+q3wvDzQ8cUXG71FWS4F1fgARMQZm4JOBAy55KyCK2p77KZEqoaEBRzd/d8sYbwAAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6393,7 +9753,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAgCdASoQABAAAsBMJYwCdH8IIBtgAOVqPSYAAP76rGySyAFBqZA1vAUrBbfsSW24qggiEuoduDknsm13YKLHFfcwq5Vzb2EAcq5wAAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6421,7 +9781,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQABAAAsBMJYwCdH8AFjHrCQgA/vqt+mvPlxhngBbss6qrpGSm8DaqnAPBNEdVLAgsJjfDA2lyVw464AA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6479,6 +9839,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAgCdASoQABAAAsBMJQBOjNAbaADLyF75N8ECAAD++q33vbhne6Tj423ji9h0LIIvUgSM3aKKC1EvHjXpfhBwjN6L6XSt8Hb6yG7YN8JBgPkGAGUmeUoAAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAgCdASoQABAAAsBMJQBOjNAbaADLyF75N8ECAAD++q33vbhne6Tj423ji9h0LIIvUgSM3aKKC1EvHjXpfhBwjN6L6XSt8Hb6yG7YN8JBgPkGAGUmeUoAAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAgCdASoQABAAAsBMJQBOjNAbaADLyF75N8ECAAD++q33vbhne6Tj423ji9h0LIIvUgSM3aKKC1EvHjXpfhBwjN6L6XSt8Hb6yG7YN8JBgPkGAGUmeUoAAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-light-wash/v2/yw174-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAgCdASoQABAAAsBMJQBOjNAbaADLyF75N8ECAAD++q33vbhne6Tj423ji9h0LIIvUgSM3aKKC1EvHjXpfhBwjN6L6XSt8Hb6yG7YN8JBgPkGAGUmeUoAAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6506,7 +9962,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAgCdASoQABAAAsBMJQBOjNAbaADLyF75N8ECAAD++q33vbhne6Tj423ji9h0LIIvUgSM3aKKC1EvHjXpfhBwjN6L6XSt8Hb6yG7YN8JBgPkGAGUmeUoAAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6534,7 +9990,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAgCdASoQABAAAsBMJYgCdH8IIABgBqfbbLO63yAA/vqsbCTaQj3Fb6e7QICxT/z+7jiRNxndGttXcn/OnvUk2tmaEeN881r/5DQxwjyQAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6562,7 +10018,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQABAAAsBMJQBOgB4aZAowAAD++q2OfvV/C1WT/pFO6J8AU4B/hxWasfyGd6Gw+GguLKw1wdD4JxLbBzM+U4h5OOgAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6620,6 +10076,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJZQCdH8AFXcE+Q/c/QAA/vqt9XKtEViU2PdNGwZXe3XpAQn0DI9EKsrMVD2cE3D2iB+1DzAgSx5/vRji+bGs7hx99a05HhBOt462LnCialMAAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJZQCdH8AFXcE+Q/c/QAA/vqt9XKtEViU2PdNGwZXe3XpAQn0DI9EKsrMVD2cE3D2iB+1DzAgSx5/vRji+bGs7hx99a05HhBOt462LnCialMAAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJZQCdH8AFXcE+Q/c/QAA/vqt9XKtEViU2PdNGwZXe3XpAQn0DI9EKsrMVD2cE3D2iB+1DzAgSx5/vRji+bGs7hx99a05HhBOt462LnCialMAAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw174-dark-indigo/v2/yw174-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJZQCdH8AFXcE+Q/c/QAA/vqt9XKtEViU2PdNGwZXe3XpAQn0DI9EKsrMVD2cE3D2iB+1DzAgSx5/vRji+bGs7hx99a05HhBOt462LnCialMAAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6647,7 +10199,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQABAAAsBMJZQCdH8AFXcE+Q/c/QAA/vqt9XKtEViU2PdNGwZXe3XpAQn0DI9EKsrMVD2cE3D2iB+1DzAgSx5/vRji+bGs7hx99a05HhBOt462LnCialMAAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6675,7 +10227,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoQABAAAsBMJYwCdH8AFXlAtT7Z8QAAAP76rfApQZE+PoaqoVzPWtNnU1F32iJdOHN85zVeeWr61V6nZXti/P3mFHFPuorz+0nmT4pz3zjWzJyquYQAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6703,7 +10255,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQABAAAsBMJZQCdIBgGBriD93zwAD++qbic9M5S1fqiYE9JazFKz6VmyeR3pEa22pgwjsAYr73+7MyfmaXAJfU3jYQzUluaUBwAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6761,6 +10313,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQABAAAsBMJYwCdH8AFcqGVjju+AAA/vqtHRKMxvYRwCKw/XGSW2Hb8HmWn/jmaqevdIEDER38i71N93Ap49uPn1fVP5SOrj0eArQdGfwPIAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQABAAAsBMJYwCdH8AFcqGVjju+AAA/vqtHRKMxvYRwCKw/XGSW2Hb8HmWn/jmaqevdIEDER38i71N93Ap49uPn1fVP5SOrj0eArQdGfwPIAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQABAAAsBMJYwCdH8AFcqGVjju+AAA/vqtHRKMxvYRwCKw/XGSW2Hb8HmWn/jmaqevdIEDER38i71N93Ap49uPn1fVP5SOrj0eArQdGfwPIAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw181-light-wash/v2/yw181-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQABAAAsBMJYwCdH8AFcqGVjju+AAA/vqtHRKMxvYRwCKw/XGSW2Hb8HmWn/jmaqevdIEDER38i71N93Ap49uPn1fVP5SOrj0eArQdGfwPIAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6788,7 +10436,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQABAAAsBMJYwCdH8AFcqGVjju+AAA/vqtHRKMxvYRwCKw/XGSW2Hb8HmWn/jmaqevdIEDER38i71N93Ap49uPn1fVP5SOrj0eArQdGfwPIAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6816,7 +10464,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQABAAAsBMJQBOj+EEAAv/4QW8sAD++q1Fre81cfxGd4psS5UEWFnDvWTUfFZlce5UbG6NrxlXcRQ8HqFF062BrxTAZrYpTchwAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6844,7 +10492,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAgCdASoQABAAAsBMJQBOj+EEA2wAHI4ZhaDIAP76rUWowL+1KxHhck53A4RuZowtgU8+F5btmej8rdb3HLnUDAGaaLnVhxk9dTOv/bAAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6902,6 +10550,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZQCdIIjgqiqtxOk7EAA/vqtxl00LDQlU4Cdvpn2NiHGPuRyeYz3D8AJNAQ+4G9+3XdG4UtQNn9wK98qgZfkrxL69IRdbPgzPcwfYlqSH1BwxEd/Kr7ZCK+aTAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZQCdIIjgqiqtxOk7EAA/vqtxl00LDQlU4Cdvpn2NiHGPuRyeYz3D8AJNAQ+4G9+3XdG4UtQNn9wK98qgZfkrxL69IRdbPgzPcwfYlqSH1BwxEd/Kr7ZCK+aTAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZQCdIIjgqiqtxOk7EAA/vqtxl00LDQlU4Cdvpn2NiHGPuRyeYz3D8AJNAQ+4G9+3XdG4UtQNn9wK98qgZfkrxL69IRdbPgzPcwfYlqSH1BwxEd/Kr7ZCK+aTAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-dark-indigo/v2/yw188-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZQCdIIjgqiqtxOk7EAA/vqtxl00LDQlU4Cdvpn2NiHGPuRyeYz3D8AJNAQ+4G9+3XdG4UtQNn9wK98qgZfkrxL69IRdbPgzPcwfYlqSH1BwxEd/Kr7ZCK+aTAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6929,7 +10673,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZQCdIIjgqiqtxOk7EAA/vqtxl00LDQlU4Cdvpn2NiHGPuRyeYz3D8AJNAQ+4G9+3XdG4UtQNn9wK98qgZfkrxL69IRdbPgzPcwfYlqSH1BwxEd/Kr7ZCK+aTAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6957,7 +10701,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAAsBMJZQCdIIjFjH+8KfSjaAA/vqtf53fQDfNZzf9VnK735WoQN44gebTQyyfNRwch0PycWDW3azfHVruoyezJoeUaw4nxIKcr53P0c20ApUKKm8VbWIgEQPYhiYv1AAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -6985,7 +10729,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoQABAAAsBMJZQCdH8AFSHyP1h+7kAA/vqtjn9V6c9haBIMbAf8dcbuSuZlZgfVE51nziL5WLiZofIjSGuPA7Jep0Tn8pnPVlxFK86vys0LWdrRZolVJXoiu1mgwcJfVw2AVbemRjAAAA=="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7043,6 +10787,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQABAAAsBMJYwCdH8AFXcBPA6AAP76rdQd5IBNK9Q1j6BL5V/+oI4taKC9XvF1eiVZeP2Yq/o7BYcLRpie7mhNvmlXSsGV/iJPwQDp3v/4NlgA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQABAAAsBMJYwCdH8AFXcBPA6AAP76rdQd5IBNK9Q1j6BL5V/+oI4taKC9XvF1eiVZeP2Yq/o7BYcLRpie7mhNvmlXSsGV/iJPwQDp3v/4NlgA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQABAAAsBMJYwCdH8AFXcBPA6AAP76rdQd5IBNK9Q1j6BL5V/+oI4taKC9XvF1eiVZeP2Yq/o7BYcLRpie7mhNvmlXSsGV/iJPwQDp3v/4NlgA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw188-light-wash/v2/yw188-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQABAAAsBMJYwCdH8AFXcBPA6AAP76rdQd5IBNK9Q1j6BL5V/+oI4taKC9XvF1eiVZeP2Yq/o7BYcLRpie7mhNvmlXSsGV/iJPwQDp3v/4NlgA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7070,7 +10910,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQABAAAsBMJYwCdH8AFXcBPA6AAP76rdQd5IBNK9Q1j6BL5V/+oI4taKC9XvF1eiVZeP2Yq/o7BYcLRpie7mhNvmlXSsGV/iJPwQDp3v/4NlgA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7098,7 +10938,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQABAAAsBMJYwCdH8AFXNxN1wAAP76rfn5l5+zqrpA6RXMridLkLksoPsXl4tVGcYmeQWS1rBEG6/xlXxYOp3/2ckmjIyj5Xj75booEAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7126,7 +10966,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQABAAAsBMJYwCdH8AFcqgs1wAAP76rfApPGzeGDMKM/EvUZrpNCs69PvTO9cdnB4FcTi1dQLQmCf31wQfiFglgAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7184,6 +11024,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAAsBMJZQC7AYv/y5nVtnSrBYAAP76rL7n3rmXP4kobwHKqfQ19OoEzvyY/l89iLKEfQsMmIxQ8rNl/XFx+YMEo9vtwCIy7mxPLlpr4Gpml6Hs9uj71DtKxOVz/Syf+fZUeTWJWdLk8s7JXE7Sz5CF5OxmIAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAAsBMJZQC7AYv/y5nVtnSrBYAAP76rL7n3rmXP4kobwHKqfQ19OoEzvyY/l89iLKEfQsMmIxQ8rNl/XFx+YMEo9vtwCIy7mxPLlpr4Gpml6Hs9uj71DtKxOVz/Syf+fZUeTWJWdLk8s7JXE7Sz5CF5OxmIAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAAsBMJZQC7AYv/y5nVtnSrBYAAP76rL7n3rmXP4kobwHKqfQ19OoEzvyY/l89iLKEfQsMmIxQ8rNl/XFx+YMEo9vtwCIy7mxPLlpr4Gpml6Hs9uj71DtKxOVz/Syf+fZUeTWJWdLk8s7JXE7Sz5CF5OxmIAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw220-dark-indigo/v2/yw220-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAAsBMJZQC7AYv/y5nVtnSrBYAAP76rL7n3rmXP4kobwHKqfQ19OoEzvyY/l89iLKEfQsMmIxQ8rNl/XFx+YMEo9vtwCIy7mxPLlpr4Gpml6Hs9uj71DtKxOVz/Syf+fZUeTWJWdLk8s7JXE7Sz5CF5OxmIAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7211,7 +11147,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAAsBMJZQC7AYv/y5nVtnSrBYAAP76rL7n3rmXP4kobwHKqfQ19OoEzvyY/l89iLKEfQsMmIxQ8rNl/XFx+YMEo9vtwCIy7mxPLlpr4Gpml6Hs9uj71DtKxOVz/Syf+fZUeTWJWdLk8s7JXE7Sz5CF5OxmIAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7239,7 +11175,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQAgCdASoQABAAAsBMJZwC7AEXtMUsX9S59tqsAAD++q3wKnGTHyA/JMuuDESD4DUmpvvLxiDPz7lCCWQXkTFdl/XTs34WF53sGIRS6Sd4ThWGVMooeUDsfAs6rhRALoilSweEHY63qgAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7267,7 +11203,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAAsBMJZQCdH8AFcn7SVAAAP76qa/W131kAVrtn/rAP/SbiQlDrMO4pjPrLXX8amO68v+XXVMFgKudgRNZxD8mWAAA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7325,6 +11261,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJYwCdH8AFXlEj9uNwAD++q0fEV9fPDq7M6hUlWH0vdOjd1fCgCJVYPPUSZiq8QDfV3CDoalLl4jnNce8JZQlnoU6HB8khLy1sL1amLp/EzNxyks72ZMHL6Rhu5ZLO/7WYAAA"
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJYwCdH8AFXlEj9uNwAD++q0fEV9fPDq7M6hUlWH0vdOjd1fCgCJVYPPUSZiq8QDfV3CDoalLl4jnNce8JZQlnoU6HB8khLy1sL1amLp/EzNxyks72ZMHL6Rhu5ZLO/7WYAAA"
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJYwCdH8AFXlEj9uNwAD++q0fEV9fPDq7M6hUlWH0vdOjd1fCgCJVYPPUSZiq8QDfV3CDoalLl4jnNce8JZQlnoU6HB8khLy1sL1amLp/EzNxyks72ZMHL6Rhu5ZLO/7WYAAA"
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw227-dark-indigo/v2/yw227-dark-indigo_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJYwCdH8AFXlEj9uNwAD++q0fEV9fPDq7M6hUlWH0vdOjd1fCgCJVYPPUSZiq8QDfV3CDoalLl4jnNce8JZQlnoU6HB8khLy1sL1amLp/EzNxyks72ZMHL6Rhu5ZLO/7WYAAA"
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7352,7 +11384,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJYwCdH8AFXlEj9uNwAD++q0fEV9fPDq7M6hUlWH0vdOjd1fCgCJVYPPUSZiq8QDfV3CDoalLl4jnNce8JZQlnoU6HB8khLy1sL1amLp/EzNxyks72ZMHL6Rhu5ZLO/7WYAAA"
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7380,7 +11412,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoQABAAAsBMJYwCdH8G6AA0Fx+GtzHEAP76reRPv1El/IzLPZkBjjztpyUkXj0C3HqxBQ2/ZF7d/x0efpdljYO9kjg7fRLwrc+eTd3XTfvpwcZIh4raGkpC3Q4G7fxZwAA="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7408,7 +11440,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQABAAAsBMJYwCdH8AFSL7WF00gAD++q33vbhijbb8dvGnhdrxd6c+Mu4bd0i72kVvmsIr/sCzfQNSSojnfSmW54MwNIdkSwW1L/CNRq7aUcvOy+2KlQqHPKwMNRW+hjDUEIoZdt4PmagA"
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7467,6 +11499,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQABAAAsBMJZQCdIHAjz5QftaFnUoAAP76rR5nduyxX52ZJct8/TJeR2FOIfVbAO7IZw+VZmFIsqXSJH9JMRPOkfi6Ie4EK3RXB60rktM/nNR9lrAIN1xyLvaIwfQKhohZQT4AAAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQABAAAsBMJZQCdIHAjz5QftaFnUoAAP76rR5nduyxX52ZJct8/TJeR2FOIfVbAO7IZw+VZmFIsqXSJH9JMRPOkfi6Ie4EK3RXB60rktM/nNR9lrAIN1xyLvaIwfQKhohZQT4AAAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQABAAAsBMJZQCdIHAjz5QftaFnUoAAP76rR5nduyxX52ZJct8/TJeR2FOIfVbAO7IZw+VZmFIsqXSJH9JMRPOkfi6Ie4EK3RXB60rktM/nNR9lrAIN1xyLvaIwfQKhohZQT4AAAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw228-light-wash/v2/yw228-light-wash_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQABAAAsBMJZQCdIHAjz5QftaFnUoAAP76rR5nduyxX52ZJct8/TJeR2FOIfVbAO7IZw+VZmFIsqXSJH9JMRPOkfi6Ie4EK3RXB60rktM/nNR9lrAIN1xyLvaIwfQKhohZQT4AAAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7494,7 +11622,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQABAAAsBMJZQCdIHAjz5QftaFnUoAAP76rR5nduyxX52ZJct8/TJeR2FOIfVbAO7IZw+VZmFIsqXSJH9JMRPOkfi6Ie4EK3RXB60rktM/nNR9lrAIN1xyLvaIwfQKhohZQT4AAAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7522,7 +11650,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAgCdASoQABAAAsBMJZwCdH8IIABgBdo7iS/oAAD++q1Fquk/57VTwK/zkr7TUVoa2wtDJS5PuN2O5342hR/XrJlDAdNP+Qc0rj/w61hDvFWtxcGU4QAA"
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7550,7 +11678,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQABAAAsBMJZQCdIBgFcn7SVAAAP76rdNjSC2GUbQ+YUG4RRHFB/f8Gtv492khDIYV75ySs2+PLp386r98DgKAAAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7609,6 +11737,102 @@ export const PRODUCTS: Product[] = [
     "images": [
       {
         "idx": 0,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_three_quarter_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_three_quarter_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_three_quarter_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_three_quarter_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJaQAD49umZZyFfjoAP76rL/71mb/8lHxCoIv86KNBZFTfs+jwN7c8ZoymNlXgzb8Ye6/bwXszP9Jw0eFTt+heH2iQdEeMREyPh6Ggoz2Glns2tbd6es2yOs5lQ85QcXo6Mt4gAA="
+      },
+      {
+        "idx": 1,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_back_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_back_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_back_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_back_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJaQAD49umZZyFfjoAP76rL/71mb/8lHxCoIv86KNBZFTfs+jwN7c8ZoymNlXgzb8Ye6/bwXszP9Jw0eFTt+heH2iQdEeMREyPh6Ggoz2Glns2tbd6es2yOs5lQ85QcXo6Mt4gAA="
+      },
+      {
+        "idx": 2,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_motif_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_motif_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_motif_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_motif_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJaQAD49umZZyFfjoAP76rL/71mb/8lHxCoIv86KNBZFTfs+jwN7c8ZoymNlXgzb8Ye6/bwXszP9Jw0eFTt+heH2iQdEeMREyPh6Ggoz2Glns2tbd6es2yOs5lQ85QcXo6Mt4gAA="
+      },
+      {
+        "idx": 3,
+        "width": 2000,
+        "height": 2000,
+        "sizes": [
+            {
+              "w": 480,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_infographic_480.webp"
+            },
+            {
+              "w": 800,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_infographic_800.webp"
+            },
+            {
+              "w": 1200,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_infographic_1200.webp"
+            },
+            {
+              "w": 1600,
+              "src": "/products/yw236-onyx-black/v2/yw236-onyx-black_v2_infographic_1600.webp"
+            }
+          ],
+        "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJaQAD49umZZyFfjoAP76rL/71mb/8lHxCoIv86KNBZFTfs+jwN7c8ZoymNlXgzb8Ye6/bwXszP9Jw0eFTt+heH2iQdEeMREyPh6Ggoz2Glns2tbd6es2yOs5lQ85QcXo6Mt4gAA="
+      },
+      {
+        "idx": 4,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7636,7 +11860,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQABAAAsBMJaQAD49umZZyFfjoAP76rL/71mb/8lHxCoIv86KNBZFTfs+jwN7c8ZoymNlXgzb8Ye6/bwXszP9Jw0eFTt+heH2iQdEeMREyPh6Ggoz2Glns2tbd6es2yOs5lQ85QcXo6Mt4gAA="
       },
       {
-        "idx": 1,
+        "idx": 5,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7664,7 +11888,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoQABAAAsBMJaQAD45QXeF1h5pJQAD++qxsBwAZOq41F5Yy/svX/wf+vJbjFg3keM2Zm+qOzqWGRip+myEbFyZaWMrF6uo5CxDGJrRjNT7fhWPXSoBZpzR+eopTPYj2N72SfrdOGAAAAA=="
       },
       {
-        "idx": 2,
+        "idx": 6,
         "width": 4000,
         "height": 4000,
         "sizes": [
@@ -7692,7 +11916,7 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQABAAAsBMJaQAAqo/ILXe8AAA/vqtHxGhS+YtODL5FLSf3XFYo9Mv4RmVLc2Ck77zuJoodlAvXSzmFb3NY1JNst0mCon0QAA="
       },
       {
-        "idx": 3,
+        "idx": 7,
         "width": 4000,
         "height": 4000,
         "sizes": [
