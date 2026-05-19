@@ -29,6 +29,8 @@ export interface Product {
   images: ProductImage[];
   restricted?: boolean;
   restrictedReason?: "IP_FLAG" | "SKIP_LIST";
+  outOfStock?: boolean;
+  outOfStockNote?: string;
 }
 
 export const PRODUCTS: Product[] = [
@@ -2148,7 +2150,9 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQABAAAsBMJQBOj+ACrv1BfMAA/vqt/3Oad2vs83+fu2u1qoxW8rocQ2OMsVVvdoS37PlfoK2piaBwKnPWEpOb9JFt5dcupKHD3SAA"
       }
     ],
-    "restricted": false
+    "restricted": false,
+    "outOfStock": true,
+    "outOfStockNote": "Restocking — not in current stock book"
   },
   {
     "id": 15,
@@ -3333,7 +3337,9 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQABAAAsBMJbACdADFFRBmAAD++q1/6FF/zCw3fCBzSHCcWnXnznxE3rbXDGAJSpDCdS7REBZHe8+xCZyrea9bb8hkPcCJA07U/kwCifavjvkFUAA="
       }
     ],
-    "restricted": false
+    "restricted": false,
+    "outOfStock": true,
+    "outOfStockNote": "Restocking — not in current stock book"
   },
   {
     "id": 23,
@@ -4887,7 +4893,9 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQABAAAsBMJQBOj+ADADbUmAwAAP76qRzj0Wcd1R9zaGXoEVH3kF2u9uCUif8FjnujPxRt465+3ZhhAMaWMlKGzAmAAA=="
       }
     ],
-    "restricted": false
+    "restricted": false,
+    "outOfStock": true,
+    "outOfStockNote": "Restocking — not in current stock book"
   },
   {
     "id": 34,
@@ -5028,7 +5036,9 @@ export const PRODUCTS: Product[] = [
         "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoQABAAAsBMJYwCdIIjGAEfDzZ8QAAA/vqsVSXyJ8yVt/yxLMEcWnUTON1vV1mjqG4Yn4p33SEdW3Oitq7BT2qqqgOt7Pfgu8HL83koAAA="
       }
     ],
-    "restricted": false
+    "restricted": false,
+    "outOfStock": true,
+    "outOfStockNote": "Restocking — not in current stock book"
   },
   {
     "id": 35,

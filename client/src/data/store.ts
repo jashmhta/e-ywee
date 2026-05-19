@@ -15,9 +15,12 @@ import type { Product } from "./products.generated";
 
 export const PRODUCTS: Product[] = RAW_PRODUCTS;
 // Public catalog: drops items flagged restricted (third-party-IP visible or
-// in the human reviewer's skip list pending licensing/QC). Use this for any
+// in the human reviewer's skip list pending licensing/QC) and items that are
+// out of stock per the latest Generations stock book. Use this for any
 // surface that's customer-facing — feed grid, search, sitemap, product pages.
-export const PRODUCTS_PUBLIC: Product[] = RAW_PRODUCTS.filter((p) => !p.restricted);
+export const PRODUCTS_PUBLIC: Product[] = RAW_PRODUCTS.filter(
+  (p) => !p.restricted && !p.outOfStock,
+);
 export { PRODUCTS_BY_SLUG, PRODUCT_FAMILIES, PRODUCT_COLORS, PRODUCT_PATTERNS };
 
 // ─── Helpers ────────────────────────────────────────────────────────────

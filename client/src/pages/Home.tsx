@@ -22,7 +22,7 @@ const FEATURED_SLUGS = [
   "yw126-dark-indigo",    // SKU14 — bunny + heart-love charm skort
   "yw037-rinse-wash",     // SKU15 — happiness GORGEOUS YOU sequin
   "yw073-dark-indigo",    // SKU29 — wide-leg cargo with YZ rhinestone
-  "yw131-dark-indigo",    // SKU33 — rainbow + cloud applique
+  "yw036-light-wash",     // SKU43 — two-tone slim, dark side panels (47u in stock)
 ];
 
 // Trending: 3-button hi-waist + cursive scripts, the second wave to watch.
@@ -44,18 +44,21 @@ const BESTSELLER_SLUGS = [
   "yw123-embroidered",    // SKU07 — bunny embroidery
   "yw123-embellished-b",  // SKU08 — butterfly + ribbon stripes
   "yw123-embellished-c",  // SKU09 — two-tone with side panels
-  "yw131-light-wash",     // SKU33 light variant — rainbow cloud
+  "yw133-dark-indigo",    // SKU20 — straight-leg dark indigo (38u in stock)
   "yw188-dark-indigo",    // SKU46 — Magic unicorn dark wide-leg
   "yw228-light-wash",     // SKU31 (restricted — may filter)
   "yw174-light-wash",     // SKU28 — DONUT STOP DREAMING light
   "yw188-light-wash",     // SKU47 — SKY rainbow cuffed shorts
 ];
 
-// Drop any restricted SKUs (IP-flagged or skip-list) from the public surface.
+// Drop any restricted SKUs (IP-flagged or skip-list) and any out-of-stock
+// items from the curated public surfaces.
 function pick(slugs: string[]) {
   return slugs
     .map((s) => PRODUCTS.find((p) => p.slug === s))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p) && !p!.restricted);
+    .filter((p): p is NonNullable<typeof p> =>
+      Boolean(p) && !p!.restricted && !p!.outOfStock,
+    );
 }
 
 // ─── Hero ─────────────────────────────────────────────────────────────────
