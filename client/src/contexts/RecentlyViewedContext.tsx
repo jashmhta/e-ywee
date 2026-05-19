@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 const STORAGE_KEY = "ywee:recentlyViewed:v1";
 const MAX = 12;
@@ -27,12 +27,23 @@ export function RecentlyViewedProvider({ children }: { children: ReactNode }) {
     try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch {}
   }, [items]);
 
-  const push = (slug: string) => setItems((prev) => [slug, ...prev.filter((s) => s !== slug)].slice(0, MAX));
-  const remove = (slug: string) => setItems((prev) => prev.filter((s) => s !== slug));
-  const clear = () => setItems([]);
+  // Stable refs — passing fresh closures here would cause any consumer
+  // useEffect depending on these to re-run every render and clobber state
+  // (e.g. Product.tsx's slug-change reset would fire on every keystroke).
+  const push = useCallback(
+    (slug: string) => setItems((prev) => [slug, ...prev.filter((s) => s !== slug)].slice(0, MAX)),
+    [],
+  );
+  const remove = useCallback(
+    (slug: string) => setItems((prev) => prev.filter((s) => s !== slug)),
+    [],
+  );
+  const clear = useCallback(() => setItems([]), []);
+
+  const value = useMemo(() => ({ items, push, remove, clear }), [items, push, remove, clear]);
 
   return (
-    <RecentlyViewedContext.Provider value={{ items, push, remove, clear }}>
+    <RecentlyViewedContext.Provider value={value}>
       {children}
     </RecentlyViewedContext.Provider>
   );

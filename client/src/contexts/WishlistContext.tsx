@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 const STORAGE_KEY = "ywee:wishlist:v1";
 
@@ -40,17 +40,32 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("storage", onStorage);
   }, []);
 
-  const has = (slug: string) => items.includes(slug);
-  const add = (slug: string) => setItems((prev) => (prev.includes(slug) ? prev : [slug, ...prev]));
-  const remove = (slug: string) => setItems((prev) => prev.filter((s) => s !== slug));
-  const toggle = (slug: string) => setItems((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [slug, ...prev]));
-  const clear = () => setItems([]);
-
-  return (
-    <WishlistContext.Provider value={{ items, has, toggle, add, remove, clear, count: items.length }}>
-      {children}
-    </WishlistContext.Provider>
+  // `has` depends on `items`; the rest are stable callbacks. Memoise the
+  // value so consumer useEffects depending on these don't fire each render.
+  const has = useCallback((slug: string) => items.includes(slug), [items]);
+  const add = useCallback(
+    (slug: string) => setItems((prev) => (prev.includes(slug) ? prev : [slug, ...prev])),
+    [],
   );
+  const remove = useCallback(
+    (slug: string) => setItems((prev) => prev.filter((s) => s !== slug)),
+    [],
+  );
+  const toggle = useCallback(
+    (slug: string) =>
+      setItems((prev) =>
+        prev.includes(slug) ? prev.filter((s) => s !== slug) : [slug, ...prev],
+      ),
+    [],
+  );
+  const clear = useCallback(() => setItems([]), []);
+
+  const value = useMemo(
+    () => ({ items, has, toggle, add, remove, clear, count: items.length }),
+    [items, has, toggle, add, remove, clear],
+  );
+
+  return <WishlistContext.Provider value={value}>{children}</WishlistContext.Provider>;
 }
 
 export function useWishlist() {

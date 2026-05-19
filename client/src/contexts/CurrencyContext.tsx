@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 const STORAGE_KEY = "ywee:currency:v1";
 
@@ -47,19 +47,24 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
   }, [code]);
 
   const currency = CURRENCIES[code];
-  const format = (inr: number) => {
-    const v = inr * currency.rate;
-    if (currency.decimals === 0) {
-      return `${currency.symbol}${Math.round(v).toLocaleString(currency.locale)}`;
-    }
-    return `${currency.symbol}${v.toFixed(currency.decimals)}`;
-  };
-
-  return (
-    <CurrencyContext.Provider value={{ currency, setCurrency: setCode, format }}>
-      {children}
-    </CurrencyContext.Provider>
+  const format = useCallback(
+    (inr: number) => {
+      const v = inr * currency.rate;
+      if (currency.decimals === 0) {
+        return `${currency.symbol}${Math.round(v).toLocaleString(currency.locale)}`;
+      }
+      return `${currency.symbol}${v.toFixed(currency.decimals)}`;
+    },
+    [currency],
   );
+  const setCurrency = useCallback((c: CurrencyCode) => setCode(c), []);
+
+  const value = useMemo(
+    () => ({ currency, setCurrency, format }),
+    [currency, setCurrency, format],
+  );
+
+  return <CurrencyContext.Provider value={value}>{children}</CurrencyContext.Provider>;
 }
 
 export function useCurrency() {
