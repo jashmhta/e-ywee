@@ -100,28 +100,6 @@ export function ProductCard({
             />
           ) : null}
 
-          {/* Low stock badge */}
-          {fewLeft && (
-            <div
-              style={{
-                position: "absolute",
-                top: "10px",
-                left: "10px",
-                background: "rgba(255,255,255,0.94)",
-                backdropFilter: "blur(8px)",
-                fontSize: "9px",
-                letterSpacing: "0.16em",
-                textTransform: "uppercase",
-                color: "#993a3a",
-                padding: "5px 9px",
-                fontFamily: "var(--sans)",
-                fontWeight: 500,
-              }}
-            >
-              {fewLeft}
-            </div>
-          )}
-
           {quickAdd ? (
             <button
               type="button"
@@ -183,7 +161,29 @@ export function ProductCard({
             <p className="pcard-name" style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
               {product.name}
             </p>
-            <p className="pcard-color">{product.color}</p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "2px" }}>
+              <p className="pcard-color" style={{ margin: 0 }}>{product.color}</p>
+              {fewLeft && (
+                <>
+                  <span style={{ color: "var(--ink-faint, rgba(26,25,22,0.45))", fontSize: "11px" }}>·</span>
+                  <span
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "5px",
+                      color: "#993a3a",
+                      fontSize: "11px",
+                      letterSpacing: "0.02em",
+                      whiteSpace: "nowrap",
+                      fontFamily: "var(--sans)",
+                    }}
+                  >
+                    <span aria-hidden style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#C53030" }} />
+                    {fewLeft}
+                  </span>
+                </>
+              )}
+            </div>
             {showRating && (
               <div style={{ marginTop: "6px" }}>
                 <StarRating rating={rating.avg} size={11} count={rating.count} showValue />
